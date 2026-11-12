@@ -1,0 +1,365 @@
+method,kind,video,stored,frame_recall,idle_kept,ev_full
+FD,clean,one-by-one,0.8923959827833573,0.9365750528541226,0.67,0.8333333333333334
+FD,clean,people,0.7298657718120806,1.0,0.351931330472103,1.0
+FD,clean,person-bike-car,0.7295208655332303,1.0,0.2584745762711864,1.0
+FD,clean,walk-and-pause,0.6498625114573785,0.7731788079470199,0.23297491039426524,0.0
+FD,clean,worker-zone,0.9637362637362638,0.9764150943396226,0.9285714285714286,1.0
+FD,clean,car-lot,0.7029177718832891,1.0,0.37410071942446044,1.0
+FD,clean,store-aisle,0.9248407643312102,1.0,0.16666666666666666,1.0
+FD,illum,one-by-one,0.9103299856527977,0.9640591966173362,0.665,1.0
+FD,illum,people,0.7919463087248322,1.0,0.5021459227467812,1.0
+FD,illum,person-bike-car,0.8330757341576507,1.0,0.5423728813559322,1.0
+FD,illum,walk-and-pause,0.8084326306141155,0.8956953642384106,0.5698924731182796,0.25
+FD,illum,worker-zone,0.9461538461538461,0.9512578616352201,0.9285714285714286,0.8
+FD,illum,car-lot,0.7188328912466844,1.0,0.4172661870503597,1.0
+FD,illum,store-aisle,0.9248407643312102,1.0,0.16666666666666666,1.0
+FD,jitter,one-by-one,1.0,1.0,1.0,1.0
+FD,jitter,people,1.0,1.0,1.0,1.0
+FD,jitter,person-bike-car,1.0,1.0,1.0,1.0
+FD,jitter,walk-and-pause,1.0,1.0,1.0,1.0
+FD,jitter,worker-zone,1.0,1.0,1.0,1.0
+FD,jitter,car-lot,1.0,1.0,1.0,1.0
+FD,jitter,store-aisle,1.0,1.0,1.0,1.0
+FD,noise,one-by-one,0.8708751793400287,0.9059196617336153,0.665,0.8333333333333334
+FD,noise,people,0.7298657718120806,1.0,0.351931330472103,1.0
+FD,noise,person-bike-car,0.7279752704791345,1.0,0.2542372881355932,1.0
+FD,noise,walk-and-pause,0.6791934005499541,0.8211920529801324,0.23297491039426524,0.25
+FD,noise,worker-zone,0.9637362637362638,0.9764150943396226,0.9285714285714286,1.0
+FD,noise,car-lot,0.7108753315649867,1.0,0.39568345323741005,1.0
+FD,noise,store-aisle,0.9248407643312102,1.0,0.16666666666666666,1.0
+FLOW,clean,one-by-one,1.0,1.0,1.0,1.0
+FLOW,clean,people,1.0,1.0,1.0,1.0
+FLOW,clean,person-bike-car,0.9536321483771252,1.0,0.8728813559322034,1.0
+FLOW,clean,walk-and-pause,1.0,1.0,1.0,1.0
+FLOW,clean,worker-zone,0.8879120879120879,0.8679245283018868,0.9285714285714286,0.6
+FLOW,clean,car-lot,0.7692307692307693,1.0,0.5251798561151079,1.0
+FLOW,clean,store-aisle,0.9248407643312102,1.0,0.16666666666666666,1.0
+FLOW,illum,one-by-one,1.0,1.0,1.0,1.0
+FLOW,illum,people,1.0,1.0,1.0,1.0
+FLOW,illum,person-bike-car,0.9768160741885626,1.0,0.9364406779661016,1.0
+FLOW,illum,walk-and-pause,1.0,1.0,1.0,1.0
+FLOW,illum,worker-zone,0.8879120879120879,0.8679245283018868,0.9285714285714286,0.6
+FLOW,illum,car-lot,0.7851458885941645,1.0,0.5683453237410072,1.0
+FLOW,illum,store-aisle,0.9248407643312102,1.0,0.16666666666666666,1.0
+FLOW,jitter,one-by-one,1.0,1.0,1.0,1.0
+FLOW,jitter,people,1.0,1.0,1.0,1.0
+FLOW,jitter,person-bike-car,1.0,1.0,1.0,1.0
+FLOW,jitter,walk-and-pause,1.0,1.0,1.0,1.0
+FLOW,jitter,worker-zone,1.0,1.0,1.0,1.0
+FLOW,jitter,car-lot,1.0,1.0,1.0,1.0
+FLOW,jitter,store-aisle,1.0,1.0,1.0,1.0
+FLOW,noise,one-by-one,1.0,1.0,1.0,1.0
+FLOW,noise,people,1.0,1.0,1.0,1.0
+FLOW,noise,person-bike-car,1.0,1.0,1.0,1.0
+FLOW,noise,walk-and-pause,1.0,1.0,1.0,1.0
+FLOW,noise,worker-zone,0.8956043956043956,0.8789308176100629,0.9285714285714286,0.6
+FLOW,noise,car-lot,1.0,1.0,1.0,1.0
+FLOW,noise,store-aisle,1.0,1.0,1.0,1.0
+MOG2,clean,one-by-one,0.9017216642754663,0.919661733615222,0.715,0.8333333333333334
+MOG2,clean,people,0.6862416107382551,1.0,0.2446351931330472,1.0
+MOG2,clean,person-bike-car,0.9227202472952086,1.0,0.847457627118644,1.0
+MOG2,clean,walk-and-pause,0.7974335472043996,0.9950331125827815,0.3118279569892473,1.0
+MOG2,clean,worker-zone,0.9824175824175824,1.0,1.0,1.0
+MOG2,clean,car-lot,0.8647214854111406,1.0,0.8129496402877698,1.0
+MOG2,clean,store-aisle,0.9732484076433121,1.0,0.5,1.0
+MOG2,illum,one-by-one,0.9799139167862266,0.9957716701902748,0.88,1.0
+MOG2,illum,people,0.7281879194630873,1.0,0.34334763948497854,1.0
+MOG2,illum,person-bike-car,0.7434312210200927,0.9636363636363636,0.4745762711864407,0.75
+MOG2,illum,walk-and-pause,0.846012832263978,0.9188741721854304,0.6810035842293907,0.75
+MOG2,illum,worker-zone,0.9835164835164835,1.0,1.0,1.0
+MOG2,illum,car-lot,0.7586206896551724,1.0,0.5251798561151079,1.0
+MOG2,illum,store-aisle,0.9732484076433121,1.0,0.5,1.0
+MOG2,jitter,one-by-one,1.0,1.0,1.0,1.0
+MOG2,jitter,people,1.0,1.0,1.0,1.0
+MOG2,jitter,person-bike-car,1.0,1.0,1.0,1.0
+MOG2,jitter,walk-and-pause,0.9578368469294225,1.0,0.8853046594982079,1.0
+MOG2,jitter,worker-zone,1.0,1.0,1.0,1.0
+MOG2,jitter,car-lot,1.0,1.0,1.0,1.0
+MOG2,jitter,store-aisle,1.0,1.0,1.0,1.0
+MOG2,noise,one-by-one,0.8730272596843616,0.9238900634249472,0.595,0.8333333333333334
+MOG2,noise,people,0.6812080536912751,1.0,0.2317596566523605,1.0
+MOG2,noise,person-bike-car,0.964451313755796,1.0,0.9449152542372882,1.0
+MOG2,noise,walk-and-pause,0.7085242896425298,0.9221854304635762,0.2078853046594982,0.75
+MOG2,noise,worker-zone,0.9956043956043956,1.0,1.0,1.0
+MOG2,noise,car-lot,0.8859416445623343,1.0,0.8705035971223022,1.0
+MOG2,noise,store-aisle,0.9248407643312102,1.0,0.16666666666666666,1.0
+KNN,clean,one-by-one,0.8959827833572453,0.9334038054968288,0.61,0.8333333333333334
+KNN,clean,people,0.6879194630872483,1.0,0.2317596566523605,1.0
+KNN,clean,person-bike-car,0.9613601236476044,1.0,0.9364406779661016,1.0
+KNN,clean,walk-and-pause,0.7598533455545371,0.9536423841059603,0.23297491039426524,0.75
+KNN,clean,worker-zone,1.0,1.0,1.0,1.0
+KNN,clean,car-lot,0.9628647214854111,1.0,0.8992805755395683,1.0
+KNN,clean,store-aisle,0.9605095541401274,1.0,0.2619047619047619,1.0
+KNN,illum,one-by-one,0.9318507890961263,0.9355179704016914,0.85,0.8333333333333334
+KNN,illum,people,0.7533557046979866,1.0,0.3905579399141631,1.0
+KNN,illum,person-bike-car,0.7897990726429676,0.9636363636363636,0.5889830508474576,0.75
+KNN,illum,walk-and-pause,0.8606782768102658,0.9586092715231788,0.6379928315412187,0.75
+KNN,illum,worker-zone,1.0,1.0,1.0,1.0
+KNN,illum,car-lot,0.9946949602122016,1.0,0.9856115107913669,1.0
+KNN,illum,store-aisle,0.9605095541401274,1.0,0.2619047619047619,1.0
+KNN,jitter,one-by-one,1.0,1.0,1.0,1.0
+KNN,jitter,people,1.0,1.0,1.0,1.0
+KNN,jitter,person-bike-car,1.0,1.0,1.0,1.0
+KNN,jitter,walk-and-pause,0.9880843263061412,1.0,1.0,1.0
+KNN,jitter,worker-zone,1.0,1.0,1.0,1.0
+KNN,jitter,car-lot,1.0,1.0,1.0,1.0
+KNN,jitter,store-aisle,1.0,1.0,1.0,1.0
+KNN,noise,one-by-one,0.9691535150645624,1.0,0.805,1.0
+KNN,noise,people,0.6862416107382551,1.0,0.22746781115879827,1.0
+KNN,noise,person-bike-car,1.0,1.0,1.0,1.0
+KNN,noise,walk-and-pause,0.7974335472043996,1.0,0.2831541218637993,1.0
+KNN,noise,worker-zone,1.0,1.0,1.0,1.0
+KNN,noise,car-lot,1.0,1.0,1.0,1.0
+KNN,noise,store-aisle,0.978343949044586,1.0,0.5952380952380952,1.0
+CNT,clean,one-by-one,0.9763271162123386,0.9820295983086681,0.945,1.0
+CNT,clean,people,0.6291946308724832,1.0,0.11158798283261803,1.0
+CNT,clean,person-bike-car,0.5718701700154559,0.7545454545454545,0.3474576271186441,0.5
+CNT,clean,walk-and-pause,0.8487626031164069,0.9668874172185431,0.6272401433691757,0.75
+CNT,clean,worker-zone,1.0,1.0,1.0,1.0
+CNT,clean,car-lot,0.8037135278514589,1.0,0.4676258992805755,1.0
+CNT,clean,store-aisle,0.9707006369426752,1.0,0.4523809523809524,1.0
+CNT,illum,one-by-one,0.9885222381635581,1.0,0.945,1.0
+CNT,illum,people,0.9714765100671141,1.0,0.927038626609442,1.0
+CNT,illum,person-bike-car,0.9119010819165378,0.9045454545454545,0.9872881355932204,0.5
+CNT,illum,walk-and-pause,0.9945004582951421,1.0,1.0,1.0
+CNT,illum,worker-zone,1.0,1.0,1.0,1.0
+CNT,illum,car-lot,0.9893899204244032,1.0,0.9712230215827338,1.0
+CNT,illum,store-aisle,0.9707006369426752,1.0,0.4523809523809524,1.0
+CNT,jitter,one-by-one,1.0,1.0,1.0,1.0
+CNT,jitter,people,1.0,1.0,1.0,1.0
+CNT,jitter,person-bike-car,0.7712519319938176,1.0,0.4533898305084746,1.0
+CNT,jitter,walk-and-pause,1.0,1.0,1.0,1.0
+CNT,jitter,worker-zone,1.0,1.0,1.0,1.0
+CNT,jitter,car-lot,0.8222811671087533,1.0,0.5179856115107914,1.0
+CNT,jitter,store-aisle,1.0,1.0,1.0,1.0
+CNT,noise,one-by-one,0.9383070301291249,1.0,0.595,1.0
+CNT,noise,people,0.62248322147651,1.0,0.1072961373390558,1.0
+CNT,noise,person-bike-car,1.0,1.0,1.0,1.0
+CNT,noise,walk-and-pause,0.7506874427131073,1.0,0.25448028673835127,1.0
+CNT,noise,worker-zone,1.0,1.0,1.0,1.0
+CNT,noise,car-lot,0.8116710875331565,1.0,0.4892086330935252,1.0
+CNT,noise,store-aisle,0.9707006369426752,1.0,0.4523809523809524,1.0
+GSOC,clean,one-by-one,0.9232424677187948,0.9936575052854123,0.615,1.0
+GSOC,clean,people,0.6912751677852349,1.0,0.24892703862660945,1.0
+GSOC,clean,person-bike-car,0.598145285935085,0.8318181818181818,0.3135593220338983,0.75
+GSOC,clean,walk-and-pause,0.7580201649862511,1.0,0.22580645161290322,1.0
+GSOC,clean,worker-zone,1.0,1.0,1.0,1.0
+GSOC,clean,car-lot,0.7400530503978779,1.0,0.4748201438848921,1.0
+GSOC,clean,store-aisle,0.9235668789808917,1.0,0.14285714285714285,1.0
+GSOC,illum,one-by-one,0.9569583931133429,1.0,0.82,1.0
+GSOC,illum,people,0.9026845637583892,1.0,0.7896995708154506,1.0
+GSOC,illum,person-bike-car,0.8778979907264297,1.0,0.6991525423728814,1.0
+GSOC,illum,walk-and-pause,0.9550870760769936,1.0,0.9390681003584229,1.0
+GSOC,illum,worker-zone,1.0,1.0,1.0,1.0
+GSOC,illum,car-lot,0.8885941644562334,1.0,0.8776978417266187,1.0
+GSOC,illum,store-aisle,0.9235668789808917,1.0,0.14285714285714285,1.0
+GSOC,jitter,one-by-one,1.0,1.0,1.0,1.0
+GSOC,jitter,people,0.7785234899328859,1.0,0.4592274678111588,1.0
+GSOC,jitter,person-bike-car,0.47295208655332305,0.759090909090909,0.08898305084745763,0.5
+GSOC,jitter,walk-and-pause,0.7818515123739689,1.0,0.24372759856630824,1.0
+GSOC,jitter,worker-zone,1.0,1.0,1.0,1.0
+GSOC,jitter,car-lot,0.8355437665782494,1.0,0.5539568345323741,1.0
+GSOC,jitter,store-aisle,1.0,1.0,1.0,1.0
+GSOC,noise,one-by-one,1.0,1.0,1.0,1.0
+GSOC,noise,people,0.8674496644295302,1.0,0.6609442060085837,1.0
+GSOC,noise,person-bike-car,1.0,1.0,1.0,1.0
+GSOC,noise,walk-and-pause,0.8689275893675527,1.0,0.4982078853046595,1.0
+GSOC,noise,worker-zone,1.0,1.0,1.0,1.0
+GSOC,noise,car-lot,1.0,1.0,1.0,1.0
+GSOC,noise,store-aisle,1.0,1.0,1.0,1.0
+Detector (every frame),clean,one-by-one,0.8952654232424677,1.0,0.42,1.0
+Detector (every frame),clean,people,0.6342281879194631,1.0,0.15879828326180256,1.0
+Detector (every frame),clean,person-bike-car,0.6630602782071098,0.9954545454545455,0.13559322033898305,1.0
+Detector (every frame),clean,walk-and-pause,0.7571035747021082,1.0,0.17204301075268819,1.0
+Detector (every frame),clean,worker-zone,0.9604395604395605,1.0,0.7857142857142857,1.0
+Detector (every frame),clean,car-lot,0.33687002652519893,0.6031746031746031,0.11510791366906475,0.6666666666666666
+Detector (every frame),clean,store-aisle,0.9095541401273886,1.0,0.0,1.0
+Detector (every frame),illum,one-by-one,0.8952654232424677,1.0,0.42,1.0
+Detector (every frame),illum,people,0.6342281879194631,1.0,0.15879828326180256,1.0
+Detector (every frame),illum,person-bike-car,0.5749613601236476,0.9272727272727272,0.11864406779661017,0.5
+Detector (every frame),illum,walk-and-pause,0.7552703941338221,1.0,0.16845878136200718,1.0
+Detector (every frame),illum,worker-zone,0.9615384615384616,1.0,0.7857142857142857,1.0
+Detector (every frame),illum,car-lot,0.20954907161803712,0.36507936507936506,0.1079136690647482,0.3333333333333333
+Detector (every frame),illum,store-aisle,0.9095541401273886,1.0,0.0,1.0
+Detector (every frame),jitter,one-by-one,0.8952654232424677,1.0,0.415,1.0
+Detector (every frame),jitter,people,0.6325503355704698,1.0,0.15450643776824036,1.0
+Detector (every frame),jitter,person-bike-car,0.6646058732612056,1.0,0.1271186440677966,1.0
+Detector (every frame),jitter,walk-and-pause,0.7525206232813932,1.0,0.16845878136200718,1.0
+Detector (every frame),jitter,worker-zone,0.9626373626373627,1.0,0.7857142857142857,1.0
+Detector (every frame),jitter,car-lot,0.3421750663129973,0.6031746031746031,0.1366906474820144,0.6666666666666666
+Detector (every frame),jitter,store-aisle,0.9082802547770701,1.0,0.0,1.0
+Detector (every frame),noise,one-by-one,0.8859397417503587,1.0,0.375,1.0
+Detector (every frame),noise,people,0.6073825503355704,1.0,0.11158798283261803,1.0
+Detector (every frame),noise,person-bike-car,0.5857805255023184,0.9363636363636364,0.09322033898305085,0.75
+Detector (every frame),noise,walk-and-pause,0.7387717690192483,1.0,0.15770609318996415,1.0
+Detector (every frame),noise,worker-zone,0.9571428571428572,1.0,0.8214285714285714,1.0
+Detector (every frame),noise,car-lot,0.10079575596816977,0.0,0.1079136690647482,0.3333333333333333
+Detector (every frame),noise,store-aisle,0.9082802547770701,1.0,0.0,1.0
+Detector (every 2th frame),clean,one-by-one,0.8952654232424677,1.0,0.42,1.0
+Detector (every 2th frame),clean,people,0.6375838926174496,1.0,0.17167381974248927,1.0
+Detector (every 2th frame),clean,person-bike-car,0.6584234930448223,1.0,0.1271186440677966,1.0
+Detector (every 2th frame),clean,walk-and-pause,0.7571035747021082,1.0,0.17562724014336917,1.0
+Detector (every 2th frame),clean,worker-zone,0.9604395604395605,1.0,0.7857142857142857,1.0
+Detector (every 2th frame),clean,car-lot,0.3395225464190981,0.6031746031746031,0.12949640287769784,0.6666666666666666
+Detector (every 2th frame),clean,store-aisle,0.9082802547770701,1.0,0.0,1.0
+Detector (every 2th frame),illum,one-by-one,0.896700143472023,1.0,0.42,1.0
+Detector (every 2th frame),illum,people,0.6375838926174496,1.0,0.17167381974248927,1.0
+Detector (every 2th frame),illum,person-bike-car,0.5625965996908809,0.9090909090909091,0.1059322033898305,0.5
+Detector (every 2th frame),illum,walk-and-pause,0.7552703941338221,1.0,0.17562724014336917,1.0
+Detector (every 2th frame),illum,worker-zone,0.9604395604395605,1.0,0.7857142857142857,1.0
+Detector (every 2th frame),illum,car-lot,0.21220159151193635,0.3492063492063492,0.11510791366906475,0.3333333333333333
+Detector (every 2th frame),illum,store-aisle,0.9082802547770701,1.0,0.0,1.0
+Detector (every 2th frame),jitter,one-by-one,0.8938307030129125,1.0,0.41,1.0
+Detector (every 2th frame),jitter,people,0.6342281879194631,1.0,0.1630901287553648,1.0
+Detector (every 2th frame),jitter,person-bike-car,0.6676970633693973,1.0,0.13559322033898305,1.0
+Detector (every 2th frame),jitter,walk-and-pause,0.7534372135655362,1.0,0.17562724014336917,1.0
+Detector (every 2th frame),jitter,worker-zone,0.9604395604395605,1.0,0.7857142857142857,1.0
+Detector (every 2th frame),jitter,car-lot,0.3448275862068966,0.6031746031746031,0.14388489208633093,0.6666666666666666
+Detector (every 2th frame),jitter,store-aisle,0.9082802547770701,1.0,0.0,1.0
+Detector (every 2th frame),noise,one-by-one,0.8866571018651362,1.0,0.39,1.0
+Detector (every 2th frame),noise,people,0.5939597315436241,1.0,0.12017167381974249,1.0
+Detector (every 2th frame),noise,person-bike-car,0.5873261205564142,0.9363636363636364,0.09745762711864407,0.75
+Detector (every 2th frame),noise,walk-and-pause,0.7369385884509624,1.0,0.16487455197132617,1.0
+Detector (every 2th frame),noise,worker-zone,0.9538461538461539,1.0,0.8571428571428571,1.0
+Detector (every 2th frame),noise,car-lot,0.10344827586206896,0.0,0.11510791366906475,0.3333333333333333
+Detector (every 2th frame),noise,store-aisle,0.9082802547770701,1.0,0.0,1.0
+Detector (every 4th frame),clean,one-by-one,0.896700143472023,1.0,0.43,1.0
+Detector (every 4th frame),clean,people,0.6510067114093959,1.0,0.20600858369098712,1.0
+Detector (every 4th frame),clean,person-bike-car,0.6738794435857806,1.0,0.16101694915254236,1.0
+Detector (every 4th frame),clean,walk-and-pause,0.7589367552703942,1.0,0.1863799283154122,1.0
+Detector (every 4th frame),clean,worker-zone,0.9604395604395605,1.0,0.7857142857142857,1.0
+Detector (every 4th frame),clean,car-lot,0.32625994694960214,0.49206349206349204,0.14388489208633093,0.3333333333333333
+Detector (every 4th frame),clean,store-aisle,0.9082802547770701,1.0,0.0,1.0
+Detector (every 4th frame),illum,one-by-one,0.8938307030129125,1.0,0.43,1.0
+Detector (every 4th frame),illum,people,0.6510067114093959,1.0,0.20600858369098712,1.0
+Detector (every 4th frame),illum,person-bike-car,0.6676970633693973,1.0,0.15254237288135594,1.0
+Detector (every 4th frame),illum,walk-and-pause,0.7589367552703942,1.0,0.1863799283154122,1.0
+Detector (every 4th frame),illum,worker-zone,0.9560439560439561,1.0,0.7857142857142857,1.0
+Detector (every 4th frame),illum,car-lot,0.10875331564986737,0.0,0.11510791366906475,0.3333333333333333
+Detector (every 4th frame),illum,store-aisle,0.9082802547770701,1.0,0.0,1.0
+Detector (every 4th frame),jitter,one-by-one,0.8923959827833573,1.0,0.41,1.0
+Detector (every 4th frame),jitter,people,0.6510067114093959,1.0,0.20600858369098712,1.0
+Detector (every 4th frame),jitter,person-bike-car,0.6800618238021638,1.0,0.16101694915254236,1.0
+Detector (every 4th frame),jitter,walk-and-pause,0.7552703941338221,1.0,0.1863799283154122,1.0
+Detector (every 4th frame),jitter,worker-zone,0.9736263736263736,1.0,1.0,1.0
+Detector (every 4th frame),jitter,car-lot,0.23872679045092837,0.42857142857142855,0.11510791366906475,0.3333333333333333
+Detector (every 4th frame),jitter,store-aisle,0.9082802547770701,1.0,0.0,1.0
+Detector (every 4th frame),noise,one-by-one,0.8895265423242468,1.0,0.41,1.0
+Detector (every 4th frame),noise,people,0.5973154362416108,1.0,0.13733905579399142,1.0
+Detector (every 4th frame),noise,person-bike-car,0.5935085007727975,0.9363636363636364,0.1271186440677966,0.75
+Detector (every 4th frame),noise,walk-and-pause,0.7296058661778185,1.0,0.17204301075268819,1.0
+Detector (every 4th frame),noise,worker-zone,0.9560439560439561,1.0,0.9285714285714286,1.0
+Detector (every 4th frame),noise,car-lot,0.0,0.0,0.0,0.3333333333333333
+Detector (every 4th frame),noise,store-aisle,0.9082802547770701,1.0,0.0,1.0
+Detector (every 8th frame),clean,one-by-one,0.8923959827833573,1.0,0.49,1.0
+Detector (every 8th frame),clean,people,0.6442953020134228,1.0,0.2575107296137339,1.0
+Detector (every 8th frame),clean,person-bike-car,0.6306027820710973,0.9545454545454546,0.1864406779661017,0.75
+Detector (every 8th frame),clean,walk-and-pause,0.7479376718606783,1.0,0.2007168458781362,1.0
+Detector (every 8th frame),clean,worker-zone,0.9516483516483516,1.0,0.7857142857142857,1.0
+Detector (every 8th frame),clean,car-lot,0.5915119363395226,1.0,0.33093525179856115,1.0
+Detector (every 8th frame),clean,store-aisle,0.9031847133757962,1.0,0.0,1.0
+Detector (every 8th frame),illum,one-by-one,0.8923959827833573,1.0,0.49,1.0
+Detector (every 8th frame),illum,people,0.6442953020134228,1.0,0.2575107296137339,1.0
+Detector (every 8th frame),illum,person-bike-car,0.6182380216383307,0.9545454545454546,0.16101694915254236,0.75
+Detector (every 8th frame),illum,walk-and-pause,0.7479376718606783,1.0,0.2007168458781362,1.0
+Detector (every 8th frame),illum,worker-zone,0.9516483516483516,1.0,0.7857142857142857,1.0
+Detector (every 8th frame),illum,car-lot,0.3660477453580902,0.6031746031746031,0.2014388489208633,0.6666666666666666
+Detector (every 8th frame),illum,store-aisle,0.9031847133757962,1.0,0.0,1.0
+Detector (every 8th frame),jitter,one-by-one,0.8866571018651362,1.0,0.47,1.0
+Detector (every 8th frame),jitter,people,0.6442953020134228,1.0,0.2575107296137339,1.0
+Detector (every 8th frame),jitter,person-bike-car,0.6306027820710973,0.9545454545454546,0.1864406779661017,0.75
+Detector (every 8th frame),jitter,walk-and-pause,0.7479376718606783,1.0,0.2007168458781362,1.0
+Detector (every 8th frame),jitter,worker-zone,0.9604395604395605,1.0,1.0,1.0
+Detector (every 8th frame),jitter,car-lot,0.5915119363395226,1.0,0.33093525179856115,1.0
+Detector (every 8th frame),jitter,store-aisle,0.9031847133757962,1.0,0.0,1.0
+Detector (every 8th frame),noise,one-by-one,0.8809182209469153,1.0,0.45,1.0
+Detector (every 8th frame),noise,people,0.5771812080536913,0.9651162790697675,0.1888412017167382,0.75
+Detector (every 8th frame),noise,person-bike-car,0.5935085007727975,0.9181818181818182,0.16101694915254236,0.75
+Detector (every 8th frame),noise,walk-and-pause,0.7259395050412466,1.0,0.17204301075268819,1.0
+Detector (every 8th frame),noise,worker-zone,0.9516483516483516,1.0,1.0,1.0
+Detector (every 8th frame),noise,car-lot,0.11936339522546419,0.19047619047619047,0.05755395683453238,0.3333333333333333
+Detector (every 8th frame),noise,store-aisle,0.9031847133757962,1.0,0.0,1.0
+Hybrid: MOG2 gate + detector,clean,one-by-one,0.8407460545193687,0.919661733615222,0.42,0.8333333333333334
+Hybrid: MOG2 gate + detector,clean,people,0.6342281879194631,1.0,0.15879828326180256,1.0
+Hybrid: MOG2 gate + detector,clean,person-bike-car,0.6537867078825348,0.9954545454545455,0.13135593220338984,1.0
+Hybrid: MOG2 gate + detector,clean,walk-and-pause,0.7479376718606783,0.9966887417218543,0.17204301075268819,1.0
+Hybrid: MOG2 gate + detector,clean,worker-zone,0.9604395604395605,1.0,0.7857142857142857,1.0
+Hybrid: MOG2 gate + detector,clean,car-lot,0.5623342175066313,1.0,0.19424460431654678,1.0
+Hybrid: MOG2 gate + detector,clean,store-aisle,0.9095541401273886,1.0,0.0,1.0
+Hybrid: MOG2 gate + detector,illum,one-by-one,0.8923959827833573,0.9957716701902748,0.42,1.0
+Hybrid: MOG2 gate + detector,illum,people,0.6342281879194631,1.0,0.15879828326180256,1.0
+Hybrid: MOG2 gate + detector,illum,person-bike-car,0.5533230293663061,0.9136363636363637,0.11016949152542373,0.5
+Hybrid: MOG2 gate + detector,illum,walk-and-pause,0.693858845096242,0.9188741721854304,0.16845878136200718,0.75
+Hybrid: MOG2 gate + detector,illum,worker-zone,0.9615384615384616,1.0,0.7857142857142857,1.0
+Hybrid: MOG2 gate + detector,illum,car-lot,0.3183023872679045,0.7301587301587301,0.1079136690647482,0.6666666666666666
+Hybrid: MOG2 gate + detector,illum,store-aisle,0.9095541401273886,1.0,0.0,1.0
+Hybrid: MOG2 gate + detector,jitter,one-by-one,0.8952654232424677,1.0,0.415,1.0
+Hybrid: MOG2 gate + detector,jitter,people,0.6325503355704698,1.0,0.15450643776824036,1.0
+Hybrid: MOG2 gate + detector,jitter,person-bike-car,0.6646058732612056,1.0,0.1271186440677966,1.0
+Hybrid: MOG2 gate + detector,jitter,walk-and-pause,0.7451879010082493,1.0,0.16845878136200718,1.0
+Hybrid: MOG2 gate + detector,jitter,worker-zone,0.9626373626373627,1.0,0.7857142857142857,1.0
+Hybrid: MOG2 gate + detector,jitter,car-lot,0.44297082228116713,0.6507936507936508,0.20863309352517986,0.6666666666666666
+Hybrid: MOG2 gate + detector,jitter,store-aisle,0.9082802547770701,1.0,0.0,1.0
+Hybrid: MOG2 gate + detector,noise,one-by-one,0.8342898134863702,0.9238900634249472,0.375,0.8333333333333334
+Hybrid: MOG2 gate + detector,noise,people,0.6073825503355704,1.0,0.11158798283261803,1.0
+Hybrid: MOG2 gate + detector,noise,person-bike-car,0.5857805255023184,0.9363636363636364,0.09322033898305085,0.75
+Hybrid: MOG2 gate + detector,noise,walk-and-pause,0.692942254812099,0.9238410596026491,0.15770609318996415,0.75
+Hybrid: MOG2 gate + detector,noise,worker-zone,0.9571428571428572,1.0,0.8214285714285714,1.0
+Hybrid: MOG2 gate + detector,noise,car-lot,0.10344827586206896,0.0,0.1079136690647482,0.3333333333333333
+Hybrid: MOG2 gate + detector,noise,store-aisle,0.9082802547770701,1.0,0.0,1.0
+Hybrid: CNT gate + detector,clean,one-by-one,0.8902439024390244,0.992600422832981,0.42,1.0
+Hybrid: CNT gate + detector,clean,people,0.6057046979865772,1.0,0.1072961373390558,1.0
+Hybrid: CNT gate + detector,clean,person-bike-car,0.5255023183925811,0.9045454545454545,0.07627118644067797,0.5
+Hybrid: CNT gate + detector,clean,walk-and-pause,0.7011915673693859,0.9751655629139073,0.16487455197132617,1.0
+Hybrid: CNT gate + detector,clean,worker-zone,0.9604395604395605,1.0,0.7857142857142857,1.0
+Hybrid: CNT gate + detector,clean,car-lot,0.5623342175066313,1.0,0.19424460431654678,1.0
+Hybrid: CNT gate + detector,clean,store-aisle,0.9095541401273886,1.0,0.0,1.0
+Hybrid: CNT gate + detector,illum,one-by-one,0.8952654232424677,1.0,0.42,1.0
+Hybrid: CNT gate + detector,illum,people,0.6342281879194631,1.0,0.15879828326180256,1.0
+Hybrid: CNT gate + detector,illum,person-bike-car,0.5193199381761978,0.8954545454545455,0.09322033898305085,0.5
+Hybrid: CNT gate + detector,illum,walk-and-pause,0.7415215398716773,1.0,0.16129032258064516,1.0
+Hybrid: CNT gate + detector,illum,worker-zone,0.9615384615384616,1.0,0.7857142857142857,1.0
+Hybrid: CNT gate + detector,illum,car-lot,0.3183023872679045,0.7301587301587301,0.1079136690647482,0.6666666666666666
+Hybrid: CNT gate + detector,illum,store-aisle,0.9095541401273886,1.0,0.0,1.0
+Hybrid: CNT gate + detector,jitter,one-by-one,0.8952654232424677,1.0,0.415,1.0
+Hybrid: CNT gate + detector,jitter,people,0.6325503355704698,1.0,0.15450643776824036,1.0
+Hybrid: CNT gate + detector,jitter,person-bike-car,0.6553323029366306,1.0,0.1271186440677966,1.0
+Hybrid: CNT gate + detector,jitter,walk-and-pause,0.7525206232813932,1.0,0.16845878136200718,1.0
+Hybrid: CNT gate + detector,jitter,worker-zone,0.9626373626373627,1.0,0.7857142857142857,1.0
+Hybrid: CNT gate + detector,jitter,car-lot,0.44297082228116713,0.6507936507936508,0.20863309352517986,0.6666666666666666
+Hybrid: CNT gate + detector,jitter,store-aisle,0.9082802547770701,1.0,0.0,1.0
+Hybrid: CNT gate + detector,noise,one-by-one,0.8859397417503587,1.0,0.375,1.0
+Hybrid: CNT gate + detector,noise,people,0.5889261744966443,1.0,0.08583690987124463,1.0
+Hybrid: CNT gate + detector,noise,person-bike-car,0.5857805255023184,0.9363636363636364,0.09322033898305085,0.75
+Hybrid: CNT gate + detector,noise,walk-and-pause,0.7002749770852429,1.0,0.15770609318996415,1.0
+Hybrid: CNT gate + detector,noise,worker-zone,0.9571428571428572,1.0,0.8214285714285714,1.0
+Hybrid: CNT gate + detector,noise,car-lot,0.10344827586206896,0.0,0.1079136690647482,0.3333333333333333
+Hybrid: CNT gate + detector,noise,store-aisle,0.9082802547770701,1.0,0.0,1.0
+Hybrid: FD gate + detector,clean,one-by-one,0.8637015781922525,0.9365750528541226,0.47,0.8333333333333334
+Hybrid: FD gate + detector,clean,people,0.6593959731543624,1.0,0.2017167381974249,1.0
+Hybrid: FD gate + detector,clean,person-bike-car,0.6955177743431221,1.0,0.19491525423728814,1.0
+Hybrid: FD gate + detector,clean,walk-and-pause,0.6315307057745188,0.7731788079470199,0.1827956989247312,0.0
+Hybrid: FD gate + detector,clean,worker-zone,0.9593406593406594,0.9764150943396226,0.8928571428571429,1.0
+Hybrid: FD gate + detector,clean,car-lot,0.5888594164456233,1.0,0.23741007194244604,1.0
+Hybrid: FD gate + detector,clean,store-aisle,0.9095541401273886,1.0,0.0,1.0
+Hybrid: FD gate + detector,illum,one-by-one,0.8823529411764706,0.9640591966173362,0.47,1.0
+Hybrid: FD gate + detector,illum,people,0.6610738255033557,1.0,0.20600858369098712,1.0
+Hybrid: FD gate + detector,illum,person-bike-car,0.6939721792890263,1.0,0.19491525423728814,1.0
+Hybrid: FD gate + detector,illum,walk-and-pause,0.7011915673693859,0.8956953642384106,0.17921146953405018,0.25
+Hybrid: FD gate + detector,illum,worker-zone,0.9417582417582417,0.9512578616352201,0.8928571428571429,0.8
+Hybrid: FD gate + detector,illum,car-lot,0.5862068965517241,1.0,0.23741007194244604,1.0
+Hybrid: FD gate + detector,illum,store-aisle,0.9095541401273886,1.0,0.0,1.0
+Hybrid: FD gate + detector,jitter,one-by-one,0.9053084648493543,1.0,0.465,1.0
+Hybrid: FD gate + detector,jitter,people,0.6526845637583892,1.0,0.18025751072961374,1.0
+Hybrid: FD gate + detector,jitter,person-bike-car,0.6831530139103554,1.0,0.16101694915254236,1.0
+Hybrid: FD gate + detector,jitter,walk-and-pause,0.7607699358386801,1.0,0.1827956989247312,1.0
+Hybrid: FD gate + detector,jitter,worker-zone,1.0,1.0,1.0,1.0
+Hybrid: FD gate + detector,jitter,car-lot,0.5862068965517241,1.0,0.23741007194244604,1.0
+Hybrid: FD gate + detector,jitter,store-aisle,0.9095541401273886,1.0,0.0,1.0
+Hybrid: FD gate + detector,noise,one-by-one,0.8393113342898135,0.9059196617336153,0.445,0.8333333333333334
+Hybrid: FD gate + detector,noise,people,0.6426174496644296,1.0,0.16738197424892703,1.0
+Hybrid: FD gate + detector,noise,person-bike-car,0.6754250386398764,1.0,0.15254237288135594,1.0
+Hybrid: FD gate + detector,noise,walk-and-pause,0.6471127406049496,0.8211920529801324,0.17204301075268819,0.25
+Hybrid: FD gate + detector,noise,worker-zone,0.9560439560439561,0.9764150943396226,0.8214285714285714,1.0
+Hybrid: FD gate + detector,noise,car-lot,0.5570291777188329,0.8888888888888888,0.2158273381294964,0.6666666666666666
+Hybrid: FD gate + detector,noise,store-aisle,0.9095541401273886,1.0,0.0,1.0

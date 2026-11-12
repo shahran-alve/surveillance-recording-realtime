@@ -1,0 +1,43 @@
+one-by-one 640 1 62.8 91.9
+one-by-one 640 2 41.8 63.4
+one-by-one 480 1 35.8 51.6
+one-by-one 320 1 20.4 30.5
+people 640 1 60.7 84.8
+people 640 2 42.0 65.8
+people 480 1 39.7 55.2
+people 320 1 22.0 31.6
+person-bike-car 640 1 62.5 87.8
+person-bike-car 640 2 41.0 62.6
+person-bike-car 480 1 37.8 55.3
+person-bike-car 320 1 20.5 30.9
+walk-and-pause 640 1 60.7 84.3
+walk-and-pause 640 2 40.9 61.0
+walk-and-pause 480 1 37.9 53.4
+walk-and-pause 320 1 19.9 29.9
+worker-zone 640 1 61.7 87.1
+worker-zone 640 2 42.2 65.4
+worker-zone 480 1 38.0 55.2
+worker-zone 320 1 21.1 30.4
+car-lot 640 1 55.1 80.3
+car-lot 640 2 41.8 66.3
+car-lot 480 1 34.8 47.7
+car-lot 320 1 20.9 29.7
+store-aisle 640 1 62.5 85.1
+store-aisle 640 2 42.4 65.2
+store-aisle 480 1 39.0 54.4
+store-aisle 320 1 21.6 33.0
+scores illum one-by-one
+scores illum people
+scores illum person-bike-car
+scores illum walk-and-pause
+scores illum worker-zone
+scores illum car-lot
+scores illum store-aisle
+scores jitter one-by-one
+scores jitter people
+scores jitter person-bike-car
+scores jitter walk-and-pause
+scores jitter worker-zone
+scores jitter car-lot
+scores jitter store-aisle
+DONE 2.14.1+cu130
