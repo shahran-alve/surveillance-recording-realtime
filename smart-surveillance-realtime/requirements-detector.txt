@@ -1,0 +1,6 @@
+numpy
+torch==2.14.1
+torchvision==0.29.1
+ultralytics==8.4.190
+onnxruntime==1.31.1
+opencv-python

@@ -1,0 +1,7 @@
+numpy
+scipy
+scikit-learn
+pandas
+matplotlib
+motmetrics
+opencv-contrib-python-headless==4.10.0.84

@@ -1,0 +1,8 @@
+one-by-one {'FD': 0.74, 'FLOW': 17.24, 'MOG2': 7.37, 'KNN': 8.7, 'CNT': 1.49, 'GSOC': 43.35}
+people {'FD': 0.76, 'FLOW': 17.7, 'MOG2': 6.55, 'KNN': 5.06, 'CNT': 1.28, 'GSOC': 44.33}
+person-bike-car {'FD': 0.76, 'FLOW': 17.59, 'MOG2': 5.98, 'KNN': 5.25, 'CNT': 1.41, 'GSOC': 44.43}
+walk-and-pause {'FD': 0.73, 'FLOW': 17.37, 'MOG2': 7.76, 'KNN': 8.87, 'CNT': 1.46, 'GSOC': 44.52}
+worker-zone {'FD': 0.79, 'FLOW': 17.65, 'MOG2': 10.07, 'KNN': 11.92, 'CNT': 1.59, 'GSOC': 45.2}
+car-lot {'FD': 0.8, 'FLOW': 16.18, 'MOG2': 7.72, 'KNN': 7.45, 'CNT': 1.36, 'GSOC': 42.81}
+store-aisle {'FD': 0.81, 'FLOW': 14.87, 'MOG2': 8.77, 'KNN': 15.06, 'CNT': 1.37, 'GSOC': 45.31}
+DONE 4.10.0 x86_64
