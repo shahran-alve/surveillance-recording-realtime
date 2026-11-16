@@ -1,0 +1,2 @@
+multi Adaptive, deadline-aware 12 {'jobs': 9087, 'miss': 0.0, 'n_miss': 0, 'resp_mean': np.float64(108.005), 'resp_p50': np.float64(97.997), 'resp_p95': np.float64(210.927), 'resp_p99': np.float64(263.699), 'resp_max': np.float64(368.042), 'service_mean': np.float64(54.579), 'service_p99': np.float64(63.871), 'service_max': np.float64(79.159), 'util': 0.826, 'min_slack': 0.304, 'agree': 100.0, 'n_disagree': 0, 'max_abs_score_diff': 0.0}
+DONE

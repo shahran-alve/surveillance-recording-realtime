@@ -1,0 +1,3 @@
+policy=Fixed stride 8 N*=37
+policy=Adaptive 16/8 N*=45
+policy=Adaptive, deadline-aware N*=43

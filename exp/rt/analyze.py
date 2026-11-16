@@ -5,11 +5,12 @@ C  timing guarantee: alert-delay bound and onset coverage, checked on detectable
 D  cameras per core (trace-driven FIFO simulation)
 E  lower-resolution detector as trigger (storage / recall, LOVO)"""
 import sys, json, numpy as np
-sys.path.insert(0, '/root/exp')
+import os; ROOT = os.environ.get('SS_ROOT', '/root')
+sys.path.insert(0, ROOT + '/exp')
 import event_eval as EV, event_analysis as EA
 from event_analysis import VIDS, FPS, DGRID, load, record, metrics, pooled, trig_stride
 from gt_events import EVENTS
-R = '/root/results/rt/'; res = {}
+R = ROOT + '/results/rt/'; res = {}
 LM = np.load(R + 'lat_motion.npz'); LD = np.load(R + 'lat_det.npz')
 WARM = 10
 def pool(key_fn): return np.concatenate([key_fn(v)[WARM:] for v in VIDS])

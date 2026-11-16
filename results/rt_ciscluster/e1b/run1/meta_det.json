@@ -1,0 +1,282 @@
+{
+ "host": "ciscluster",
+ "pid": 3563738,
+ "core": 2,
+ "size": 640,
+ "threads": 1,
+ "warmup_s": 120.0,
+ "rotate": 0,
+ "order": [
+  "one-by-one",
+  "people",
+  "person-bike-car",
+  "walk-and-pause",
+  "worker-zone",
+  "car-lot",
+  "store-aisle"
+ ],
+ "torch": "2.14.1+cpu",
+ "cv2": "5.0.0",
+ "python": "3.11.7",
+ "start": 1794608050.8125918,
+ "loadavg_start": [
+  "0.53",
+  "0.84",
+  "0.88"
+ ],
+ "steal_start": 0,
+ "freq_start": 3678.158,
+ "cpustat_start": [
+  4801993,
+  2300,
+  371107,
+  737488961,
+  32986,
+  106930,
+  487476,
+  0,
+  0,
+  0
+ ],
+ "per_cfg": [
+  {
+   "clip": "one-by-one",
+   "size": 640,
+   "threads": 1,
+   "n": 1394,
+   "steal_delta": 0,
+   "freq_before": 1557.055,
+   "freq_after": 1290.773,
+   "wall": 69.1618435382843,
+   "cpustat_delta": [
+    6838,
+    0,
+    55,
+    0,
+    0,
+    22,
+    1,
+    0,
+    0,
+    0
+   ],
+   "sys_share": 0.007979109241259249,
+   "affinity_main": [
+    2
+   ],
+   "torch_threads": 1
+  },
+  {
+   "clip": "people",
+   "size": 640,
+   "threads": 1,
+   "n": 596,
+   "steal_delta": 0,
+   "freq_before": 3518.909,
+   "freq_after": 1415.558,
+   "wall": 30.447227716445923,
+   "cpustat_delta": [
+    2894,
+    0,
+    140,
+    0,
+    0,
+    9,
+    1,
+    0,
+    0,
+    0
+   ],
+   "sys_share": 0.04614370468029005,
+   "affinity_main": [
+    2
+   ],
+   "torch_threads": 1
+  },
+  {
+   "clip": "person-bike-car",
+   "size": 640,
+   "threads": 1,
+   "n": 647,
+   "steal_delta": 0,
+   "freq_before": 1415.558,
+   "freq_after": 1282.181,
+   "wall": 32.66548037528992,
+   "cpustat_delta": [
+    3188,
+    0,
+    67,
+    0,
+    0,
+    11,
+    0,
+    0,
+    0,
+    0
+   ],
+   "sys_share": 0.020583717357910907,
+   "affinity_main": [
+    2
+   ],
+   "torch_threads": 1
+  },
+  {
+   "clip": "walk-and-pause",
+   "size": 640,
+   "threads": 1,
+   "n": 1091,
+   "steal_delta": 0,
+   "freq_before": 1282.181,
+   "freq_after": 1553.42,
+   "wall": 54.097907304763794,
+   "cpustat_delta": [
+    5331,
+    0,
+    60,
+    0,
+    0,
+    17,
+    1,
+    0,
+    0,
+    0
+   ],
+   "sys_share": 0.011129660545353366,
+   "affinity_main": [
+    2
+   ],
+   "torch_threads": 1
+  },
+  {
+   "clip": "worker-zone",
+   "size": 640,
+   "threads": 1,
+   "n": 910,
+   "steal_delta": 0,
+   "freq_before": 2298.265,
+   "freq_after": 1712.793,
+   "wall": 44.62498664855957,
+   "cpustat_delta": [
+    4417,
+    0,
+    29,
+    0,
+    0,
+    14,
+    0,
+    0,
+    0,
+    0
+   ],
+   "sys_share": 0.0065227170490328385,
+   "affinity_main": [
+    2
+   ],
+   "torch_threads": 1
+  },
+  {
+   "clip": "car-lot",
+   "size": 640,
+   "threads": 1,
+   "n": 377,
+   "steal_delta": 0,
+   "freq_before": 1712.793,
+   "freq_after": 1194.25,
+   "wall": 18.921113967895508,
+   "cpustat_delta": [
+    1849,
+    0,
+    35,
+    0,
+    0,
+    6,
+    1,
+    0,
+    0,
+    0
+   ],
+   "sys_share": 0.018577494692144373,
+   "affinity_main": [
+    2
+   ],
+   "torch_threads": 1
+  },
+  {
+   "clip": "store-aisle",
+   "size": 640,
+   "threads": 1,
+   "n": 785,
+   "steal_delta": 0,
+   "freq_before": 1194.25,
+   "freq_after": 1358.812,
+   "wall": 41.56952261924744,
+   "cpustat_delta": [
+    3960,
+    0,
+    182,
+    0,
+    0,
+    13,
+    0,
+    0,
+    0,
+    0
+   ],
+   "sys_share": 0.04394012554321584,
+   "affinity_main": [
+    2
+   ],
+   "torch_threads": 1
+  }
+ ],
+ "warmup": {
+  "jobs": 2410,
+  "mean_ms": 49.79594714970509,
+  "max_ms": 67.72458273917437,
+  "first10_ms": [
+   66.57262146472931,
+   55.38765899837017,
+   54.0366331115365,
+   54.538522846996784,
+   55.660899728536606,
+   51.83289386332035,
+   49.378518015146255,
+   49.010246992111206,
+   48.99238795042038,
+   49.21307507902384
+  ],
+  "cpustat_delta": [
+   11789,
+   0,
+   173,
+   0,
+   0,
+   37,
+   1,
+   0,
+   0,
+   0
+  ],
+  "torch_threads": 1
+ },
+ "end": 1794608505.6927817,
+ "loadavg_end": [
+  "1.00",
+  "0.98",
+  "0.95"
+ ],
+ "steal_end": 0,
+ "freq_end": 1358.812,
+ "cpustat_end": [
+  4846227,
+  2300,
+  372196,
+  737488977,
+  32988,
+  107069,
+  487482,
+  0,
+  0,
+  0
+ ]
+}

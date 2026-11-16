@@ -1,0 +1,2 @@
+multi Adaptive 16/8 13 {'jobs': 8711, 'miss': 0.0, 'n_miss': 0, 'resp_mean': np.float64(88.533), 'resp_p50': np.float64(76.54), 'resp_p95': np.float64(179.4), 'resp_p99': np.float64(232.627), 'resp_max': np.float64(345.644), 'service_mean': np.float64(49.713), 'service_p99': np.float64(61.669), 'service_max': np.float64(75.195), 'util': 0.722, 'min_slack': 0.329, 'agree': 100.0, 'n_disagree': 0, 'max_abs_score_diff': 0.0}
+DONE

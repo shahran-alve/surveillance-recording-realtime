@@ -1,0 +1,306 @@
+{
+ "host": "ciscluster",
+ "pid": 3601033,
+ "core": 2,
+ "size": 640,
+ "threads": 1,
+ "warmup_s": 120.0,
+ "rotate": 4,
+ "order": [
+  "worker-zone",
+  "car-lot",
+  "store-aisle",
+  "one-by-one",
+  "people",
+  "person-bike-car",
+  "walk-and-pause"
+ ],
+ "torch": "2.14.1+cpu",
+ "cv2": "5.0.0",
+ "python": "3.11.7",
+ "thp_disable": false,
+ "thp_prctl_rc": null,
+ "thp_status": [
+  "THP_enabled:\t1"
+ ],
+ "malloc_env": {},
+ "minflt_start": 44859,
+ "start": 1794621540.8871005,
+ "loadavg_start": [
+  "2.09",
+  "2.06",
+  "2.01"
+ ],
+ "steal_start": 0,
+ "freq_start": 3396.619,
+ "cpustat_start": [
+  5602023,
+  2300,
+  488862,
+  737916646,
+  33192,
+  109940,
+  487725,
+  0,
+  0,
+  0
+ ],
+ "per_cfg": [
+  {
+   "clip": "worker-zone",
+   "size": 640,
+   "threads": 1,
+   "n": 910,
+   "steal_delta": 0,
+   "freq_before": 1469.722,
+   "freq_after": 1101.443,
+   "wall": 54.45893955230713,
+   "cpustat_delta": [
+    4953,
+    0,
+    471,
+    0,
+    0,
+    18,
+    1,
+    0,
+    0,
+    0
+   ],
+   "sys_share": 0.0868362831858407,
+   "minflt": 1810836,
+   "minflt_per_s": 33251.396097346835,
+   "affinity_main": [
+    2
+   ],
+   "torch_threads": 1
+  },
+  {
+   "clip": "car-lot",
+   "size": 640,
+   "threads": 1,
+   "n": 377,
+   "steal_delta": 0,
+   "freq_before": 3337.349,
+   "freq_after": 1370.188,
+   "wall": 22.16313147544861,
+   "cpustat_delta": [
+    2005,
+    0,
+    203,
+    0,
+    0,
+    8,
+    1,
+    0,
+    0,
+    0
+   ],
+   "sys_share": 0.09193840579710146,
+   "minflt": 837065,
+   "minflt_per_s": 37768.34446048678,
+   "affinity_main": [
+    2
+   ],
+   "torch_threads": 1
+  },
+  {
+   "clip": "store-aisle",
+   "size": 640,
+   "threads": 1,
+   "n": 785,
+   "steal_delta": 0,
+   "freq_before": 2732.588,
+   "freq_after": 1190.107,
+   "wall": 43.07734990119934,
+   "cpustat_delta": [
+    4266,
+    0,
+    25,
+    0,
+    0,
+    14,
+    1,
+    0,
+    0,
+    0
+   ],
+   "sys_share": 0.005826147751106968,
+   "minflt": 220460,
+   "minflt_per_s": 5117.770011417896,
+   "affinity_main": [
+    2
+   ],
+   "torch_threads": 1
+  },
+  {
+   "clip": "one-by-one",
+   "size": 640,
+   "threads": 1,
+   "n": 1394,
+   "steal_delta": 0,
+   "freq_before": 2369.048,
+   "freq_after": 1153.969,
+   "wall": 77.83655095100403,
+   "cpustat_delta": [
+    7744,
+    0,
+    9,
+    0,
+    0,
+    27,
+    2,
+    0,
+    0,
+    0
+   ],
+   "sys_share": 0.001160840964787824,
+   "minflt": 36463,
+   "minflt_per_s": 468.4559672226854,
+   "affinity_main": [
+    2
+   ],
+   "torch_threads": 1
+  },
+  {
+   "clip": "people",
+   "size": 640,
+   "threads": 1,
+   "n": 596,
+   "steal_delta": 0,
+   "freq_before": 2530.965,
+   "freq_after": 1773.664,
+   "wall": 33.426868200302124,
+   "cpustat_delta": [
+    3309,
+    0,
+    21,
+    0,
+    0,
+    11,
+    1,
+    0,
+    0,
+    0
+   ],
+   "sys_share": 0.006306306306306306,
+   "minflt": 138818,
+   "minflt_per_s": 4152.886068028814,
+   "affinity_main": [
+    2
+   ],
+   "torch_threads": 1
+  },
+  {
+   "clip": "person-bike-car",
+   "size": 640,
+   "threads": 1,
+   "n": 647,
+   "steal_delta": 0,
+   "freq_before": 2513.119,
+   "freq_after": 1534.499,
+   "wall": 36.85304355621338,
+   "cpustat_delta": [
+    3645,
+    0,
+    25,
+    0,
+    0,
+    13,
+    1,
+    0,
+    0,
+    0
+   ],
+   "sys_share": 0.006811989100817439,
+   "minflt": 194883,
+   "minflt_per_s": 5288.110380333297,
+   "affinity_main": [
+    2
+   ],
+   "torch_threads": 1
+  },
+  {
+   "clip": "walk-and-pause",
+   "size": 640,
+   "threads": 1,
+   "n": 1091,
+   "steal_delta": 0,
+   "freq_before": 1534.499,
+   "freq_after": 1440.557,
+   "wall": 64.69995284080505,
+   "cpustat_delta": [
+    6410,
+    0,
+    34,
+    0,
+    0,
+    23,
+    1,
+    0,
+    0,
+    0
+   ],
+   "sys_share": 0.005276225946617008,
+   "minflt": 312709,
+   "minflt_per_s": 4833.218200304763,
+   "affinity_main": [
+    2
+   ],
+   "torch_threads": 1
+  }
+ ],
+ "warmup": {
+  "jobs": 1868,
+  "mean_ms": 64.23914658625628,
+  "max_ms": 81.46246802061796,
+  "first10_ms": [
+   81.46246802061796,
+   62.35303357243538,
+   66.99750851839781,
+   63.909150660037994,
+   68.3546019718051,
+   66.40523951500654,
+   66.1283740773797,
+   65.08201733231544,
+   65.92847499996424,
+   68.06582398712635
+  ],
+  "cpustat_delta": [
+   10934,
+   0,
+   1020,
+   0,
+   0,
+   43,
+   4,
+   0,
+   0,
+   0
+  ],
+  "torch_threads": 1,
+  "minflt": 3552424,
+  "minflt_per_s": 29601.149581947735
+ },
+ "minflt_end": 8609307,
+ "end": 1794622039.174527,
+ "loadavg_end": [
+  "2.08",
+  "2.02",
+  "2.01"
+ ],
+ "steal_end": 0,
+ "freq_end": 1440.557,
+ "cpustat_end": [
+  5649486,
+  2300,
+  491025,
+  737916665,
+  33194,
+  110107,
+  487737,
+  0,
+  0,
+  0
+ ]
+}

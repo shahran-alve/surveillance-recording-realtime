@@ -1,8 +1,9 @@
 import sys, numpy as np, json, itertools
-sys.path.insert(0, '/root/exp')
+import os; ROOT = os.environ.get('SS_ROOT', '/root')
+sys.path.insert(0, ROOT + '/exp')
 from common import VIDEOS, video_info
 from gt_events import frame_labels, EVENTS
-MS = '/root/results/motion_scores/{}_{}.npz'; DS = '/root/results/det_scores/{}_{}_{}.npy'
+MS = ROOT + '/results/motion_scores/{}_{}.npz'; DS = ROOT + '/results/det_scores/{}_{}_{}.npy'
 PRE, POST, WARM = 1.0, 2.0, 2.0
 MOTION = ['FD', 'FLOW', 'MOG2', 'KNN', 'CNT', 'GSOC']
 

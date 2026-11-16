@@ -1,0 +1,32 @@
+BEFORE t=1794544360 load=0.49 1.16 1.36 steal=0 MHz=2358
+one-by-one 640 1 58.3 69.6 78.2 steal 0 MHz 1478.874 1555.469 aff [2] torch_threads 1
+one-by-one 640 2 34.3 37.6 44.1 steal 0 MHz 3529.633 1748.145 aff [2, 4] torch_threads 2
+one-by-one 480 1 30.2 36.7 39.7 steal 0 MHz 1748.145 1293.541 aff [2] torch_threads 1
+one-by-one 320 1 17.4 21.6 27.3 steal 0 MHz 1293.541 1148.429 aff [2] torch_threads 1
+people 640 1 48.5 51.5 61.4 steal 0 MHz 1548.177 1337.684 aff [2] torch_threads 1
+people 640 2 40.6 44.0 61.4 steal 0 MHz 1337.684 1806.48 aff [2, 4] torch_threads 2
+people 480 1 29.2 33.7 36.3 steal 0 MHz 1806.48 1140.602 aff [2] torch_threads 1
+people 320 1 17.5 18.7 19.1 steal 0 MHz 1140.602 1301.829 aff [2] torch_threads 1
+person-bike-car 640 1 47.8 58.3 66.6 steal 0 MHz 1155.069 1575.135 aff [2] torch_threads 1
+person-bike-car 640 2 33.0 35.6 38.7 steal 0 MHz 1575.135 1743.213 aff [2, 4] torch_threads 2
+person-bike-car 480 1 29.4 32.7 37.9 steal 0 MHz 1743.213 1301.472 aff [2] torch_threads 1
+person-bike-car 320 1 16.8 19.2 23.2 steal 0 MHz 1301.472 1160.198 aff [2] torch_threads 1
+walk-and-pause 640 1 47.1 51.1 56.9 steal 0 MHz 1128.711 1205.58 aff [2] torch_threads 1
+walk-and-pause 640 2 33.1 39.2 44.4 steal 0 MHz 1205.58 1509.427 aff [2, 4] torch_threads 2
+walk-and-pause 480 1 29.3 33.2 38.1 steal 0 MHz 1509.427 1420.364 aff [2] torch_threads 1
+walk-and-pause 320 1 17.0 19.1 22.4 steal 0 MHz 1420.364 1427.925 aff [2] torch_threads 1
+worker-zone 640 1 48.2 59.6 68.9 steal 0 MHz 1356.622 1505.995 aff [2] torch_threads 1
+worker-zone 640 2 33.2 36.6 39.9 steal 0 MHz 1505.995 2074.839 aff [2, 4] torch_threads 2
+worker-zone 480 1 29.3 31.9 36.9 steal 0 MHz 2074.839 1146.5 aff [2] torch_threads 1
+worker-zone 320 1 16.8 19.7 22.7 steal 0 MHz 1146.5 1475.829 aff [2] torch_threads 1
+car-lot 640 1 47.5 58.1 73.6 steal 0 MHz 3672.924 1799.33 aff [2] torch_threads 1
+car-lot 640 2 37.0 39.8 43.0 steal 0 MHz 1799.33 1771.888 aff [2, 4] torch_threads 2
+car-lot 480 1 29.0 34.0 34.8 steal 0 MHz 1771.888 1174.241 aff [2] torch_threads 1
+car-lot 320 1 16.9 19.7 20.1 steal 0 MHz 1174.241 1175.3 aff [2] torch_threads 1
+store-aisle 640 1 47.8 53.6 103.9 steal 0 MHz 1132.917 1574.557 aff [2] torch_threads 1
+store-aisle 640 2 33.1 35.7 42.1 steal 0 MHz 1574.557 1526.418 aff [2, 4] torch_threads 2
+store-aisle 480 1 29.7 37.1 43.6 steal 0 MHz 1526.418 1453.023 aff [2] torch_threads 1
+store-aisle 320 1 16.8 21.1 22.9 steal 0 MHz 1453.023 1631.005 aff [2] torch_threads 1
+DONE 2.14.1+cpu steal delta total 0
+exit=0
+AFTER t=1794545179 load=1.12 1.13 1.21 steal=0 MHz=3460

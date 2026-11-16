@@ -1,0 +1,21 @@
+Fri Nov 13 22:15:43 EST 2026 socket / NUMA evidence
+per-node memory (numastat -m, MB):
+MemTotal                94757.57        96763.81       191521.38
+MemFree                  1982.39         6290.51         8272.89
+FilePages               88015.71        84530.26       172545.98
+AnonPages                1399.02         1840.65         3239.67
+
+relative clock probe (dependent integer chain, scratchpad/freqprobe.c; value proportional to core clock), 400M iterations:
+core 4 (socket 0): 2.249, 2.248   core 2 (socket 0): 2.251   core 3 (socket 1): 2.449, 2.422   core 5 (socket 1): 2.438
+cpuinfo MHz core 2 sampled 21:40 during a run: 3423-3454; yesterday 23:16 during a run: 3486-3690
+
+2-GB first-touch + strided read test (numatest.py), pages per node and time:
+core 2: N1 356942 N0 173850 pages, 182.8 ms / 182.4 ms
+core 3: N1 357481 N0 173311 pages, 154.3 ms / 154.5 ms
+
+detector processes (e1_profile2 smaps_rollup): run7_node1_core3 AnonHugePages 26-30 MB of 5.9 GB anonymous; run7_node0_core2 20-24 MB of 5.9 GB; run6 default (core 2) 26 MB of 5.95 GB
+
+Node 0, zone      DMA      0      0      0      0      0      0      0      0      1      1      2 
+Node 0, zone    DMA32    596    378    124     84     81     56     23     11      2      2     84 
+Node 0, zone   Normal  19826  13837   5710   1844   2043    601    667    306     86    274     27 
+Node 1, zone   Normal  12346  76490  59726  36383  18698   6161    763     69     27     69    311 

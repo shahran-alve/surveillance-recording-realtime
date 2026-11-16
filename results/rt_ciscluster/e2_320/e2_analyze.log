@@ -1,0 +1,118 @@
+Adaptive 16/8 43 1 jobs 29308 util 0.837 miss 0.0 p99 535 max 664 | sim util 0.869 miss 0.0 p99 140 max 268
+Adaptive 16/8 43 2 jobs 29308 util 0.838 miss 0.0 p99 275 max 467 | sim util 0.869 miss 0.0 p99 140 max 268
+Adaptive 16/8 44 1 jobs 29913 util 0.852 miss 0.0 p99 480 max 596 | sim util 0.887 miss 0.0 p99 221 max 340
+Adaptive 16/8 44 2 jobs 29913 util 0.849 miss 0.0 p99 372 max 591 | sim util 0.887 miss 0.0 p99 221 max 340
+Adaptive 16/8 45 1 jobs 30527 util 0.878 miss 1.258 p99 820 max 913 | sim util 0.905 miss 0.0 p99 363 max 487
+Adaptive 16/8 45 2 jobs 30527 util 0.874 miss 0.01 p99 535 max 681 | sim util 0.905 miss 0.0 p99 363 max 487
+Adaptive 16/8 46 1 jobs 31243 util 0.888 miss 1.37 p99 863 max 1106 | sim util 0.927 miss 0.314 p99 576 max 744
+Adaptive 16/8 46 2 jobs 31243 util 0.897 miss 1.376 p99 754 max 1018 | sim util 0.927 miss 0.314 p99 576 max 744
+Adaptive, deadline-aware 41 1 jobs 31025 util 0.88 miss 0.013 p99 435 max 689 | sim util 0.919 miss 0.0 p99 143 max 192
+Adaptive, deadline-aware 41 2 jobs 31025 util 0.888 miss 0.055 p99 488 max 717 | sim util 0.919 miss 0.0 p99 143 max 192
+Adaptive, deadline-aware 42 1 jobs 31892 util 0.899 miss 0.179 p99 594 max 733 | sim util 0.944 miss 0.0 p99 292 max 398
+Adaptive, deadline-aware 42 2 jobs 31892 util 0.905 miss 0.0 p99 389 max 506 | sim util 0.944 miss 0.0 p99 292 max 398
+Adaptive, deadline-aware 43 1 jobs 32606 util 0.932 miss 2.113 p99 982 max 1151 | sim util 0.966 miss 0.0 p99 471 max 632
+Adaptive, deadline-aware 43 2 jobs 32606 util 0.935 miss 3.119 p99 1392 max 1698 | sim util 0.966 miss 0.0 p99 471 max 632
+Adaptive, deadline-aware 44 1 jobs 33307 util 0.949 miss 2.951 p99 1013 max 1182 | sim util 0.986 miss 2.045 p99 879 max 1028
+Adaptive, deadline-aware 44 2 jobs 33307 util 0.946 miss 2.225 p99 1063 max 1314 | sim util 0.986 miss 2.045 p99 879 max 1028
+Fixed stride 8 35 1 jobs 31131 util 0.888 miss 0.0 p99 102 max 240 | sim util 0.922 miss 0.0 p99 77 max 132
+Fixed stride 8 35 2 jobs 31131 util 0.889 miss 0.0 p99 439 max 622 | sim util 0.922 miss 0.0 p99 77 max 132
+Fixed stride 8 36 1 jobs 31884 util 0.903 miss 0.0 p99 193 max 445 | sim util 0.945 miss 0.0 p99 92 max 163
+Fixed stride 8 36 2 jobs 31884 util 0.899 miss 0.0 p99 381 max 545 | sim util 0.945 miss 0.0 p99 92 max 163
+Fixed stride 8 37 1 jobs 32790 util 0.931 miss 2.071 p99 820 max 998 | sim util 0.971 miss 0.0 p99 171 max 257
+Fixed stride 8 37 2 jobs 32790 util 0.937 miss 2.69 p99 807 max 941 | sim util 0.971 miss 0.0 p99 171 max 257
+Fixed stride 8 38 1 jobs 33692 util 0.96 miss 4.785 p99 1197 max 1486 | sim util 0.997 miss 0.142 p99 605 max 695
+Fixed stride 8 38 2 jobs 33692 util 0.973 miss 8.509 p99 1392 max 1603 | sim util 0.997 miss 0.142 p99 605 max 695
+{
+ "Fixed stride 8": {
+  "sim_nstar": 37,
+  "live_max_zero_miss_all_repeats": 36,
+  "live_N_tested": [
+   35,
+   36,
+   37,
+   38
+  ],
+  "live_zero_miss_N": [
+   35,
+   36
+  ],
+  "sim_zero_miss_N_in_range": [
+   35,
+   36,
+   37
+  ]
+ },
+ "Adaptive 16/8": {
+  "sim_nstar": 45,
+  "live_max_zero_miss_all_repeats": 44,
+  "live_N_tested": [
+   43,
+   44,
+   45,
+   46
+  ],
+  "live_zero_miss_N": [
+   43,
+   44
+  ],
+  "sim_zero_miss_N_in_range": [
+   43,
+   44,
+   45
+  ]
+ },
+ "Adaptive, deadline-aware": {
+  "sim_nstar": 43,
+  "live_max_zero_miss_all_repeats": 0,
+  "live_N_tested": [
+   41,
+   42,
+   43,
+   44
+  ],
+  "live_zero_miss_N": [],
+  "sim_zero_miss_N_in_range": [
+   41,
+   42,
+   43
+  ]
+ }
+}
+{
+ "Fixed stride 8": {
+  "jobs": 729,
+  "miss": 0.0,
+  "n_miss": 0,
+  "service_mean_ms": 18.049063882822445,
+  "service_max_ms": 27.625647373497486,
+  "resp_p99_ms": 22.541705842426726,
+  "resp_max_ms": 27.694357000527248,
+  "agree": 100.0,
+  "n_disagree": 0,
+  "max_abs_score_diff": 0.0
+ },
+ "Adaptive 16/8": {
+  "jobs": 591,
+  "miss": 0.0,
+  "n_miss": 0,
+  "service_mean_ms": 17.801000886358786,
+  "service_max_ms": 23.996997624635696,
+  "resp_p99_ms": 22.576360497872376,
+  "resp_max_ms": 24.171917078390948,
+  "agree": 100.0,
+  "n_disagree": 0,
+  "max_abs_score_diff": 0.0
+ },
+ "Adaptive, deadline-aware": {
+  "jobs": 646,
+  "miss": 0.0,
+  "n_miss": 0,
+  "service_mean_ms": 18.00189239777417,
+  "service_max_ms": 26.992682367563248,
+  "resp_p99_ms": 22.686309833079708,
+  "resp_max_ms": 27.058923974660587,
+  "agree": 100.0,
+  "n_disagree": 0,
+  "max_abs_score_diff": 0.0
+ }
+}

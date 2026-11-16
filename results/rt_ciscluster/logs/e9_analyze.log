@@ -1,0 +1,5 @@
+written /u/erdos/csga2/mmahmud9/smart-surveillance-realtime/results/rt_ciscluster/e9_summary.json
+default means [np.float64(50.2), np.float64(51.3), np.float64(59.8), np.float64(66.3), np.float64(57.0)] sys% [5.6, 3.2, 1.6, 8.8, 2.4] minflt/s [31784, 14475, 9381, 35524, 10680] high runs 3 high clips 23 / 35
+malloc means [np.float64(75.5), np.float64(86.4), np.float64(92.4), np.float64(92.9), np.float64(83.1)] sys% [29.5, 28.4, 29.8, 29.7, 30.7] minflt/s [202631, 168586, 157442, 156764, 173265] high runs 5 high clips 35 / 35
+thp means [np.float64(54.9), np.float64(66.6), np.float64(63.5), np.float64(63.6), np.float64(56.2)] sys% [8.0, 7.3, 6.2, 3.4, 3.6] minflt/s [46161, 37954, 34530, 16495, 17923] high runs 5 high clips 35 / 35
+appended section 9

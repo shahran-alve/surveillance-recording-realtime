@@ -1,0 +1,2 @@
+multi Fixed stride 8 12 {'jobs': 10591, 'miss': 4.948, 'n_miss': 524, 'resp_mean': np.float64(192.208), 'resp_p50': np.float64(116.567), 'resp_p95': np.float64(670.381), 'resp_p99': np.float64(1134.639), 'resp_max': np.float64(1312.975), 'service_mean': np.float64(54.203), 'service_p99': np.float64(64.979), 'service_max': np.float64(78.016), 'util': 0.957, 'min_slack': -0.653, 'agree': 100.0, 'n_disagree': 0, 'max_abs_score_diff': 0.0}
+DONE

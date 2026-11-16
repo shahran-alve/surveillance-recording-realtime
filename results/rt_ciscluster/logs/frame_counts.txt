@@ -1,0 +1,9 @@
+opencv 4.10.0
+one-by-one        fps=10.000 video_info_n=1394 decoded=1394 expected=1394 shape=(432, 768, 3) OK
+people            fps=12.000 video_info_n=596 decoded=596 expected=596 shape=(432, 768, 3) OK
+person-bike-car   fps=12.000 video_info_n=647 decoded=647 expected=647 shape=(432, 768, 3) OK
+walk-and-pause    fps=12.000 video_info_n=1091 decoded=1091 expected=1091 shape=(432, 768, 3) OK
+worker-zone       fps=11.988 video_info_n=910 decoded=910 expected=910 shape=(432, 768, 3) OK
+car-lot           fps=12.500 video_info_n=377 decoded=377 expected=377 shape=(432, 768, 3) OK
+store-aisle       fps=11.988 video_info_n=785 decoded=785 expected=785 shape=(431, 768, 3) OK
+total 5800 expected 5800

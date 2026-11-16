@@ -1,0 +1,8 @@
+one-by-one Adaptive 16/8 captured 1394 det jobs 153 written 1220 lost 0 det_lost 0 service ms mean/max 60.4 70.4 decode ms mean/max 1.12 4.28 late ms mean/max 1.24 4.39 write ms mean/max 2.42 3.43 segments 6
+people Adaptive 16/8 captured 596 det jobs 51 written 360 lost 0 det_lost 0 service ms mean/max 50.3 58.7 decode ms mean/max 1.2 2.43 late ms mean/max 1.32 2.55 write ms mean/max 2.23 2.82 segments 4
+person-bike-car Adaptive 16/8 captured 647 det jobs 56 written 392 lost 0 det_lost 0 service ms mean/max 55.0 61.4 decode ms mean/max 1.18 2.39 late ms mean/max 1.3 2.51 write ms mean/max 2.06 4.06 segments 4
+walk-and-pause Adaptive 16/8 captured 1091 det jobs 110 written 800 lost 0 det_lost 0 service ms mean/max 58.5 73.9 decode ms mean/max 1.23 3.08 late ms mean/max 1.35 3.21 write ms mean/max 2.1 7.46 segments 4
+worker-zone Adaptive 16/8 captured 910 det jobs 101 written 850 lost 0 det_lost 0 service ms mean/max 57.8 89.3 decode ms mean/max 31.55 70.25 late ms mean/max 31.68 70.33 write ms mean/max 3.09 19.72 segments 3
+car-lot Adaptive 16/8 captured 377 det jobs 26 written 170 lost 0 det_lost 0 service ms mean/max 49.4 56.5 decode ms mean/max 1.18 2.57 late ms mean/max 1.3 2.7 write ms mean/max 1.94 2.52 segments 2
+store-aisle Adaptive 16/8 captured 785 det jobs 92 written 685 lost 0 det_lost 0 service ms mean/max 50.3 59.4 decode ms mean/max 4.55 13.0 late ms mean/max 4.67 13.12 write ms mean/max 3.53 7.8 segments 1
+DONE /u/erdos/csga2/mmahmud9/smart-surveillance-realtime/results/rt_ciscluster/e3/recorder_Adaptive_168_cores2.json

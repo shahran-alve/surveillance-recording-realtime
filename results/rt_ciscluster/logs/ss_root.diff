@@ -1,0 +1,278 @@
+--- /tmp/claude-8800/-u-erdos-csga2-mmahmud9-smart-surveillance-realtime/68d9c066-41df-481b-ac8a-d697ba6c7735/scratchpad/exp_orig/common.py	2026-11-12 22:11:37.614563019 -0500
++++ exp/common.py	2026-11-12 22:11:37.801949536 -0500
+@@ -1,5 +1,6 @@
+ import cv2, numpy as np, os, json
+-VID_DIR = '/root/data/sample-videos'
++ROOT = os.environ.get('SS_ROOT', '/root')
++VID_DIR = ROOT + '/data/sample-videos'
+ # name: (file, frame step to reach ~10-12 fps)
+ VIDEOS = {
+  'one-by-one':        ('one-by-one-person-detection.mp4', 1),
+--- /tmp/claude-8800/-u-erdos-csga2-mmahmud9-smart-surveillance-realtime/68d9c066-41df-481b-ac8a-d697ba6c7735/scratchpad/exp_orig/event_eval.py	2026-11-12 22:11:37.639564055 -0500
++++ exp/event_eval.py	2026-11-12 22:11:37.811949420 -0500
+@@ -1,8 +1,9 @@
+ import sys, numpy as np, json, itertools
+-sys.path.insert(0, '/root/exp')
++import os; ROOT = os.environ.get('SS_ROOT', '/root')
++sys.path.insert(0, ROOT + '/exp')
+ from common import VIDEOS, video_info
+ from gt_events import frame_labels, EVENTS
+-MS = '/root/results/motion_scores/{}_{}.npz'; DS = '/root/results/det_scores/{}_{}_{}.npy'
++MS = ROOT + '/results/motion_scores/{}_{}.npz'; DS = ROOT + '/results/det_scores/{}_{}_{}.npy'
+ PRE, POST, WARM = 1.0, 2.0, 2.0
+ MOTION = ['FD', 'FLOW', 'MOG2', 'KNN', 'CNT', 'GSOC']
+ 
+--- /tmp/claude-8800/-u-erdos-csga2-mmahmud9-smart-surveillance-realtime/68d9c066-41df-481b-ac8a-d697ba6c7735/scratchpad/exp_orig/event_analysis.py	2026-11-12 22:11:37.638564014 -0500
++++ exp/event_analysis.py	2026-11-12 22:11:37.824949268 -0500
+@@ -1,5 +1,6 @@
+ import sys, json, numpy as np, pandas as pd
+-sys.path.insert(0, '/root/exp')
++import os; ROOT = os.environ.get('SS_ROOT', '/root')
++sys.path.insert(0, ROOT + '/exp')
+ from event_eval import *
+ VIDS = list(VIDEOS); TARGET = 0.95
+ MGRID = np.concatenate([[0], np.logspace(-5, -0.5, 46)]); DGRID = np.round(np.arange(0.05, 0.96, 0.05), 2)
+@@ -51,6 +52,6 @@
+             rows.append(p)
+             for r in R: per_video.append(dict(method=name, kind=k, video=r['video'], stored=r['stored'], frame_recall=r['frame_recall'], idle_kept=r['idle_kept'], ev_full=(r['ev_cov'] >= 0.9).mean()))
+         print(name, {k: {m: round(float(x), 3) for m, x in p.items() if not isinstance(x, str)} for k, (p, _) in res.items()}, flush=True)
+-    pd.DataFrame(rows).to_csv('/root/results/event_lovo.csv', index=False)
+-    pd.DataFrame(per_video).to_csv('/root/results/event_lovo_per_video.csv', index=False)
+-    json.dump(thresholds, open('/root/results/event_thresholds.json', 'w'), indent=1)
++    pd.DataFrame(rows).to_csv(ROOT + '/results/event_lovo.csv', index=False)
++    pd.DataFrame(per_video).to_csv(ROOT + '/results/event_lovo_per_video.csv', index=False)
++    json.dump(thresholds, open(ROOT + '/results/event_thresholds.json', 'w'), indent=1)
+--- /tmp/claude-8800/-u-erdos-csga2-mmahmud9-smart-surveillance-realtime/68d9c066-41df-481b-ac8a-d697ba6c7735/scratchpad/exp_orig/motion_scores.py	2026-11-12 22:11:37.681565796 -0500
++++ exp/motion_scores.py	2026-11-12 22:11:37.830949198 -0500
+@@ -1,11 +1,12 @@
+ import sys, os, time, numpy as np, cv2
+-sys.path.insert(0, '/root/exp')
++ROOT = os.environ.get('SS_ROOT', '/root')
++sys.path.insert(0, ROOT + '/exp')
+ from common import VIDEOS, frames, video_info
+ from perturb import make_perturber
+ K = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (3, 3))
+ def run(args):
+     name, kind = args
+-    out = f'/root/results/motion_scores/{name}_{kind}.npz'
++    out = f'{ROOT}/results/motion_scores/{name}_{kind}.npz'
+     if os.path.exists(out): return out
+     fps, n = video_info(name)
+     P = make_perturber(kind, n, seed=abs(hash(name)) % 1000 if False else sum(map(ord, name)))
+@@ -43,7 +44,7 @@
+     return out
+ if __name__ == '__main__':
+     from multiprocessing import Pool
+-    os.makedirs('/root/results/motion_scores', exist_ok=True)
++    os.makedirs(ROOT + '/results/motion_scores', exist_ok=True)
+     jobs = [(v, k) for k in ['clean', 'illum', 'jitter', 'noise'] for v in VIDEOS]
+     cv2.setNumThreads(1)
+     with Pool(2) as p:
+--- /tmp/claude-8800/-u-erdos-csga2-mmahmud9-smart-surveillance-realtime/68d9c066-41df-481b-ac8a-d697ba6c7735/scratchpad/exp_orig/det_scores.py	2026-11-12 22:11:37.635563889 -0500
++++ exp/det_scores.py	2026-11-12 22:11:37.835949140 -0500
+@@ -1,16 +1,17 @@
+ import sys, os, numpy as np, torch
+-sys.path.insert(0, '/root/exp')
++ROOT = os.environ.get('SS_ROOT', '/root')
++sys.path.insert(0, ROOT + '/exp')
+ from common import VIDEOS, frames, video_info
+ from perturb import make_perturber
+ from ultralytics import YOLO
+ torch.set_num_threads(1)
+ CLS = [0, 1, 2, 3, 5, 7]  # person, bicycle, car, motorcycle, bus, truck
+ model_name, kinds = sys.argv[1], sys.argv[2].split(',')
+-m = YOLO(f'/root/data/models/{model_name}.pt')
+-os.makedirs('/root/results/det_scores', exist_ok=True)
++m = YOLO(f'{ROOT}/data/models/{model_name}.pt')
++os.makedirs(ROOT + '/results/det_scores', exist_ok=True)
+ for kind in kinds:
+     for name in VIDEOS:
+-        out = f'/root/results/det_scores/{model_name}_{name}_{kind}.npy'
++        out = f'{ROOT}/results/det_scores/{model_name}_{name}_{kind}.npy'
+         if os.path.exists(out): continue
+         fps, n = video_info(name); P = make_perturber(kind, n, seed=sum(map(ord, name)))
+         S = []
+--- /tmp/claude-8800/-u-erdos-csga2-mmahmud9-smart-surveillance-realtime/68d9c066-41df-481b-ac8a-d697ba6c7735/scratchpad/exp_orig/rt/analyze2.py	2026-11-12 22:11:37.695566376 -0500
++++ exp/rt/analyze2.py	2026-11-12 22:11:37.860948848 -0500
+@@ -1,9 +1,10 @@
+ """Second-stage real-time analysis: (1) load of motion-gated hybrids vs. strided detector, (2) wall-clock validation summary."""
+ import sys, json, re, numpy as np
+-sys.path.insert(0, '/root/exp')
++import os; ROOT = os.environ.get('SS_ROOT', '/root')
++sys.path.insert(0, ROOT + '/exp')
+ import event_eval as EV, event_analysis as EA
+ from event_analysis import VIDS, FPS, load
+-R = '/root/results/rt/'; A = json.load(open(R + 'analysis.json')); TH = A['theta']
++R = ROOT + '/results/rt/'; A = json.load(open(R + 'analysis.json')); TH = A['theta']
+ LM = np.load(R + 'lat_motion.npz'); LD = np.load(R + 'lat_det.npz'); out = {}
+ def fifo(release, service):
+     fin = np.empty(len(release)); t = 0.0
+@@ -11,7 +12,7 @@
+         t = max(t, release[i]) + service[i]; fin[i] = t
+     return fin - release
+ # ---- 1  hybrids: per-frame job = gate (+ detector if the gate is open); deadline T
+-THR = json.load(open('/root/results/event_thresholds.json'))
++THR = json.load(open(ROOT + '/results/event_thresholds.json'))
+ def parse(s): return [float(x) for x in re.findall(r'float64\(([^)]+)\)', s)]
+ out['hybrid'] = {}
+ for g in ['MOG2', 'CNT', 'FD']:
+--- /tmp/claude-8800/-u-erdos-csga2-mmahmud9-smart-surveillance-realtime/68d9c066-41df-481b-ac8a-d697ba6c7735/scratchpad/exp_orig/rt/analyze.py	2026-11-12 22:11:37.693566293 -0500
++++ exp/rt/analyze.py	2026-11-12 22:11:37.855948907 -0500
+@@ -5,11 +5,12 @@
+ D  cameras per core (trace-driven FIFO simulation)
+ E  lower-resolution detector as trigger (storage / recall, LOVO)"""
+ import sys, json, numpy as np
+-sys.path.insert(0, '/root/exp')
++import os; ROOT = os.environ.get('SS_ROOT', '/root')
++sys.path.insert(0, ROOT + '/exp')
+ import event_eval as EV, event_analysis as EA
+ from event_analysis import VIDS, FPS, DGRID, load, record, metrics, pooled, trig_stride
+ from gt_events import EVENTS
+-R = '/root/results/rt/'; res = {}
++R = ROOT + '/results/rt/'; res = {}
+ LM = np.load(R + 'lat_motion.npz'); LD = np.load(R + 'lat_det.npz')
+ WARM = 10
+ def pool(key_fn): return np.concatenate([key_fn(v)[WARM:] for v in VIDS])
+--- /tmp/claude-8800/-u-erdos-csga2-mmahmud9-smart-surveillance-realtime/68d9c066-41df-481b-ac8a-d697ba6c7735/scratchpad/exp_orig/rt/figs_rt.py	2026-11-12 22:11:37.704566749 -0500
++++ exp/rt/figs_rt.py	2026-11-12 22:11:37.872948708 -0500
+@@ -1,10 +1,11 @@
+ """Figures for the real-time analysis (Springer style: sans-serif, >= 8 pt at final size, vector, embedded TrueType fonts)."""
+ import json, csv, numpy as np, matplotlib
++import os; ROOT = os.environ.get('SS_ROOT', '/root')
+ matplotlib.use('Agg'); import matplotlib.pyplot as plt
+ plt.rcParams.update({'font.family': 'sans-serif', 'font.sans-serif': ['DejaVu Sans'], 'font.size': 8, 'axes.spines.top': False, 'axes.spines.right': False, 'axes.linewidth': 0.6,
+                      'xtick.major.width': 0.6, 'ytick.major.width': 0.6, 'pdf.fonttype': 42, 'legend.fontsize': 7.5})
+ BLUE, ORANGE, GREEN, PURPLE, GREY, INK = '#2a78d6', '#eb6834', '#1baf7a', '#4a3aa7', '#8a8880', '#333333'
+-R = '/root/results/rt/'; A = json.load(open(R + 'analysis.json')); OUT = '/root/jrtip/paper/fig/'
++R = ROOT + '/results/rt/'; A = json.load(open(R + 'analysis.json')); OUT = ROOT + '/jrtip/paper/fig/'
+ LM = np.load(R + 'lat_motion.npz'); LD = np.load(R + 'lat_det.npz')
+ def pool(z, pre): return 1e3 * np.concatenate([z[k][10:] for k in z.files if k.startswith(pre)])
+ 
+@@ -26,7 +27,7 @@
+ fig.savefig(OUT + 'Fig3.pdf', bbox_inches='tight', pad_inches=0.02); plt.close(fig)
+ 
+ # ---------- Fig4: idle frames stored under perturbation (thresholds fixed from clean video)
+-Rr = list(csv.DictReader(open('/root/results/event_lovo.csv'))); get = lambda m, k: 100 * float([r for r in Rr if r['method'] == m and r['kind'] == k][0]['idle_kept'])
++Rr = list(csv.DictReader(open(ROOT + '/results/event_lovo.csv'))); get = lambda m, k: 100 * float([r for r in Rr if r['method'] == m and r['kind'] == k][0]['idle_kept'])
+ meth = [('FD', 'FD'), ('FLOW', 'Flow'), ('MOG2', 'MOG2'), ('KNN', 'KNN'), ('CNT', 'CNT'), ('GSOC', 'GSOC'), ('Detector (every frame)', 'Det\nk=1'), ('Detector (every 8th frame)', 'Det\nk=8'), ('Hybrid: MOG2 gate + detector', 'MOG2\n+det')]
+ kinds = [('clean', 'Clean', GREY, ''), ('illum', 'Illumination steps', ORANGE, '///'), ('jitter', 'Camera jitter', BLUE, '')]
+ fig, a = plt.subplots(figsize=(3.3, 2.2)); w = 0.27
+@@ -57,7 +58,7 @@
+ fig.tight_layout(w_pad=1.2); fig.savefig(OUT + 'Fig5.pdf', bbox_inches='tight', pad_inches=0.02); plt.close(fig)
+ 
+ # ---------- Fig6: accuracy vs latency on VisDrone
+-M = json.load(open('/root/results/det/det_metrics.json')); L = json.load(open('/root/results/rt/latency_visdrone.json'))
++M = json.load(open(ROOT + '/results/det/det_metrics.json')); L = json.load(open(ROOT + '/results/rt/latency_visdrone.json'))
+ fig, a = plt.subplots(figsize=(3.3, 2.5))
+ for series, col, ls, mk, name in [(['yolo11n_640', 'yolo11n_960', 'yolo11n_1280'], BLUE, '-', 'o', 'YOLO11n'), (['yolo11s_640', 'yolo11s_960', 'yolo11s_1280'], BLUE, '--', 's', 'YOLO11s'),
+                                   (['yolo26n_640', 'yolo26n_960', 'yolo26n_1280'], ORANGE, '-', 'o', 'YOLO26n'), (['yolo26s_640', 'yolo26s_960', 'yolo26s_1280'], ORANGE, '--', 's', 'YOLO26s')]:
+--- /tmp/claude-8800/-u-erdos-csga2-mmahmud9-smart-surveillance-realtime/68d9c066-41df-481b-ac8a-d697ba6c7735/scratchpad/exp_orig/rt/gen_supp.py	2026-11-12 22:11:37.706566832 -0500
++++ exp/rt/gen_supp.py	2026-11-12 22:11:37.876948662 -0500
+@@ -1,5 +1,6 @@
+ import json, math
+-R='/root/results/rt/'; A=json.load(open(R+'analysis.json')); B=json.load(open(R+'analysis2.json')); M=json.load(open('/root/results/det/det_metrics.json')); L=json.load(open(R+'latency_visdrone.json'))
++import os; ROOT = os.environ.get('SS_ROOT', '/root')
++R=ROOT + '/results/rt/'; A=json.load(open(R+'analysis.json')); B=json.load(open(R+'analysis2.json')); M=json.load(open(ROOT + '/results/det/det_metrics.json')); L=json.load(open(R+'latency_visdrone.json'))
+ o=[]
+ def T(cap,lab,spec,head,rows):
+     o.append("\\begin{table}[h]\n\\centering\\footnotesize\\setlength{\\tabcolsep}{3.5pt}\n\\begin{tabular}{@{}"+spec+"@{}}\n\\toprule\n"+head+" \\\\\n\\midrule\n"+" \\\\\n".join(rows)+" \\\\\n\\bottomrule\n\\end{tabular}\n\\caption{"+cap+"}\n\\label{"+lab+"}\n\\end{table}\n")
+--- /tmp/claude-8800/-u-erdos-csga2-mmahmud9-smart-surveillance-realtime/68d9c066-41df-481b-ac8a-d697ba6c7735/scratchpad/exp_orig/rt/latency_visdrone.py	2026-11-12 22:11:37.708566915 -0500
++++ exp/rt/latency_visdrone.py	2026-11-12 22:11:37.883948580 -0500
+@@ -1,6 +1,7 @@
+ """Median CPU latency (2 threads) of every detector configuration on 50 VisDrone validation images (after 10 warm-up images)."""
+ import sys, time, json, numpy as np, cv2, torch, os
+-sys.path.insert(0, '/root/exp/det'); torch.set_num_threads(2); os.environ['THREADS'] = '2'
++ROOT = os.environ.get('SS_ROOT', '/root')
++sys.path.insert(0, ROOT + '/exp/det'); torch.set_num_threads(2); os.environ['THREADS'] = '2'
+ import run_det as R
+ from visdrone import image_list
+ VD = [cv2.imread(p) for p in image_list()[:60]]; res = {}
+@@ -12,5 +13,5 @@
+         t0 = time.perf_counter(); fn(f); dt = time.perf_counter() - t0
+         if i >= 10: ts.append(dt)
+     key = f'{model}_{imgsz}' + ''.join('_' + r for r in rest); res[key] = 1000 * float(np.median(ts)); res[key + '|p99'] = 1000 * float(np.percentile(ts, 99)); print(key, round(res[key], 1), round(res[key + '|p99'], 1), flush=True)
+-    json.dump(res, open('/root/results/rt/latency_visdrone.json', 'w'), indent=1)
++    json.dump(res, open(ROOT + '/results/rt/latency_visdrone.json', 'w'), indent=1)
+ print('DONE')
+--- /tmp/claude-8800/-u-erdos-csga2-mmahmud9-smart-surveillance-realtime/68d9c066-41df-481b-ac8a-d697ba6c7735/scratchpad/exp_orig/rt/live.py	2026-11-12 22:11:37.710566998 -0500
++++ exp/rt/live.py	2026-11-12 22:11:37.867948767 -0500
+@@ -3,12 +3,13 @@
+ serves the detector jobs of N cameras first-come-first-served. A job released at r with next stride k must finish by r + k*T.
+ Outputs job response times, deadline misses, and agreement of the live trigger with the trace-driven trigger."""
+ import sys, time, json, heapq, numpy as np, torch, cv2
+-sys.path.insert(0, '/root/exp')
++import os; ROOT = os.environ.get('SS_ROOT', '/root')
++sys.path.insert(0, ROOT + '/exp')
+ from common import VIDEOS, frames, video_info
+ from ultralytics import YOLO
+-R = '/root/results/rt/'; A = json.load(open(R + 'analysis.json')); TH = A['theta']
++R = ROOT + '/results/rt/'; A = json.load(open(R + 'analysis.json')); TH = A['theta']
+ CLS = [0, 1, 2, 3, 5, 7]; torch.set_num_threads(1); cv2.setNumThreads(1)
+-m = YOLO('/root/data/models/yolo11n.pt')
++m = YOLO(ROOT + '/data/models/yolo11n.pt')
+ def kidle_rt(fps, pre=1.0): return max(1, int(np.floor(pre * fps + 1e-9)))
+ POL = {'Fixed stride 8': lambda fps: (8, 8), 'Adaptive 16/8': lambda fps: (16, 8), 'Adaptive, deadline-aware': lambda fps: (kidle_rt(fps), min(8, kidle_rt(fps)))}
+ 
+@@ -45,7 +46,7 @@
+ clips = {}
+ for v in VIDEOS:
+     fps, n = video_info(v); F = list(frames(v)); clips[v] = (v, F, fps)
+-    sc = np.load(f'/root/results/det_scores/yolo11n_{v}_clean.npy') if False else None
++    sc = np.load(f'{ROOT}/results/det_scores/yolo11n_{v}_clean.npy') if False else None
+     for pname, pf in POL.items():
+         rec = run([clips[v]], pf, 1e9, False); out['single'].setdefault(pname, []).extend(rec)
+         print(v, pname, {k: round(x, 3) for k, x in summ(rec).items()}, flush=True)
+--- /tmp/claude-8800/-u-erdos-csga2-mmahmud9-smart-surveillance-realtime/68d9c066-41df-481b-ac8a-d697ba6c7735/scratchpad/exp_orig/rt/measure_det.py	2026-11-12 22:11:37.711567039 -0500
++++ exp/rt/measure_det.py	2026-11-12 22:11:37.850948965 -0500
+@@ -1,12 +1,13 @@
+ """Per-frame service times and scores of the detector trigger (YOLO11n, PyTorch CPU) for several input sizes and thread counts."""
+ import sys, time, os, numpy as np, torch, cv2
+-sys.path.insert(0, '/root/exp')
++ROOT = os.environ.get('SS_ROOT', '/root')
++sys.path.insert(0, ROOT + '/exp')
+ from common import VIDEOS, frames, video_info
+ from perturb import make_perturber
+ from ultralytics import YOLO
+ CLS = [0, 1, 2, 3, 5, 7]
+ CFG = [(640, 1), (640, 2), (480, 1), (320, 1)]
+-out = {}; m = YOLO('/root/data/models/yolo11n.pt')
++out = {}; m = YOLO(ROOT + '/data/models/yolo11n.pt')
+ for name in VIDEOS:
+     F = list(frames(name))
+     for size, th in CFG:
+@@ -16,9 +17,9 @@
+             t0 = time.perf_counter(); r = m.predict(f, imgsz=size, conf=0.05, classes=CLS, verbose=False)[0]
+             s = float(r.boxes.conf.max()) if len(r.boxes) else 0.0; ts.append(time.perf_counter() - t0); S.append(s)
+         out[f'lat|{size}|{th}|{name}'] = np.array(ts); out[f'score|{size}|{th}|{name}'] = np.array(S)
+-        if th == 1 and size != 640: np.save(f'/root/results/det_scores/yolo11n{size}_{name}_clean.npy', np.array(S))
++        if th == 1 and size != 640: np.save(f'{ROOT}/results/det_scores/yolo11n{size}_{name}_clean.npy', np.array(S))
+         print(name, size, th, round(1000 * float(np.median(ts)), 1), round(1000 * float(np.percentile(ts, 99)), 1), flush=True)
+-    np.savez('/root/results/rt/lat_det.npz', **out)
++    np.savez(ROOT + '/results/rt/lat_det.npz', **out)
+ # scores for the 320-px detector under perturbation (no timing)
+ torch.set_num_threads(2)
+ for kind in ['illum', 'jitter']:
+@@ -26,5 +27,5 @@
+         fps, n = video_info(name); P = make_perturber(kind, n, seed=sum(map(ord, name))); S = []
+         for t, f in enumerate(frames(name)):
+             r = m.predict(P(t, f), imgsz=320, conf=0.05, classes=CLS, verbose=False)[0]; S.append(float(r.boxes.conf.max()) if len(r.boxes) else 0.0)
+-        np.save(f'/root/results/det_scores/yolo11n320_{name}_{kind}.npy', np.array(S)); print('scores', kind, name, flush=True)
++        np.save(f'{ROOT}/results/det_scores/yolo11n320_{name}_{kind}.npy', np.array(S)); print('scores', kind, name, flush=True)
+ print('DONE', torch.__version__)
+--- /tmp/claude-8800/-u-erdos-csga2-mmahmud9-smart-surveillance-realtime/68d9c066-41df-481b-ac8a-d697ba6c7735/scratchpad/exp_orig/rt/measure_motion.py	2026-11-12 22:11:37.712567081 -0500
++++ exp/rt/measure_motion.py	2026-11-12 22:11:37.843949047 -0500
+@@ -1,6 +1,7 @@
+ """Per-frame service times of the motion triggers on all seven clips (clean), single thread. Decode excluded (frame already in memory)."""
+ import sys, time, numpy as np, cv2, platform
+-sys.path.insert(0, '/root/exp')
++import os; ROOT = os.environ.get('SS_ROOT', '/root')
++sys.path.insert(0, ROOT + '/exp')
+ from common import VIDEOS, frames
+ cv2.setNumThreads(int(sys.argv[1]) if len(sys.argv) > 1 else 1)
+ K = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (3, 3)); out = {}
+@@ -28,4 +29,4 @@
+         T[k] = ts
+     for k, v in T.items(): out[f'{k}|{name}'] = np.array(v)
+     print(name, {k: round(1000 * float(np.median(v)), 2) for k, v in T.items()}, flush=True)
+-np.savez('/root/results/rt/lat_motion.npz', **out); print('DONE', cv2.__version__, platform.processor())
++np.savez(ROOT + '/results/rt/lat_motion.npz', **out); print('DONE', cv2.__version__, platform.processor())

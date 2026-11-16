@@ -1,0 +1,24 @@
+Fri Nov 13 21:44:54 EST 2026
+process 3605806 (default run6, core 2) smaps_rollup:
+Rss:             6095324 kB
+Anonymous:       5954664 kB
+AnonHugePages:     26624 kB
+
+/proc/buddyinfo (free blocks per order 0..10; order 9 = 2 MB):
+Node 0, zone      DMA      0      0      0      0      0      0      0      0      1      1      2 
+Node 0, zone    DMA32      6     70     74     75     77     51     24     12      1      2     84 
+Node 0, zone   Normal   7847   5027   1370    497    296    127     67     26      8      0     16 
+Node 1, zone   Normal   1430   1977    903    956    715    382    782     87     30     40    324 
+
+MemFree:         2481948 kB
+MemAvailable:   182031392 kB
+Cached:         176686260 kB
+AnonHugePages:   2172928 kB
+compact_stall 435
+thp_fault_alloc 1583604
+thp_fault_fallback 22962
+[always] madvise never
+always defer defer+madvise [madvise] never
+
+D-state tasks:
+Ds   3542463 yl20        07:53:08 bash

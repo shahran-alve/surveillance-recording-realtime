@@ -1,0 +1,282 @@
+{
+ "host": "ciscluster",
+ "pid": 3567191,
+ "core": 2,
+ "size": 640,
+ "threads": 1,
+ "warmup_s": 120.0,
+ "rotate": 4,
+ "order": [
+  "worker-zone",
+  "car-lot",
+  "store-aisle",
+  "one-by-one",
+  "people",
+  "person-bike-car",
+  "walk-and-pause"
+ ],
+ "torch": "2.14.1+cpu",
+ "cv2": "5.0.0",
+ "python": "3.11.7",
+ "start": 1794609942.7734694,
+ "loadavg_start": [
+  "1.02",
+  "1.02",
+  "1.00"
+ ],
+ "steal_start": 0,
+ "freq_start": 3686.363,
+ "cpustat_start": [
+  4978334,
+  2300,
+  383254,
+  737489065,
+  32994,
+  107497,
+  487501,
+  0,
+  0,
+  0
+ ],
+ "per_cfg": [
+  {
+   "clip": "worker-zone",
+   "size": 640,
+   "threads": 1,
+   "n": 910,
+   "steal_delta": 0,
+   "freq_before": 1326.056,
+   "freq_after": 1429.197,
+   "wall": 45.800883769989014,
+   "cpustat_delta": [
+    4408,
+    0,
+    156,
+    0,
+    0,
+    14,
+    1,
+    0,
+    0,
+    0
+   ],
+   "sys_share": 0.03418054338299737,
+   "affinity_main": [
+    2
+   ],
+   "torch_threads": 1
+  },
+  {
+   "clip": "car-lot",
+   "size": 640,
+   "threads": 1,
+   "n": 377,
+   "steal_delta": 0,
+   "freq_before": 3339.399,
+   "freq_after": 1539.228,
+   "wall": 20.23749017715454,
+   "cpustat_delta": [
+    1900,
+    0,
+    116,
+    0,
+    0,
+    6,
+    0,
+    0,
+    0,
+    0
+   ],
+   "sys_share": 0.057539682539682536,
+   "affinity_main": [
+    2
+   ],
+   "torch_threads": 1
+  },
+  {
+   "clip": "store-aisle",
+   "size": 640,
+   "threads": 1,
+   "n": 785,
+   "steal_delta": 0,
+   "freq_before": 1539.228,
+   "freq_after": 1270.771,
+   "wall": 42.83652114868164,
+   "cpustat_delta": [
+    3894,
+    0,
+    375,
+    0,
+    0,
+    13,
+    1,
+    0,
+    0,
+    0
+   ],
+   "sys_share": 0.08784258608573436,
+   "affinity_main": [
+    2
+   ],
+   "torch_threads": 1
+  },
+  {
+   "clip": "one-by-one",
+   "size": 640,
+   "threads": 1,
+   "n": 1394,
+   "steal_delta": 0,
+   "freq_before": 1270.771,
+   "freq_after": 3527.58,
+   "wall": 71.39557433128357,
+   "cpustat_delta": [
+    6868,
+    0,
+    248,
+    0,
+    0,
+    22,
+    1,
+    0,
+    0,
+    0
+   ],
+   "sys_share": 0.03485103991006183,
+   "affinity_main": [
+    2
+   ],
+   "torch_threads": 1
+  },
+  {
+   "clip": "people",
+   "size": 640,
+   "threads": 1,
+   "n": 596,
+   "steal_delta": 0,
+   "freq_before": 3527.58,
+   "freq_after": 1370.094,
+   "wall": 29.80383801460266,
+   "cpustat_delta": [
+    2918,
+    0,
+    51,
+    0,
+    0,
+    10,
+    0,
+    0,
+    0,
+    0
+   ],
+   "sys_share": 0.017177500842034354,
+   "affinity_main": [
+    2
+   ],
+   "torch_threads": 1
+  },
+  {
+   "clip": "person-bike-car",
+   "size": 640,
+   "threads": 1,
+   "n": 647,
+   "steal_delta": 0,
+   "freq_before": 1370.094,
+   "freq_after": 1186.03,
+   "wall": 32.1931893825531,
+   "cpustat_delta": [
+    3120,
+    0,
+    87,
+    0,
+    0,
+    10,
+    1,
+    0,
+    0,
+    0
+   ],
+   "sys_share": 0.027128157156220765,
+   "affinity_main": [
+    2
+   ],
+   "torch_threads": 1
+  },
+  {
+   "clip": "walk-and-pause",
+   "size": 640,
+   "threads": 1,
+   "n": 1091,
+   "steal_delta": 0,
+   "freq_before": 1186.03,
+   "freq_after": 1438.35,
+   "wall": 56.159308433532715,
+   "cpustat_delta": [
+    5235,
+    0,
+    363,
+    0,
+    0,
+    17,
+    0,
+    0,
+    0,
+    0
+   ],
+   "sys_share": 0.06484458735262594,
+   "affinity_main": [
+    2
+   ],
+   "torch_threads": 1
+  }
+ ],
+ "warmup": {
+  "jobs": 2428,
+  "mean_ms": 49.42162215473404,
+  "max_ms": 65.79902675002813,
+  "first10_ms": [
+   62.004949897527695,
+   50.69899279624224,
+   50.43313838541508,
+   47.371821478009224,
+   50.50427373498678,
+   50.18330458551645,
+   49.59770105779171,
+   49.07097853720188,
+   48.72743785381317,
+   50.7546029984951
+  ],
+  "cpustat_delta": [
+   11759,
+   0,
+   202,
+   0,
+   0,
+   38,
+   1,
+   0,
+   0,
+   0
+  ],
+  "torch_threads": 1
+ },
+ "end": 1794610404.0120652,
+ "loadavg_end": [
+  "1.02",
+  "1.01",
+  "1.00"
+ ],
+ "steal_end": 0,
+ "freq_end": 1438.35,
+ "cpustat_end": [
+  5022347,
+  2300,
+  385205,
+  737489078,
+  32996,
+  107635,
+  487507,
+  0,
+  0,
+  0
+ ]
+}

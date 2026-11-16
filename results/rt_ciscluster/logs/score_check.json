@@ -1,0 +1,51 @@
+{
+ "one-by-one": {
+  "n": 1394,
+  "max_abs_diff": 0.0,
+  "mean_abs_diff": 0.0,
+  "n_decisions_differ": 0,
+  "decisions_agree": true
+ },
+ "people": {
+  "n": 596,
+  "max_abs_diff": 0.0,
+  "mean_abs_diff": 0.0,
+  "n_decisions_differ": 0,
+  "decisions_agree": true
+ },
+ "person-bike-car": {
+  "n": 647,
+  "max_abs_diff": 0.0,
+  "mean_abs_diff": 0.0,
+  "n_decisions_differ": 0,
+  "decisions_agree": true
+ },
+ "walk-and-pause": {
+  "n": 1091,
+  "max_abs_diff": 0.0,
+  "mean_abs_diff": 0.0,
+  "n_decisions_differ": 0,
+  "decisions_agree": true
+ },
+ "worker-zone": {
+  "n": 910,
+  "max_abs_diff": 0.0,
+  "mean_abs_diff": 0.0,
+  "n_decisions_differ": 0,
+  "decisions_agree": true
+ },
+ "car-lot": {
+  "n": 377,
+  "max_abs_diff": 0.0,
+  "mean_abs_diff": 0.0,
+  "n_decisions_differ": 0,
+  "decisions_agree": true
+ },
+ "store-aisle": {
+  "n": 785,
+  "max_abs_diff": 0.0,
+  "mean_abs_diff": 0.0,
+  "n_decisions_differ": 0,
+  "decisions_agree": true
+ }
+}

@@ -1,0 +1,282 @@
+{
+ "host": "ciscluster",
+ "pid": 3566280,
+ "core": 2,
+ "size": 640,
+ "threads": 1,
+ "warmup_s": 120.0,
+ "rotate": 3,
+ "order": [
+  "walk-and-pause",
+  "worker-zone",
+  "car-lot",
+  "store-aisle",
+  "one-by-one",
+  "people",
+  "person-bike-car"
+ ],
+ "torch": "2.14.1+cpu",
+ "cv2": "5.0.0",
+ "python": "3.11.7",
+ "start": 1794609471.9884162,
+ "loadavg_start": [
+  "1.00",
+  "1.00",
+  "1.00"
+ ],
+ "steal_start": 0,
+ "freq_start": 3679.342,
+ "cpustat_start": [
+  4934585,
+  2300,
+  380099,
+  737489040,
+  32992,
+  107357,
+  487495,
+  0,
+  0,
+  0
+ ],
+ "per_cfg": [
+  {
+   "clip": "walk-and-pause",
+   "size": 640,
+   "threads": 1,
+   "n": 1091,
+   "steal_delta": 0,
+   "freq_before": 1093.153,
+   "freq_after": 1207.18,
+   "wall": 54.81296491622925,
+   "cpustat_delta": [
+    5400,
+    0,
+    61,
+    0,
+    0,
+    17,
+    1,
+    0,
+    0,
+    0
+   ],
+   "sys_share": 0.01117011536348654,
+   "affinity_main": [
+    2
+   ],
+   "torch_threads": 1
+  },
+  {
+   "clip": "worker-zone",
+   "size": 640,
+   "threads": 1,
+   "n": 910,
+   "steal_delta": 0,
+   "freq_before": 3382.675,
+   "freq_after": 1701.646,
+   "wall": 48.295928716659546,
+   "cpustat_delta": [
+    4493,
+    0,
+    320,
+    0,
+    0,
+    15,
+    0,
+    0,
+    0,
+    0
+   ],
+   "sys_share": 0.0664865987949304,
+   "affinity_main": [
+    2
+   ],
+   "torch_threads": 1
+  },
+  {
+   "clip": "car-lot",
+   "size": 640,
+   "threads": 1,
+   "n": 377,
+   "steal_delta": 0,
+   "freq_before": 1701.646,
+   "freq_after": 1216.317,
+   "wall": 20.490480661392212,
+   "cpustat_delta": [
+    1864,
+    0,
+    178,
+    0,
+    0,
+    6,
+    0,
+    0,
+    0,
+    0
+   ],
+   "sys_share": 0.0871694417238002,
+   "affinity_main": [
+    2
+   ],
+   "torch_threads": 1
+  },
+  {
+   "clip": "store-aisle",
+   "size": 640,
+   "threads": 1,
+   "n": 785,
+   "steal_delta": 0,
+   "freq_before": 1216.317,
+   "freq_after": 1266.925,
+   "wall": 44.140976428985596,
+   "cpustat_delta": [
+    3959,
+    0,
+    440,
+    0,
+    0,
+    14,
+    1,
+    0,
+    0,
+    0
+   ],
+   "sys_share": 0.10002273243919073,
+   "affinity_main": [
+    2
+   ],
+   "torch_threads": 1
+  },
+  {
+   "clip": "one-by-one",
+   "size": 640,
+   "threads": 1,
+   "n": 1394,
+   "steal_delta": 0,
+   "freq_before": 1266.925,
+   "freq_after": 1541.353,
+   "wall": 71.51275777816772,
+   "cpustat_delta": [
+    6815,
+    0,
+    312,
+    0,
+    0,
+    22,
+    1,
+    0,
+    0,
+    0
+   ],
+   "sys_share": 0.043777185351480286,
+   "affinity_main": [
+    2
+   ],
+   "torch_threads": 1
+  },
+  {
+   "clip": "people",
+   "size": 640,
+   "threads": 1,
+   "n": 596,
+   "steal_delta": 0,
+   "freq_before": 1541.353,
+   "freq_after": 1754.754,
+   "wall": 32.540077447891235,
+   "cpustat_delta": [
+    2965,
+    0,
+    277,
+    0,
+    0,
+    10,
+    0,
+    0,
+    0,
+    0
+   ],
+   "sys_share": 0.08544108574953732,
+   "affinity_main": [
+    2
+   ],
+   "torch_threads": 1
+  },
+  {
+   "clip": "person-bike-car",
+   "size": 640,
+   "threads": 1,
+   "n": 647,
+   "steal_delta": 0,
+   "freq_before": 1754.754,
+   "freq_after": 1215.738,
+   "wall": 34.627928256988525,
+   "cpustat_delta": [
+    3193,
+    0,
+    258,
+    0,
+    0,
+    11,
+    1,
+    0,
+    0,
+    0
+   ],
+   "sys_share": 0.07476093885830194,
+   "affinity_main": [
+    2
+   ],
+   "torch_threads": 1
+  }
+ ],
+ "warmup": {
+  "jobs": 2245,
+  "mean_ms": 53.45799243264315,
+  "max_ms": 79.12578899413347,
+  "first10_ms": [
+   77.44604628533125,
+   64.96098265051842,
+   59.394690208137035,
+   58.377377688884735,
+   60.46396121382713,
+   60.911696404218674,
+   64.38894663006067,
+   64.07206505537033,
+   63.2128044962883,
+   64.9115527048707
+  ],
+  "cpustat_delta": [
+   11064,
+   0,
+   901,
+   0,
+   0,
+   37,
+   2,
+   0,
+   0,
+   0
+  ],
+  "torch_threads": 1
+ },
+ "end": 1794609940.5303648,
+ "loadavg_end": [
+  "1.02",
+  "1.02",
+  "1.00"
+ ],
+ "steal_end": 0,
+ "freq_end": 1215.738,
+ "cpustat_end": [
+  4978171,
+  2300,
+  383203,
+  737489055,
+  32994,
+  107497,
+  487501,
+  0,
+  0,
+  0
+ ]
+}

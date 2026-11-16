@@ -1,16 +1,17 @@
 import sys, os, numpy as np, torch
-sys.path.insert(0, '/root/exp')
+ROOT = os.environ.get('SS_ROOT', '/root')
+sys.path.insert(0, ROOT + '/exp')
 from common import VIDEOS, frames, video_info
 from perturb import make_perturber
 from ultralytics import YOLO
 torch.set_num_threads(1)
 CLS = [0, 1, 2, 3, 5, 7]  # person, bicycle, car, motorcycle, bus, truck
 model_name, kinds = sys.argv[1], sys.argv[2].split(',')
-m = YOLO(f'/root/data/models/{model_name}.pt')
-os.makedirs('/root/results/det_scores', exist_ok=True)
+m = YOLO(f'{ROOT}/data/models/{model_name}.pt')
+os.makedirs(ROOT + '/results/det_scores', exist_ok=True)
 for kind in kinds:
     for name in VIDEOS:
-        out = f'/root/results/det_scores/{model_name}_{name}_{kind}.npy'
+        out = f'{ROOT}/results/det_scores/{model_name}_{name}_{kind}.npy'
         if os.path.exists(out): continue
         fps, n = video_info(name); P = make_perturber(kind, n, seed=sum(map(ord, name)))
         S = []

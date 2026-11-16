@@ -1,0 +1,41 @@
+Fri Nov 13 20:00:22 EST 2026
+allocstall_dma 0
+allocstall_dma32 0
+allocstall_normal 0
+allocstall_movable 12
+pgmajfault 118945
+numa_hint_faults 205644725
+numa_pages_migrated 22972277
+compact_migrate_scanned 273137
+compact_free_scanned 4008447
+compact_isolated 432906
+compact_stall 394
+compact_fail 0
+compact_success 394
+compact_daemon_wake 0
+compact_daemon_migrate_scanned 0
+compact_daemon_free_scanned 0
+thp_fault_alloc 1451829
+thp_fault_fallback 21334
+thp_fault_fallback_charge 0
+thp_collapse_alloc 13801
+thp_collapse_alloc_failed 0
+thp_file_alloc 0
+thp_file_fallback 0
+thp_file_fallback_charge 0
+thp_file_mapped 0
+thp_split_page 36
+thp_split_page_failed 0
+thp_deferred_split_page 112100
+thp_split_pmd 116733
+thp_split_pud 0
+thp_zero_page_alloc 1
+thp_zero_page_alloc_failed 0
+thp_swpout 0
+thp_swpout_fallback 0
+MemFree:         2400556 kB
+MemAvailable:   181938764 kB
+Cached:         176675208 kB
+AnonHugePages:   2351104 kB
+[always] madvise never
+always defer defer+madvise [madvise] never

@@ -1,0 +1,32 @@
+{
+ "host": "ciscluster",
+ "mode": "b2b",
+ "imgsz": 640,
+ "threads": 1,
+ "core": 2,
+ "period": 0.6666666666666666,
+ "minutes": 20.0,
+ "torch": "2.14.1+cpu",
+ "cv2": "5.0.0",
+ "loadavg_start": [
+  "4.19",
+  "3.02",
+  "1.89"
+ ],
+ "steal_start": 0,
+ "freq_start": 1283.132,
+ "affinity": [
+  2
+ ],
+ "t_start": 1794550061.3184075,
+ "torch_threads": 1,
+ "t_end": 1794551261.346454,
+ "jobs": 23169,
+ "loadavg_end": [
+  "1.02",
+  "1.11",
+  "1.29"
+ ],
+ "steal_end": 0,
+ "freq_end": 1453.064
+}

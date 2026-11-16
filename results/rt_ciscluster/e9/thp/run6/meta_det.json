@@ -1,0 +1,346 @@
+{
+ "host": "ciscluster",
+ "pid": 3607063,
+ "core": 2,
+ "size": 640,
+ "threads": 1,
+ "warmup_s": 120.0,
+ "rotate": 5,
+ "order": [
+  "car-lot",
+  "store-aisle",
+  "one-by-one",
+  "people",
+  "person-bike-car",
+  "walk-and-pause",
+  "worker-zone"
+ ],
+ "torch": "2.14.1+cpu",
+ "cv2": "5.0.0",
+ "python": "3.11.7",
+ "thp_disable": true,
+ "thp_prctl_rc": 0,
+ "thp_status": [
+  "THP_enabled:\t0"
+ ],
+ "malloc_env": {},
+ "minflt_start": 44791,
+ "start": 1794624494.1643767,
+ "loadavg_start": [
+  "3.04",
+  "2.15",
+  "1.83"
+ ],
+ "steal_start": 0,
+ "freq_start": 3465.082,
+ "cpustat_start": [
+  5792729,
+  2300,
+  513503,
+  737994887,
+  33928,
+  110729,
+  487814,
+  0,
+  0,
+  0
+ ],
+ "per_cfg": [
+  {
+   "clip": "car-lot",
+   "size": 640,
+   "threads": 1,
+   "n": 377,
+   "steal_delta": 0,
+   "freq_before": 1463.221,
+   "freq_after": 1508.124,
+   "wall": 23.14972472190857,
+   "cpustat_delta": [
+    2060,
+    0,
+    245,
+    0,
+    0,
+    8,
+    1,
+    0,
+    0,
+    0
+   ],
+   "sys_share": 0.10629067245119306,
+   "minflt": 1269222,
+   "minflt_per_s": 54826.62464596886,
+   "smaps_kb": {
+    "Rss": 6081360,
+    "Anonymous": 5941360,
+    "AnonHugePages": 0
+   },
+   "affinity_main": [
+    2
+   ],
+   "torch_threads": 1
+  },
+  {
+   "clip": "store-aisle",
+   "size": 640,
+   "threads": 1,
+   "n": 785,
+   "steal_delta": 0,
+   "freq_before": 3427.199,
+   "freq_after": 1322.909,
+   "wall": 48.815473794937134,
+   "cpustat_delta": [
+    4358,
+    0,
+    505,
+    0,
+    0,
+    17,
+    1,
+    0,
+    0,
+    0
+   ],
+   "sys_share": 0.10384536294468436,
+   "minflt": 2505190,
+   "minflt_per_s": 51319.580415371915,
+   "smaps_kb": {
+    "Rss": 6081316,
+    "Anonymous": 5940868,
+    "AnonHugePages": 0
+   },
+   "affinity_main": [
+    2
+   ],
+   "torch_threads": 1
+  },
+  {
+   "clip": "one-by-one",
+   "size": 640,
+   "threads": 1,
+   "n": 1394,
+   "steal_delta": 0,
+   "freq_before": 3440.598,
+   "freq_after": 1167.846,
+   "wall": 85.50470900535583,
+   "cpustat_delta": [
+    7647,
+    0,
+    871,
+    0,
+    0,
+    29,
+    3,
+    0,
+    0,
+    0
+   ],
+   "sys_share": 0.10225405024653675,
+   "minflt": 4488282,
+   "minflt_per_s": 52491.62445088788,
+   "smaps_kb": {
+    "Rss": 6069948,
+    "Anonymous": 5929500,
+    "AnonHugePages": 0
+   },
+   "affinity_main": [
+    2
+   ],
+   "torch_threads": 1
+  },
+  {
+   "clip": "people",
+   "size": 640,
+   "threads": 1,
+   "n": 596,
+   "steal_delta": 0,
+   "freq_before": 3552.17,
+   "freq_after": 1192.349,
+   "wall": 37.022613525390625,
+   "cpustat_delta": [
+    3357,
+    0,
+    331,
+    0,
+    0,
+    13,
+    1,
+    0,
+    0,
+    0
+   ],
+   "sys_share": 0.08975054229934924,
+   "minflt": 1916318,
+   "minflt_per_s": 51760.73676893006,
+   "smaps_kb": {
+    "Rss": 6069948,
+    "Anonymous": 5929500,
+    "AnonHugePages": 0
+   },
+   "affinity_main": [
+    2
+   ],
+   "torch_threads": 1
+  },
+  {
+   "clip": "person-bike-car",
+   "size": 640,
+   "threads": 1,
+   "n": 647,
+   "steal_delta": 0,
+   "freq_before": 3449.629,
+   "freq_after": 1238.481,
+   "wall": 39.18982291221619,
+   "cpustat_delta": [
+    3534,
+    0,
+    369,
+    0,
+    0,
+    13,
+    1,
+    0,
+    0,
+    0
+   ],
+   "sys_share": 0.09454265949269793,
+   "minflt": 2157508,
+   "minflt_per_s": 55052.7457518363,
+   "smaps_kb": {
+    "Rss": 6069952,
+    "Anonymous": 5929504,
+    "AnonHugePages": 0
+   },
+   "affinity_main": [
+    2
+   ],
+   "torch_threads": 1
+  },
+  {
+   "clip": "walk-and-pause",
+   "size": 640,
+   "threads": 1,
+   "n": 1091,
+   "steal_delta": 0,
+   "freq_before": 3452.015,
+   "freq_after": 1394.493,
+   "wall": 67.13911294937134,
+   "cpustat_delta": [
+    6066,
+    0,
+    621,
+    0,
+    0,
+    23,
+    1,
+    0,
+    0,
+    0
+   ],
+   "sys_share": 0.09286675639300135,
+   "minflt": 3404803,
+   "minflt_per_s": 50712.65646362596,
+   "smaps_kb": {
+    "Rss": 6069956,
+    "Anonymous": 5929508,
+    "AnonHugePages": 0
+   },
+   "affinity_main": [
+    2
+   ],
+   "torch_threads": 1
+  },
+  {
+   "clip": "worker-zone",
+   "size": 640,
+   "threads": 1,
+   "n": 910,
+   "steal_delta": 0,
+   "freq_before": 3380.489,
+   "freq_after": 1422.206,
+   "wall": 56.417444705963135,
+   "cpustat_delta": [
+    5072,
+    0,
+    548,
+    0,
+    0,
+    19,
+    2,
+    0,
+    0,
+    0
+   ],
+   "sys_share": 0.09750889679715302,
+   "minflt": 3124610,
+   "minflt_per_s": 55383.74491202503,
+   "smaps_kb": {
+    "Rss": 6069956,
+    "Anonymous": 5929508,
+    "AnonHugePages": 0
+   },
+   "affinity_main": [
+    2
+   ],
+   "torch_threads": 1
+  }
+ ],
+ "warmup": {
+  "jobs": 2014,
+  "mean_ms": 59.60225087175259,
+  "max_ms": 77.2678954526782,
+  "first10_ms": [
+   77.2678954526782,
+   61.56943924725056,
+   59.72061585634947,
+   61.11665442585945,
+   65.32240193337202,
+   56.75295181572437,
+   57.25738126784563,
+   66.89796131104231,
+   62.75820825248957,
+   56.325108744204044
+  ],
+  "cpustat_delta": [
+   11157,
+   0,
+   805,
+   0,
+   0,
+   40,
+   3,
+   0,
+   0,
+   0
+  ],
+  "torch_threads": 1,
+  "minflt": 3817853,
+  "minflt_per_s": 31801.87650142203,
+  "smaps_kb": {
+   "Rss": 6068828,
+   "Anonymous": 5928956,
+   "AnonHugePages": 0
+  }
+ },
+ "minflt_end": 24208981,
+ "end": 1794625017.7588174,
+ "loadavg_end": [
+  "2.40",
+  "2.23",
+  "2.03"
+ ],
+ "steal_end": 0,
+ "freq_end": 3371.249,
+ "cpustat_end": [
+  5840145,
+  2300,
+  518217,
+  737994906,
+  33951,
+  110901,
+  487828,
+  0,
+  0,
+  0
+ ]
+}

@@ -1,6 +1,7 @@
 """Median CPU latency (2 threads) of every detector configuration on 50 VisDrone validation images (after 10 warm-up images)."""
 import sys, time, json, numpy as np, cv2, torch, os
-sys.path.insert(0, '/root/exp/det'); torch.set_num_threads(2); os.environ['THREADS'] = '2'
+ROOT = os.environ.get('SS_ROOT', '/root')
+sys.path.insert(0, ROOT + '/exp/det'); torch.set_num_threads(2); os.environ['THREADS'] = '2'
 import run_det as R
 from visdrone import image_list
 VD = [cv2.imread(p) for p in image_list()[:60]]; res = {}
@@ -12,5 +13,5 @@ for c in CFG:
         t0 = time.perf_counter(); fn(f); dt = time.perf_counter() - t0
         if i >= 10: ts.append(dt)
     key = f'{model}_{imgsz}' + ''.join('_' + r for r in rest); res[key] = 1000 * float(np.median(ts)); res[key + '|p99'] = 1000 * float(np.percentile(ts, 99)); print(key, round(res[key], 1), round(res[key + '|p99'], 1), flush=True)
-    json.dump(res, open('/root/results/rt/latency_visdrone.json', 'w'), indent=1)
+    json.dump(res, open(ROOT + '/results/rt/latency_visdrone.json', 'w'), indent=1)
 print('DONE')

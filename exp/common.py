@@ -1,5 +1,6 @@
 import cv2, numpy as np, os, json
-VID_DIR = '/root/data/sample-videos'
+ROOT = os.environ.get('SS_ROOT', '/root')
+VID_DIR = ROOT + '/data/sample-videos'
 # name: (file, frame step to reach ~10-12 fps)
 VIDEOS = {
  'one-by-one':        ('one-by-one-person-detection.mp4', 1),

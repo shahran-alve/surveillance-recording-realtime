@@ -1,0 +1,13 @@
+START Adaptivedeadline-aware_N38_rep1 Fri Nov 13 16:08:56 EST 2026 load=0.03 0.06 0.10
+END Adaptivedeadline-aware_N38_rep1 exit=0 Fri Nov 13 16:19:43 EST 2026 multi Adaptive, deadline-aware 38 {'jobs': 28715, 'miss': 0.0, 'n_miss': 0, 'resp_mean': np.float64(33.69), 'resp_p50': np.float64(29.928), 'resp_p95': np.float64(65.95), 'resp_p99': np.float64(86.494
+START Adaptivedeadline-aware_N39_rep1 Fri Nov 13 16:19:43 EST 2026 load=0.72 0.68 0.45
+END Adaptivedeadline-aware_N39_rep1 exit=0 Fri Nov 13 16:30:30 EST 2026 multi Adaptive, deadline-aware 39 {'jobs': 29499, 'miss': 0.0, 'n_miss': 0, 'resp_mean': np.float64(35.441), 'resp_p50': np.float64(31.26), 'resp_p95': np.float64(71.445), 'resp_p99': np.float64(103.5
+START Adaptivedeadline-aware_N40_rep1 Fri Nov 13 16:30:30 EST 2026 load=0.96 0.88 0.68
+END Adaptivedeadline-aware_N40_rep1 exit=0 Fri Nov 13 16:41:16 EST 2026 multi Adaptive, deadline-aware 40 {'jobs': 30368, 'miss': 0.0, 'n_miss': 0, 'resp_mean': np.float64(42.43), 'resp_p50': np.float64(32.436), 'resp_p95': np.float64(77.367), 'resp_p99': np.float64(408.5
+START Adaptivedeadline-aware_N38_rep2 Fri Nov 13 16:41:16 EST 2026 load=0.86 0.90 0.82
+END Adaptivedeadline-aware_N38_rep2 exit=0 Fri Nov 13 16:52:02 EST 2026 multi Adaptive, deadline-aware 38 {'jobs': 28715, 'miss': 0.0, 'n_miss': 0, 'resp_mean': np.float64(33.976), 'resp_p50': np.float64(29.998), 'resp_p95': np.float64(66.324), 'resp_p99': np.float64(91.4
+START Adaptivedeadline-aware_N39_rep2 Fri Nov 13 16:52:02 EST 2026 load=0.74 0.86 0.85
+END Adaptivedeadline-aware_N39_rep2 exit=0 Fri Nov 13 17:02:49 EST 2026 multi Adaptive, deadline-aware 39 {'jobs': 29499, 'miss': 0.0, 'n_miss': 0, 'resp_mean': np.float64(35.01), 'resp_p50': np.float64(31.504), 'resp_p95': np.float64(68.286), 'resp_p99': np.float64(90.42
+START Adaptivedeadline-aware_N40_rep2 Fri Nov 13 17:02:49 EST 2026 load=0.75 0.79 0.84
+END Adaptivedeadline-aware_N40_rep2 exit=0 Fri Nov 13 17:13:36 EST 2026 multi Adaptive, deadline-aware 40 {'jobs': 30368, 'miss': 0.0, 'n_miss': 0, 'resp_mean': np.float64(34.957), 'resp_p50': np.float64(31.806), 'resp_p95': np.float64(68.431), 'resp_p99': np.float64(87.8
+E2 EXT DONE Fri Nov 13 17:13:36 EST 2026

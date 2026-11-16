@@ -1,0 +1,1098 @@
+{
+ "multi": [
+  {
+   "policy": "Adaptive 16/8",
+   "N": 43,
+   "rep": 1,
+   "jobs": 29308,
+   "util": 0.8373050243703223,
+   "miss": 0.0,
+   "n_miss": 0,
+   "resp_p99_ms": 534.9024598402667,
+   "resp_max_ms": 663.6862865353521,
+   "service_mean_ms": 17.1433538660192,
+   "service_max_ms": 27.644258923828602,
+   "min_slack_ms": 21.226680501301722,
+   "agree": 100.0,
+   "sim_util": 0.8691367884570111,
+   "sim_miss": 0.0,
+   "sim_resp_p99_ms": 140.14085675824148,
+   "sim_resp_max_ms": 268.36833631720936,
+   "load": [
+    [
+     "0.91",
+     "0.97",
+     "0.99"
+    ],
+    [
+     "0.93",
+     "0.88",
+     "0.95"
+    ]
+   ],
+   "steal": 0,
+   "freq": [
+    2858.748,
+    1155.793
+   ],
+   "torch_threads": [
+    1,
+    1
+   ],
+   "file": "live_Adaptive168_N43_rep1.json"
+  },
+  {
+   "policy": "Adaptive 16/8",
+   "N": 43,
+   "rep": 2,
+   "jobs": 29308,
+   "util": 0.8376753562184583,
+   "miss": 0.0,
+   "n_miss": 0,
+   "resp_p99_ms": 275.4486289526926,
+   "resp_max_ms": 467.26513221119603,
+   "service_mean_ms": 17.150938951452172,
+   "service_max_ms": 26.456911116838455,
+   "min_slack_ms": 200.0682011221373,
+   "agree": 100.0,
+   "sim_util": 0.8691367884570111,
+   "sim_miss": 0.0,
+   "sim_resp_p99_ms": 140.14085675824148,
+   "sim_resp_max_ms": 268.36833631720936,
+   "load": [
+    [
+     "0.98",
+     "0.91",
+     "0.93"
+    ],
+    [
+     "0.79",
+     "0.86",
+     "0.90"
+    ]
+   ],
+   "steal": 0,
+   "freq": [
+    2857.986,
+    1153.661
+   ],
+   "torch_threads": [
+    1,
+    1
+   ],
+   "file": "live_Adaptive168_N43_rep2.json"
+  },
+  {
+   "policy": "Adaptive 16/8",
+   "N": 44,
+   "rep": 1,
+   "jobs": 29913,
+   "util": 0.8521334503675476,
+   "miss": 0.0,
+   "n_miss": 0,
+   "resp_p99_ms": 479.6694767261386,
+   "resp_max_ms": 596.2771023781102,
+   "service_mean_ms": 17.09461810884698,
+   "service_max_ms": 29.055794700980186,
+   "min_slack_ms": 72.22495338212786,
+   "agree": 100.0,
+   "sim_util": 0.8868161149509252,
+   "sim_miss": 0.0,
+   "sim_resp_p99_ms": 220.8870076993535,
+   "sim_resp_max_ms": 339.6060973913819,
+   "load": [
+    [
+     "0.94",
+     "0.88",
+     "0.95"
+    ],
+    [
+     "0.86",
+     "0.94",
+     "0.97"
+    ]
+   ],
+   "steal": 0,
+   "freq": [
+    3552.859,
+    1096.647
+   ],
+   "torch_threads": [
+    1,
+    1
+   ],
+   "file": "live_Adaptive168_N44_rep1.json"
+  },
+  {
+   "policy": "Adaptive 16/8",
+   "N": 44,
+   "rep": 2,
+   "jobs": 29913,
+   "util": 0.8490403736794231,
+   "miss": 0.0,
+   "n_miss": 0,
+   "resp_p99_ms": 372.2353403813107,
+   "resp_max_ms": 591.4703686815415,
+   "service_mean_ms": 17.032555093750226,
+   "service_max_ms": 26.768963783979416,
+   "min_slack_ms": 75.86296465179187,
+   "agree": 100.0,
+   "sim_util": 0.8868161149509252,
+   "sim_miss": 0.0,
+   "sim_resp_p99_ms": 220.8870076993535,
+   "sim_resp_max_ms": 339.6060973913819,
+   "load": [
+    [
+     "0.80",
+     "0.86",
+     "0.90"
+    ],
+    [
+     "0.85",
+     "0.86",
+     "0.90"
+    ]
+   ],
+   "steal": 0,
+   "freq": [
+    3551.773,
+    1098.083
+   ],
+   "torch_threads": [
+    1,
+    1
+   ],
+   "file": "live_Adaptive168_N44_rep2.json"
+  },
+  {
+   "policy": "Adaptive 16/8",
+   "N": 45,
+   "rep": 1,
+   "jobs": 30527,
+   "util": 0.8784157122484546,
+   "miss": 1.2579028401087562,
+   "n_miss": 384,
+   "resp_p99_ms": 820.4308440152541,
+   "resp_max_ms": 912.668518190813,
+   "service_mean_ms": 17.267252186491255,
+   "service_max_ms": 27.722304686903954,
+   "min_slack_ms": -246.00185152414633,
+   "agree": 100.0,
+   "sim_util": 0.9045645759440959,
+   "sim_miss": 0.0,
+   "sim_resp_p99_ms": 363.0021955007363,
+   "sim_resp_max_ms": 486.7178952528377,
+   "load": [
+    [
+     "0.87",
+     "0.94",
+     "0.97"
+    ],
+    [
+     "0.87",
+     "0.91",
+     "0.97"
+    ]
+   ],
+   "steal": 0,
+   "freq": [
+    3537.647,
+    1235.215
+   ],
+   "torch_threads": [
+    1,
+    1
+   ],
+   "file": "live_Adaptive168_N45_rep1.json"
+  },
+  {
+   "policy": "Adaptive 16/8",
+   "N": 45,
+   "rep": 2,
+   "jobs": 30527,
+   "util": 0.8737190116701511,
+   "miss": 0.009827365938349658,
+   "n_miss": 3,
+   "resp_p99_ms": 535.0783122633692,
+   "resp_max_ms": 681.111790798596,
+   "service_mean_ms": 17.1749575586069,
+   "service_max_ms": 27.028490789234638,
+   "min_slack_ms": -14.445124131929333,
+   "agree": 100.0,
+   "sim_util": 0.9045645759440959,
+   "sim_miss": 0.0,
+   "sim_resp_p99_ms": 363.0021955007363,
+   "sim_resp_max_ms": 486.7178952528377,
+   "load": [
+    [
+     "0.85",
+     "0.86",
+     "0.90"
+    ],
+    [
+     "0.90",
+     "0.90",
+     "0.91"
+    ]
+   ],
+   "steal": 0,
+   "freq": [
+    2930.588,
+    1304.966
+   ],
+   "torch_threads": [
+    1,
+    1
+   ],
+   "file": "live_Adaptive168_N45_rep2.json"
+  },
+  {
+   "policy": "Adaptive 16/8",
+   "N": 46,
+   "rep": 1,
+   "jobs": 31243,
+   "util": 0.888265636080304,
+   "miss": 1.3699068591364467,
+   "n_miss": 428,
+   "resp_p99_ms": 862.7878866608903,
+   "resp_max_ms": 1105.981253883826,
+   "service_mean_ms": 17.05990990115469,
+   "service_max_ms": 27.2671552374959,
+   "min_slack_ms": -439.3145872171592,
+   "agree": 100.0,
+   "sim_util": 0.9266529015870765,
+   "sim_miss": 0.3136803021573523,
+   "sim_resp_p99_ms": 576.0590671859376,
+   "sim_resp_max_ms": 744.3399389756564,
+   "load": [
+    [
+     "0.87",
+     "0.91",
+     "0.97"
+    ],
+    [
+     "0.98",
+     "0.91",
+     "0.93"
+    ]
+   ],
+   "steal": 0,
+   "freq": [
+    3551.954,
+    1216.687
+   ],
+   "torch_threads": [
+    1,
+    1
+   ],
+   "file": "live_Adaptive168_N46_rep1.json"
+  },
+  {
+   "policy": "Adaptive 16/8",
+   "N": 46,
+   "rep": 2,
+   "jobs": 31243,
+   "util": 0.8971890918162233,
+   "miss": 1.376308293057645,
+   "n_miss": 430,
+   "resp_p99_ms": 753.9480894814186,
+   "resp_max_ms": 1018.4084502704991,
+   "service_mean_ms": 17.231330603583622,
+   "service_max_ms": 27.137755416333675,
+   "min_slack_ms": -346.38057280635184,
+   "agree": 100.0,
+   "sim_util": 0.9266529015870765,
+   "sim_miss": 0.3136803021573523,
+   "sim_resp_p99_ms": 576.0590671859376,
+   "sim_resp_max_ms": 744.3399389756564,
+   "load": [
+    [
+     "0.91",
+     "0.90",
+     "0.91"
+    ],
+    [
+     "0.90",
+     "0.94",
+     "0.93"
+    ]
+   ],
+   "steal": 0,
+   "freq": [
+    3553.64,
+    1274.428
+   ],
+   "torch_threads": [
+    1,
+    1
+   ],
+   "file": "live_Adaptive168_N46_rep2.json"
+  },
+  {
+   "policy": "Adaptive, deadline-aware",
+   "N": 41,
+   "rep": 1,
+   "jobs": 31025,
+   "util": 0.8795673315580479,
+   "miss": 0.0128928283642224,
+   "n_miss": 4,
+   "resp_p99_ms": 434.79003856494853,
+   "resp_max_ms": 689.0577898268475,
+   "service_mean_ms": 17.011091171596487,
+   "service_max_ms": 34.899018704891205,
+   "min_slack_ms": -22.391123160180882,
+   "agree": 100.0,
+   "sim_util": 0.9188498042477294,
+   "sim_miss": 0.0,
+   "sim_resp_p99_ms": 142.9262379769088,
+   "sim_resp_max_ms": 192.17655581338988,
+   "load": [
+    [
+     "0.90",
+     "0.94",
+     "0.93"
+    ],
+    [
+     "0.94",
+     "0.95",
+     "0.94"
+    ]
+   ],
+   "steal": 0,
+   "freq": [
+    3552.542,
+    1213.595
+   ],
+   "torch_threads": [
+    1,
+    1
+   ],
+   "file": "live_Adaptivedeadline-aware_N41_rep1.json"
+  },
+  {
+   "policy": "Adaptive, deadline-aware",
+   "N": 41,
+   "rep": 2,
+   "jobs": 31025,
+   "util": 0.8882711642649799,
+   "miss": 0.0547945205479452,
+   "n_miss": 17,
+   "resp_p99_ms": 488.08385802958605,
+   "resp_max_ms": 717.3459989577111,
+   "service_mean_ms": 17.179117219118847,
+   "service_max_ms": 26.72537788748741,
+   "min_slack_ms": -50.01266562437778,
+   "agree": 100.0,
+   "sim_util": 0.9188498042477294,
+   "sim_miss": 0.0,
+   "sim_resp_p99_ms": 142.9262379769088,
+   "sim_resp_max_ms": 192.17655581338988,
+   "load": [
+    [
+     "0.99",
+     "0.97",
+     "0.99"
+    ],
+    [
+     "0.92",
+     "0.93",
+     "0.99"
+    ]
+   ],
+   "steal": 0,
+   "freq": [
+    3567.528,
+    1268.495
+   ],
+   "torch_threads": [
+    1,
+    1
+   ],
+   "file": "live_Adaptivedeadline-aware_N41_rep2.json"
+  },
+  {
+   "policy": "Adaptive, deadline-aware",
+   "N": 42,
+   "rep": 1,
+   "jobs": 31892,
+   "util": 0.8988781805587371,
+   "miss": 0.17872820770099085,
+   "n_miss": 57,
+   "resp_p99_ms": 593.6229673476657,
+   "resp_max_ms": 732.702267660045,
+   "service_mean_ms": 16.91146467311363,
+   "service_max_ms": 27.56170928478241,
+   "min_slack_ms": -64.50846339894967,
+   "agree": 100.0,
+   "sim_util": 0.9443725231320907,
+   "sim_miss": 0.0,
+   "sim_resp_p99_ms": 292.1336867471829,
+   "sim_resp_max_ms": 397.96324185931553,
+   "load": [
+    [
+     "0.95",
+     "0.95",
+     "0.94"
+    ],
+    [
+     "0.96",
+     "0.92",
+     "0.94"
+    ]
+   ],
+   "steal": 0,
+   "freq": [
+    3551.299,
+    1095.181
+   ],
+   "torch_threads": [
+    1,
+    1
+   ],
+   "file": "live_Adaptivedeadline-aware_N42_rep1.json"
+  },
+  {
+   "policy": "Adaptive, deadline-aware",
+   "N": 42,
+   "rep": 2,
+   "jobs": 31892,
+   "util": 0.90463693227185,
+   "miss": 0.0,
+   "n_miss": 0,
+   "resp_p99_ms": 388.7659036599951,
+   "resp_max_ms": 505.56121110201957,
+   "service_mean_ms": 17.019815166601973,
+   "service_max_ms": 27.29232609272003,
+   "min_slack_ms": 167.29234712401976,
+   "agree": 100.0,
+   "sim_util": 0.9443725231320907,
+   "sim_miss": 0.0,
+   "sim_resp_p99_ms": 292.1336867471829,
+   "sim_resp_max_ms": 397.96324185931553,
+   "load": [
+    [
+     "0.92",
+     "0.93",
+     "0.99"
+    ],
+    [
+     "1.00",
+     "0.99",
+     "1.00"
+    ]
+   ],
+   "steal": 0,
+   "freq": [
+    3555.184,
+    1160.797
+   ],
+   "torch_threads": [
+    1,
+    1
+   ],
+   "file": "live_Adaptivedeadline-aware_N42_rep2.json"
+  },
+  {
+   "policy": "Adaptive, deadline-aware",
+   "N": 43,
+   "rep": 1,
+   "jobs": 32606,
+   "util": 0.9315785425504672,
+   "miss": 2.1131080169293996,
+   "n_miss": 689,
+   "resp_p99_ms": 982.0852187382461,
+   "resp_max_ms": 1150.8192281823142,
+   "service_mean_ms": 17.142806039050395,
+   "service_max_ms": 27.01345458626747,
+   "min_slack_ms": -484.15256151564756,
+   "agree": 100.0,
+   "sim_util": 0.9658077496647214,
+   "sim_miss": 0.0,
+   "sim_resp_p99_ms": 470.70340986096693,
+   "sim_resp_max_ms": 631.7447096845399,
+   "load": [
+    [
+     "0.96",
+     "0.92",
+     "0.94"
+    ],
+    [
+     "0.90",
+     "0.93",
+     "0.95"
+    ]
+   ],
+   "steal": 0,
+   "freq": [
+    3533.613,
+    1181.24
+   ],
+   "torch_threads": [
+    1,
+    1
+   ],
+   "file": "live_Adaptivedeadline-aware_N43_rep1.json"
+  },
+  {
+   "policy": "Adaptive, deadline-aware",
+   "N": 43,
+   "rep": 2,
+   "jobs": 32606,
+   "util": 0.9352103469425345,
+   "miss": 3.119057842114948,
+   "n_miss": 1017,
+   "resp_p99_ms": 1391.6815118313766,
+   "resp_max_ms": 1697.8747230524505,
+   "service_mean_ms": 17.20964247216868,
+   "service_max_ms": 28.43305002897978,
+   "min_slack_ms": -1031.208056385784,
+   "agree": 100.0,
+   "sim_util": 0.9658077496647214,
+   "sim_miss": 0.0,
+   "sim_resp_p99_ms": 470.70340986096693,
+   "sim_resp_max_ms": 631.7447096845399,
+   "load": [
+    [
+     "1.00",
+     "0.99",
+     "1.00"
+    ],
+    [
+     "0.99",
+     "0.96",
+     "0.99"
+    ]
+   ],
+   "steal": 0,
+   "freq": [
+    3553.29,
+    1109.227
+   ],
+   "torch_threads": [
+    1,
+    1
+   ],
+   "file": "live_Adaptivedeadline-aware_N43_rep2.json"
+  },
+  {
+   "policy": "Adaptive, deadline-aware",
+   "N": 44,
+   "rep": 1,
+   "jobs": 33307,
+   "util": 0.9487862339404,
+   "miss": 2.9513315519260215,
+   "n_miss": 983,
+   "resp_p99_ms": 1012.9618030838834,
+   "resp_max_ms": 1181.8052218437742,
+   "service_mean_ms": 17.09261389024388,
+   "service_max_ms": 26.771385222673416,
+   "min_slack_ms": -522.9275435681166,
+   "agree": 100.0,
+   "sim_util": 0.9862041263018424,
+   "sim_miss": 2.044615246044375,
+   "sim_resp_p99_ms": 878.6649000673455,
+   "sim_resp_max_ms": 1027.9141404897416,
+   "load": [
+    [
+     "0.90",
+     "0.93",
+     "0.95"
+    ],
+    [
+     "0.99",
+     "0.97",
+     "0.99"
+    ]
+   ],
+   "steal": 0,
+   "freq": [
+    3552.263,
+    1093.665
+   ],
+   "torch_threads": [
+    1,
+    1
+   ],
+   "file": "live_Adaptivedeadline-aware_N44_rep1.json"
+  },
+  {
+   "policy": "Adaptive, deadline-aware",
+   "N": 44,
+   "rep": 2,
+   "jobs": 33307,
+   "util": 0.9456389858665062,
+   "miss": 2.2247575584711923,
+   "n_miss": 741,
+   "resp_p99_ms": 1062.5004860878744,
+   "resp_max_ms": 1314.4029119998777,
+   "service_mean_ms": 17.0356009269484,
+   "service_max_ms": 27.668948285281658,
+   "min_slack_ms": -647.4809514806642,
+   "agree": 100.0,
+   "sim_util": 0.9862041263018424,
+   "sim_miss": 2.044615246044375,
+   "sim_resp_p99_ms": 878.6649000673455,
+   "sim_resp_max_ms": 1027.9141404897416,
+   "load": [
+    [
+     "0.99",
+     "0.96",
+     "0.99"
+    ],
+    [
+     "0.95",
+     "0.97",
+     "1.00"
+    ]
+   ],
+   "steal": 0,
+   "freq": [
+    3553.101,
+    1097.346
+   ],
+   "torch_threads": [
+    1,
+    1
+   ],
+   "file": "live_Adaptivedeadline-aware_N44_rep2.json"
+  },
+  {
+   "policy": "Fixed stride 8",
+   "N": 35,
+   "rep": 1,
+   "jobs": 31131,
+   "util": 0.8875705011696707,
+   "miss": 0.0,
+   "n_miss": 0,
+   "resp_p99_ms": 101.75088573703603,
+   "resp_max_ms": 240.10148070769333,
+   "service_mean_ms": 17.107485083618485,
+   "service_max_ms": 27.011136524379253,
+   "min_slack_ms": 406.40351734631906,
+   "agree": 100.0,
+   "sim_util": 0.9220890863332898,
+   "sim_miss": 0.0,
+   "sim_resp_p99_ms": 77.09573462486189,
+   "sim_resp_max_ms": 132.44004427798473,
+   "load": [
+    [
+     "0.21",
+     "0.29",
+     "0.31"
+    ],
+    [
+     "0.82",
+     "0.83",
+     "0.63"
+    ]
+   ],
+   "steal": 0,
+   "freq": [
+    3290.043,
+    1809.304
+   ],
+   "torch_threads": [
+    1,
+    1
+   ],
+   "file": "live_Fixedstride8_N35_rep1.json"
+  },
+  {
+   "policy": "Fixed stride 8",
+   "N": 35,
+   "rep": 2,
+   "jobs": 31131,
+   "util": 0.8886925557380606,
+   "miss": 0.0,
+   "n_miss": 0,
+   "resp_p99_ms": 439.1740700865796,
+   "resp_max_ms": 621.77444908491,
+   "service_mean_ms": 17.129026085878092,
+   "service_max_ms": 28.158643282949924,
+   "min_slack_ms": 18.22555091509004,
+   "agree": 100.0,
+   "sim_util": 0.9220890863332898,
+   "sim_miss": 0.0,
+   "sim_resp_p99_ms": 77.09573462486189,
+   "sim_resp_max_ms": 132.44004427798473,
+   "load": [
+    [
+     "1.00",
+     "1.00",
+     "0.99"
+    ],
+    [
+     "1.07",
+     "1.00",
+     "1.00"
+    ]
+   ],
+   "steal": 0,
+   "freq": [
+    3567.228,
+    1081.841
+   ],
+   "torch_threads": [
+    1,
+    1
+   ],
+   "file": "live_Fixedstride8_N35_rep2.json"
+  },
+  {
+   "policy": "Fixed stride 8",
+   "N": 36,
+   "rep": 1,
+   "jobs": 31884,
+   "util": 0.9034532643250668,
+   "miss": 0.0,
+   "n_miss": 0,
+   "resp_p99_ms": 193.2799368192466,
+   "resp_max_ms": 444.59764452346917,
+   "service_mean_ms": 17.002305017761806,
+   "service_max_ms": 26.57968457788229,
+   "min_slack_ms": 203.05280742924424,
+   "agree": 100.0,
+   "sim_util": 0.9447510783638184,
+   "sim_miss": 0.0,
+   "sim_resp_p99_ms": 92.47654486358671,
+   "sim_resp_max_ms": 163.47051199807083,
+   "load": [
+    [
+     "0.84",
+     "0.83",
+     "0.63"
+    ],
+    [
+     "0.69",
+     "0.89",
+     "0.79"
+    ]
+   ],
+   "steal": 0,
+   "freq": [
+    3139.856,
+    1235.652
+   ],
+   "torch_threads": [
+    1,
+    1
+   ],
+   "file": "live_Fixedstride8_N36_rep1.json"
+  },
+  {
+   "policy": "Fixed stride 8",
+   "N": 36,
+   "rep": 2,
+   "jobs": 31884,
+   "util": 0.8988940839049023,
+   "miss": 0.0,
+   "n_miss": 0,
+   "resp_p99_ms": 381.4223405398268,
+   "resp_max_ms": 545.4999946516494,
+   "service_mean_ms": 16.916389319519467,
+   "service_max_ms": 28.20165827870369,
+   "min_slack_ms": 101.82086911881017,
+   "agree": 100.0,
+   "sim_util": 0.9447510783638184,
+   "sim_miss": 0.0,
+   "sim_resp_p99_ms": 92.47654486358671,
+   "sim_resp_max_ms": 163.47051199807083,
+   "load": [
+    [
+     "1.06",
+     "1.00",
+     "1.00"
+    ],
+    [
+     "0.92",
+     "1.00",
+     "0.99"
+    ]
+   ],
+   "steal": 0,
+   "freq": [
+    3285.856,
+    1336.178
+   ],
+   "torch_threads": [
+    1,
+    1
+   ],
+   "file": "live_Fixedstride8_N36_rep2.json"
+  },
+  {
+   "policy": "Fixed stride 8",
+   "N": 37,
+   "rep": 1,
+   "jobs": 32790,
+   "util": 0.9310631772959398,
+   "miss": 2.0707532784385485,
+   "n_miss": 679,
+   "resp_p99_ms": 820.4803638548657,
+   "resp_max_ms": 997.5688921806807,
+   "service_mean_ms": 17.03755079134367,
+   "service_max_ms": 27.04083453863859,
+   "min_slack_ms": -343.29946991860595,
+   "agree": 100.0,
+   "sim_util": 0.9711792637982095,
+   "sim_miss": 0.0,
+   "sim_resp_p99_ms": 171.36321919147787,
+   "sim_resp_max_ms": 256.59960378470714,
+   "load": [
+    [
+     "0.71",
+     "0.89",
+     "0.79"
+    ],
+    [
+     "1.06",
+     "1.01",
+     "0.92"
+    ]
+   ],
+   "steal": 0,
+   "freq": [
+    3274.902,
+    1126.905
+   ],
+   "torch_threads": [
+    1,
+    1
+   ],
+   "file": "live_Fixedstride8_N37_rep1.json"
+  },
+  {
+   "policy": "Fixed stride 8",
+   "N": 37,
+   "rep": 2,
+   "jobs": 32790,
+   "util": 0.936962321774495,
+   "miss": 2.689844464775846,
+   "n_miss": 882,
+   "resp_p99_ms": 806.6272646161833,
+   "resp_max_ms": 940.7943561928676,
+   "service_mean_ms": 17.145511228790024,
+   "service_max_ms": 27.05594338476658,
+   "min_slack_ms": -289.03638781351106,
+   "agree": 100.0,
+   "sim_util": 0.9711792637982095,
+   "sim_miss": 0.0,
+   "sim_resp_p99_ms": 171.36321919147787,
+   "sim_resp_max_ms": 256.59960378470714,
+   "load": [
+    [
+     "0.92",
+     "1.00",
+     "0.99"
+    ],
+    [
+     "1.00",
+     "1.00",
+     "1.00"
+    ]
+   ],
+   "steal": 0,
+   "freq": [
+    3537.976,
+    1313.347
+   ],
+   "torch_threads": [
+    1,
+    1
+   ],
+   "file": "live_Fixedstride8_N37_rep2.json"
+  },
+  {
+   "policy": "Fixed stride 8",
+   "N": 38,
+   "rep": 1,
+   "jobs": 33692,
+   "util": 0.9603122375762058,
+   "miss": 4.784518580078357,
+   "n_miss": 1612,
+   "resp_p99_ms": 1197.215552737299,
+   "resp_max_ms": 1485.6134298994732,
+   "service_mean_ms": 17.102735144222514,
+   "service_max_ms": 26.827234774827957,
+   "min_slack_ms": -822.3438598960661,
+   "agree": 100.0,
+   "sim_util": 0.9972163012437523,
+   "sim_miss": 0.1424712831319937,
+   "sim_resp_p99_ms": 604.5507285679545,
+   "sim_resp_max_ms": 694.9028623143363,
+   "load": [
+    [
+     "1.05",
+     "1.01",
+     "0.92"
+    ],
+    [
+     "1.00",
+     "1.00",
+     "0.99"
+    ]
+   ],
+   "steal": 0,
+   "freq": [
+    3231.037,
+    1280.511
+   ],
+   "torch_threads": [
+    1,
+    1
+   ],
+   "file": "live_Fixedstride8_N38_rep1.json"
+  },
+  {
+   "policy": "Fixed stride 8",
+   "N": 38,
+   "rep": 2,
+   "jobs": 33692,
+   "util": 0.9729758052245242,
+   "miss": 8.509438442360203,
+   "n_miss": 2867,
+   "resp_p99_ms": 1392.3469853394163,
+   "resp_max_ms": 1602.638844840783,
+   "service_mean_ms": 17.32822073119675,
+   "service_max_ms": 27.627023868262768,
+   "min_slack_ms": -942.3223851307375,
+   "agree": 100.0,
+   "sim_util": 0.9972163012437523,
+   "sim_miss": 0.1424712831319937,
+   "sim_resp_p99_ms": 604.5507285679545,
+   "sim_resp_max_ms": 694.9028623143363,
+   "load": [
+    [
+     "1.00",
+     "1.00",
+     "1.00"
+    ],
+    [
+     "0.90",
+     "0.97",
+     "0.99"
+    ]
+   ],
+   "steal": 0,
+   "freq": [
+    3553.445,
+    1472.369
+   ],
+   "torch_threads": [
+    1,
+    1
+   ],
+   "file": "live_Fixedstride8_N38_rep2.json"
+  }
+ ],
+ "nstar": {
+  "Fixed stride 8": {
+   "sim_nstar": 37,
+   "live_max_zero_miss_all_repeats": 36,
+   "live_N_tested": [
+    35,
+    36,
+    37,
+    38
+   ],
+   "live_zero_miss_N": [
+    35,
+    36
+   ],
+   "sim_zero_miss_N_in_range": [
+    35,
+    36,
+    37
+   ]
+  },
+  "Adaptive 16/8": {
+   "sim_nstar": 45,
+   "live_max_zero_miss_all_repeats": 44,
+   "live_N_tested": [
+    43,
+    44,
+    45,
+    46
+   ],
+   "live_zero_miss_N": [
+    43,
+    44
+   ],
+   "sim_zero_miss_N_in_range": [
+    43,
+    44,
+    45
+   ]
+  },
+  "Adaptive, deadline-aware": {
+   "sim_nstar": 43,
+   "live_max_zero_miss_all_repeats": 0,
+   "live_N_tested": [
+    41,
+    42,
+    43,
+    44
+   ],
+   "live_zero_miss_N": [],
+   "sim_zero_miss_N_in_range": [
+    41,
+    42,
+    43
+   ]
+  }
+ },
+ "single": {
+  "Fixed stride 8": {
+   "jobs": 729,
+   "miss": 0.0,
+   "n_miss": 0,
+   "service_mean_ms": 18.049063882822445,
+   "service_max_ms": 27.625647373497486,
+   "resp_p99_ms": 22.541705842426726,
+   "resp_max_ms": 27.694357000527248,
+   "agree": 100.0,
+   "n_disagree": 0,
+   "max_abs_score_diff": 0.0
+  },
+  "Adaptive 16/8": {
+   "jobs": 591,
+   "miss": 0.0,
+   "n_miss": 0,
+   "service_mean_ms": 17.801000886358786,
+   "service_max_ms": 23.996997624635696,
+   "resp_p99_ms": 22.576360497872376,
+   "resp_max_ms": 24.171917078390948,
+   "agree": 100.0,
+   "n_disagree": 0,
+   "max_abs_score_diff": 0.0
+  },
+  "Adaptive, deadline-aware": {
+   "jobs": 646,
+   "miss": 0.0,
+   "n_miss": 0,
+   "service_mean_ms": 18.00189239777417,
+   "service_max_ms": 26.992682367563248,
+   "resp_p99_ms": 22.686309833079708,
+   "resp_max_ms": 27.058923974660587,
+   "agree": 100.0,
+   "n_disagree": 0,
+   "max_abs_score_diff": 0.0
+  }
+ },
+ "single_meta": {
+  "loadavg_start": [
+   "0.95",
+   "0.97",
+   "1.00"
+  ],
+  "loadavg_end": [
+   "0.02",
+   "0.05",
+   "0.22"
+  ],
+  "steal_start": 0,
+  "steal_end": 0,
+  "torch_threads": 1,
+  "torch_threads_end": 1
+ }
+}

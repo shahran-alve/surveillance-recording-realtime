@@ -1,0 +1,963 @@
+{
+ "host": "ciscluster",
+ "pid": 3452105,
+ "core": 2,
+ "core2": 4,
+ "torch": "2.14.1+cpu",
+ "cv2": "5.0.0",
+ "numpy": "2.4.6",
+ "python": "3.11.7",
+ "cuda": false,
+ "start": 1794544361.9863174,
+ "loadavg_start": [
+  "0.49",
+  "1.16",
+  "1.36"
+ ],
+ "steal_start": 0,
+ "freq_start": 3685.365,
+ "cpustat_start": [
+  974577,
+  2298,
+  267728,
+  735069722,
+  30824,
+  93839,
+  485225,
+  0,
+  0,
+  0
+ ],
+ "per_cfg": [
+  {
+   "clip": "one-by-one",
+   "size": 640,
+   "threads": 1,
+   "n": 1394,
+   "steal_delta": 0,
+   "freq_before": 1478.874,
+   "freq_after": 1555.469,
+   "wall": 83.99473738670349,
+   "cpustat_delta": [
+    7224,
+    0,
+    1147,
+    1,
+    0,
+    26,
+    1,
+    0,
+    0,
+    0
+   ],
+   "affinity_main": [
+    2
+   ],
+   "n_threads": 1,
+   "torch_threads": 1,
+   "affinity_all": [
+    [
+     2
+    ]
+   ]
+  },
+  {
+   "clip": "one-by-one",
+   "size": 640,
+   "threads": 2,
+   "n": 1394,
+   "steal_delta": 0,
+   "freq_before": 3529.633,
+   "freq_after": 1748.145,
+   "wall": 48.11595439910889,
+   "cpustat_delta": [
+    3763,
+    0,
+    103,
+    897,
+    0,
+    11,
+    2,
+    0,
+    0,
+    0
+   ],
+   "affinity_main": [
+    2,
+    4
+   ],
+   "n_threads": 3,
+   "torch_threads": 2,
+   "affinity_all": [
+    [
+     2,
+     4
+    ]
+   ]
+  },
+  {
+   "clip": "one-by-one",
+   "size": 480,
+   "threads": 1,
+   "n": 1394,
+   "steal_delta": 0,
+   "freq_before": 1748.145,
+   "freq_after": 1293.541,
+   "wall": 43.60430717468262,
+   "cpustat_delta": [
+    4317,
+    0,
+    26,
+    1,
+    0,
+    16,
+    0,
+    0,
+    0,
+    0
+   ],
+   "affinity_main": [
+    2
+   ],
+   "n_threads": 2,
+   "torch_threads": 1,
+   "affinity_all": [
+    [
+     2
+    ]
+   ]
+  },
+  {
+   "clip": "one-by-one",
+   "size": 320,
+   "threads": 1,
+   "n": 1394,
+   "steal_delta": 0,
+   "freq_before": 1293.541,
+   "freq_after": 1148.429,
+   "wall": 24.67579221725464,
+   "cpustat_delta": [
+    2446,
+    0,
+    11,
+    1,
+    0,
+    9,
+    1,
+    0,
+    0,
+    0
+   ],
+   "affinity_main": [
+    2
+   ],
+   "n_threads": 2,
+   "torch_threads": 1,
+   "affinity_all": [
+    [
+     2
+    ]
+   ]
+  },
+  {
+   "clip": "people",
+   "size": 640,
+   "threads": 1,
+   "n": 596,
+   "steal_delta": 0,
+   "freq_before": 1548.177,
+   "freq_after": 1337.684,
+   "wall": 29.28988027572632,
+   "cpustat_delta": [
+    2915,
+    0,
+    3,
+    2,
+    0,
+    9,
+    0,
+    0,
+    0,
+    0
+   ],
+   "affinity_main": [
+    2
+   ],
+   "n_threads": 2,
+   "torch_threads": 1,
+   "affinity_all": [
+    [
+     2
+    ]
+   ]
+  },
+  {
+   "clip": "people",
+   "size": 640,
+   "threads": 2,
+   "n": 596,
+   "steal_delta": 0,
+   "freq_before": 1337.684,
+   "freq_after": 1806.48,
+   "wall": 24.457722902297974,
+   "cpustat_delta": [
+    1742,
+    0,
+    318,
+    382,
+    0,
+    6,
+    1,
+    0,
+    0,
+    0
+   ],
+   "affinity_main": [
+    2,
+    4
+   ],
+   "n_threads": 3,
+   "torch_threads": 2,
+   "affinity_all": [
+    [
+     2,
+     4
+    ]
+   ]
+  },
+  {
+   "clip": "people",
+   "size": 480,
+   "threads": 1,
+   "n": 596,
+   "steal_delta": 0,
+   "freq_before": 1806.48,
+   "freq_after": 1140.602,
+   "wall": 17.738895177841187,
+   "cpustat_delta": [
+    1753,
+    0,
+    12,
+    1,
+    0,
+    6,
+    0,
+    0,
+    0,
+    0
+   ],
+   "affinity_main": [
+    2
+   ],
+   "n_threads": 2,
+   "torch_threads": 1,
+   "affinity_all": [
+    [
+     2
+    ]
+   ]
+  },
+  {
+   "clip": "people",
+   "size": 320,
+   "threads": 1,
+   "n": 596,
+   "steal_delta": 0,
+   "freq_before": 1140.602,
+   "freq_after": 1301.829,
+   "wall": 10.456907272338867,
+   "cpustat_delta": [
+    1013,
+    0,
+    28,
+    1,
+    0,
+    4,
+    0,
+    0,
+    0,
+    0
+   ],
+   "affinity_main": [
+    2
+   ],
+   "n_threads": 2,
+   "torch_threads": 1,
+   "affinity_all": [
+    [
+     2
+    ]
+   ]
+  },
+  {
+   "clip": "person-bike-car",
+   "size": 640,
+   "threads": 1,
+   "n": 647,
+   "steal_delta": 0,
+   "freq_before": 1155.069,
+   "freq_after": 1575.135,
+   "wall": 32.587843894958496,
+   "cpustat_delta": [
+    3244,
+    0,
+    1,
+    1,
+    0,
+    11,
+    1,
+    0,
+    0,
+    0
+   ],
+   "affinity_main": [
+    2
+   ],
+   "n_threads": 2,
+   "torch_threads": 1,
+   "affinity_all": [
+    [
+     2
+    ]
+   ]
+  },
+  {
+   "clip": "person-bike-car",
+   "size": 640,
+   "threads": 2,
+   "n": 647,
+   "steal_delta": 0,
+   "freq_before": 1575.135,
+   "freq_after": 1743.213,
+   "wall": 21.596574306488037,
+   "cpustat_delta": [
+    1753,
+    0,
+    36,
+    366,
+    0,
+    6,
+    1,
+    0,
+    0,
+    0
+   ],
+   "affinity_main": [
+    2,
+    4
+   ],
+   "n_threads": 3,
+   "torch_threads": 2,
+   "affinity_all": [
+    [
+     2,
+     4
+    ]
+   ]
+  },
+  {
+   "clip": "person-bike-car",
+   "size": 480,
+   "threads": 1,
+   "n": 647,
+   "steal_delta": 0,
+   "freq_before": 1743.213,
+   "freq_after": 1301.472,
+   "wall": 19.263179779052734,
+   "cpustat_delta": [
+    1904,
+    0,
+    14,
+    1,
+    0,
+    6,
+    0,
+    0,
+    0,
+    0
+   ],
+   "affinity_main": [
+    2
+   ],
+   "n_threads": 2,
+   "torch_threads": 1,
+   "affinity_all": [
+    [
+     2
+    ]
+   ]
+  },
+  {
+   "clip": "person-bike-car",
+   "size": 320,
+   "threads": 1,
+   "n": 647,
+   "steal_delta": 0,
+   "freq_before": 1301.472,
+   "freq_after": 1160.198,
+   "wall": 11.007060527801514,
+   "cpustat_delta": [
+    1095,
+    0,
+    2,
+    1,
+    0,
+    4,
+    0,
+    0,
+    0,
+    0
+   ],
+   "affinity_main": [
+    2
+   ],
+   "n_threads": 2,
+   "torch_threads": 1,
+   "affinity_all": [
+    [
+     2
+    ]
+   ]
+  },
+  {
+   "clip": "walk-and-pause",
+   "size": 640,
+   "threads": 1,
+   "n": 1091,
+   "steal_delta": 0,
+   "freq_before": 1128.711,
+   "freq_after": 1205.58,
+   "wall": 51.7718505859375,
+   "cpustat_delta": [
+    5146,
+    0,
+    12,
+    1,
+    0,
+    16,
+    1,
+    0,
+    0,
+    0
+   ],
+   "affinity_main": [
+    2
+   ],
+   "n_threads": 2,
+   "torch_threads": 1,
+   "affinity_all": [
+    [
+     2
+    ]
+   ]
+  },
+  {
+   "clip": "walk-and-pause",
+   "size": 640,
+   "threads": 2,
+   "n": 1091,
+   "steal_delta": 0,
+   "freq_before": 1205.58,
+   "freq_after": 1509.427,
+   "wall": 37.82162427902222,
+   "cpustat_delta": [
+    3014,
+    0,
+    66,
+    673,
+    0,
+    9,
+    1,
+    0,
+    0,
+    0
+   ],
+   "affinity_main": [
+    2,
+    4
+   ],
+   "n_threads": 3,
+   "torch_threads": 2,
+   "affinity_all": [
+    [
+     2,
+     4
+    ]
+   ]
+  },
+  {
+   "clip": "walk-and-pause",
+   "size": 480,
+   "threads": 1,
+   "n": 1091,
+   "steal_delta": 0,
+   "freq_before": 1509.427,
+   "freq_after": 1420.364,
+   "wall": 32.26766395568848,
+   "cpustat_delta": [
+    3192,
+    0,
+    22,
+    1,
+    0,
+    11,
+    1,
+    0,
+    0,
+    0
+   ],
+   "affinity_main": [
+    2
+   ],
+   "n_threads": 2,
+   "torch_threads": 1,
+   "affinity_all": [
+    [
+     2
+    ]
+   ]
+  },
+  {
+   "clip": "walk-and-pause",
+   "size": 320,
+   "threads": 1,
+   "n": 1091,
+   "steal_delta": 0,
+   "freq_before": 1420.364,
+   "freq_after": 1427.925,
+   "wall": 18.696520805358887,
+   "cpustat_delta": [
+    1843,
+    0,
+    19,
+    1,
+    0,
+    7,
+    0,
+    0,
+    0,
+    0
+   ],
+   "affinity_main": [
+    2
+   ],
+   "n_threads": 2,
+   "torch_threads": 1,
+   "affinity_all": [
+    [
+     2
+    ]
+   ]
+  },
+  {
+   "clip": "worker-zone",
+   "size": 640,
+   "threads": 1,
+   "n": 910,
+   "steal_delta": 0,
+   "freq_before": 1356.622,
+   "freq_after": 1505.995,
+   "wall": 45.69581341743469,
+   "cpustat_delta": [
+    4530,
+    0,
+    22,
+    1,
+    0,
+    15,
+    1,
+    0,
+    0,
+    0
+   ],
+   "affinity_main": [
+    2
+   ],
+   "n_threads": 2,
+   "torch_threads": 1,
+   "affinity_all": [
+    [
+     2
+    ]
+   ]
+  },
+  {
+   "clip": "worker-zone",
+   "size": 640,
+   "threads": 2,
+   "n": 910,
+   "steal_delta": 0,
+   "freq_before": 1505.995,
+   "freq_after": 2074.839,
+   "wall": 30.508535861968994,
+   "cpustat_delta": [
+    2424,
+    0,
+    51,
+    539,
+    0,
+    7,
+    1,
+    0,
+    0,
+    0
+   ],
+   "affinity_main": [
+    2,
+    4
+   ],
+   "n_threads": 3,
+   "torch_threads": 2,
+   "affinity_all": [
+    [
+     2,
+     4
+    ]
+   ]
+  },
+  {
+   "clip": "worker-zone",
+   "size": 480,
+   "threads": 1,
+   "n": 910,
+   "steal_delta": 0,
+   "freq_before": 2074.839,
+   "freq_after": 1146.5,
+   "wall": 26.932004690170288,
+   "cpustat_delta": [
+    2664,
+    0,
+    18,
+    1,
+    0,
+    10,
+    0,
+    0,
+    0,
+    0
+   ],
+   "affinity_main": [
+    2
+   ],
+   "n_threads": 2,
+   "torch_threads": 1,
+   "affinity_all": [
+    [
+     2
+    ]
+   ]
+  },
+  {
+   "clip": "worker-zone",
+   "size": 320,
+   "threads": 1,
+   "n": 910,
+   "steal_delta": 0,
+   "freq_before": 1146.5,
+   "freq_after": 1475.829,
+   "wall": 15.467043161392212,
+   "cpustat_delta": [
+    1538,
+    0,
+    2,
+    1,
+    0,
+    5,
+    1,
+    0,
+    0,
+    0
+   ],
+   "affinity_main": [
+    2
+   ],
+   "n_threads": 2,
+   "torch_threads": 1,
+   "affinity_all": [
+    [
+     2
+    ]
+   ]
+  },
+  {
+   "clip": "car-lot",
+   "size": 640,
+   "threads": 1,
+   "n": 377,
+   "steal_delta": 0,
+   "freq_before": 3672.924,
+   "freq_after": 1799.33,
+   "wall": 18.40081787109375,
+   "cpustat_delta": [
+    1824,
+    0,
+    9,
+    1,
+    0,
+    6,
+    0,
+    0,
+    0,
+    0
+   ],
+   "affinity_main": [
+    2
+   ],
+   "n_threads": 2,
+   "torch_threads": 1,
+   "affinity_all": [
+    [
+     2
+    ]
+   ]
+  },
+  {
+   "clip": "car-lot",
+   "size": 640,
+   "threads": 2,
+   "n": 377,
+   "steal_delta": 0,
+   "freq_before": 1799.33,
+   "freq_after": 1771.888,
+   "wall": 13.829929828643799,
+   "cpustat_delta": [
+    1096,
+    0,
+    23,
+    249,
+    0,
+    3,
+    0,
+    0,
+    0,
+    0
+   ],
+   "affinity_main": [
+    2,
+    4
+   ],
+   "n_threads": 3,
+   "torch_threads": 2,
+   "affinity_all": [
+    [
+     2,
+     4
+    ]
+   ]
+  },
+  {
+   "clip": "car-lot",
+   "size": 480,
+   "threads": 1,
+   "n": 377,
+   "steal_delta": 0,
+   "freq_before": 1771.888,
+   "freq_after": 1174.241,
+   "wall": 11.275967121124268,
+   "cpustat_delta": [
+    1122,
+    0,
+    0,
+    1,
+    0,
+    4,
+    1,
+    0,
+    0,
+    0
+   ],
+   "affinity_main": [
+    2
+   ],
+   "n_threads": 2,
+   "torch_threads": 1,
+   "affinity_all": [
+    [
+     2
+    ]
+   ]
+  },
+  {
+   "clip": "car-lot",
+   "size": 320,
+   "threads": 1,
+   "n": 377,
+   "steal_delta": 0,
+   "freq_before": 1174.241,
+   "freq_after": 1175.3,
+   "wall": 6.521215200424194,
+   "cpustat_delta": [
+    649,
+    0,
+    0,
+    1,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0
+   ],
+   "affinity_main": [
+    2
+   ],
+   "n_threads": 2,
+   "torch_threads": 1,
+   "affinity_all": [
+    [
+     2
+    ]
+   ]
+  },
+  {
+   "clip": "store-aisle",
+   "size": 640,
+   "threads": 1,
+   "n": 785,
+   "steal_delta": 0,
+   "freq_before": 1132.917,
+   "freq_after": 1574.557,
+   "wall": 37.972933769226074,
+   "cpustat_delta": [
+    3777,
+    0,
+    7,
+    1,
+    0,
+    12,
+    0,
+    0,
+    0,
+    0
+   ],
+   "affinity_main": [
+    2
+   ],
+   "n_threads": 2,
+   "torch_threads": 1,
+   "affinity_all": [
+    [
+     2
+    ]
+   ]
+  },
+  {
+   "clip": "store-aisle",
+   "size": 640,
+   "threads": 2,
+   "n": 785,
+   "steal_delta": 0,
+   "freq_before": 1574.557,
+   "freq_after": 1526.418,
+   "wall": 26.220689296722412,
+   "cpustat_delta": [
+    2097,
+    0,
+    43,
+    451,
+    0,
+    7,
+    1,
+    0,
+    0,
+    0
+   ],
+   "affinity_main": [
+    2,
+    4
+   ],
+   "n_threads": 3,
+   "torch_threads": 2,
+   "affinity_all": [
+    [
+     2,
+     4
+    ]
+   ]
+  },
+  {
+   "clip": "store-aisle",
+   "size": 480,
+   "threads": 1,
+   "n": 785,
+   "steal_delta": 0,
+   "freq_before": 1526.418,
+   "freq_after": 1453.023,
+   "wall": 23.7500958442688,
+   "cpustat_delta": [
+    2353,
+    0,
+    13,
+    2,
+    0,
+    8,
+    0,
+    0,
+    0,
+    0
+   ],
+   "affinity_main": [
+    2
+   ],
+   "n_threads": 2,
+   "torch_threads": 1,
+   "affinity_all": [
+    [
+     2
+    ]
+   ]
+  },
+  {
+   "clip": "store-aisle",
+   "size": 320,
+   "threads": 1,
+   "n": 785,
+   "steal_delta": 0,
+   "freq_before": 1453.023,
+   "freq_after": 1631.005,
+   "wall": 13.624143600463867,
+   "cpustat_delta": [
+    1356,
+    0,
+    0,
+    1,
+    0,
+    5,
+    1,
+    0,
+    0,
+    0
+   ],
+   "affinity_main": [
+    2
+   ],
+   "n_threads": 2,
+   "torch_threads": 1,
+   "affinity_all": [
+    [
+     2
+    ]
+   ]
+  }
+ ],
+ "end": 1794545178.9754674,
+ "loadavg_end": [
+  "1.13",
+  "1.13",
+  "1.21"
+ ],
+ "steal_end": 0,
+ "freq_end": 2687.824,
+ "cpustat_end": [
+  1049927,
+  2298,
+  270010,
+  735073315,
+  30915,
+  94088,
+  485241,
+  0,
+  0,
+  0
+ ]
+}

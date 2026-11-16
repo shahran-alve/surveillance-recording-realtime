@@ -1,0 +1,8 @@
+one-by-one Adaptive, deadline-aware captured 1394 det jobs 166 written 1244 lost 0 det_lost 0 service ms mean/max 56.9 66.9 decode ms mean/max 1.12 4.78 late ms mean/max 1.24 4.91 write ms mean/max 2.43 4.04 segments 5
+people Adaptive, deadline-aware captured 596 det jobs 59 written 360 lost 0 det_lost 0 service ms mean/max 49.7 60.7 decode ms mean/max 1.19 2.98 late ms mean/max 1.31 3.11 write ms mean/max 2.24 3.01 segments 4
+person-bike-car Adaptive, deadline-aware captured 647 det jobs 65 written 428 lost 0 det_lost 0 service ms mean/max 50.0 56.1 decode ms mean/max 1.19 2.34 late ms mean/max 1.31 2.46 write ms mean/max 2.06 3.12 segments 4
+walk-and-pause Adaptive, deadline-aware captured 1091 det jobs 119 written 808 lost 0 det_lost 0 service ms mean/max 50.6 61.6 decode ms mean/max 1.24 2.99 late ms mean/max 1.36 3.11 write ms mean/max 2.09 7.24 segments 4
+worker-zone Adaptive, deadline-aware captured 910 det jobs 107 written 862 lost 0 det_lost 0 service ms mean/max 66.2 103.9 decode ms mean/max 32.4 64.15 late ms mean/max 32.54 71.61 write ms mean/max 3.04 15.79 segments 3
+car-lot Adaptive, deadline-aware captured 377 det jobs 33 written 85 lost 0 det_lost 0 service ms mean/max 48.9 57.8 decode ms mean/max 1.19 2.37 late ms mean/max 1.31 2.51 write ms mean/max 2.03 2.61 segments 1
+store-aisle Adaptive, deadline-aware captured 785 det jobs 95 written 709 lost 0 det_lost 0 service ms mean/max 50.1 61.9 decode ms mean/max 4.55 13.32 late ms mean/max 4.67 13.44 write ms mean/max 3.51 7.68 segments 1
+DONE /u/erdos/csga2/mmahmud9/smart-surveillance-realtime/results/rt_ciscluster/e3/recorder_Adaptive_deadline-aware_cores2.json

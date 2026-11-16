@@ -1,10 +1,11 @@
 """Figures for the real-time analysis (Springer style: sans-serif, >= 8 pt at final size, vector, embedded TrueType fonts)."""
 import json, csv, numpy as np, matplotlib
+import os; ROOT = os.environ.get('SS_ROOT', '/root')
 matplotlib.use('Agg'); import matplotlib.pyplot as plt
 plt.rcParams.update({'font.family': 'sans-serif', 'font.sans-serif': ['DejaVu Sans'], 'font.size': 8, 'axes.spines.top': False, 'axes.spines.right': False, 'axes.linewidth': 0.6,
                      'xtick.major.width': 0.6, 'ytick.major.width': 0.6, 'pdf.fonttype': 42, 'legend.fontsize': 7.5})
 BLUE, ORANGE, GREEN, PURPLE, GREY, INK = '#2a78d6', '#eb6834', '#1baf7a', '#4a3aa7', '#8a8880', '#333333'
-R = '/root/results/rt/'; A = json.load(open(R + 'analysis.json')); OUT = '/root/jrtip/paper/fig/'
+R = ROOT + '/results/rt/'; A = json.load(open(R + 'analysis.json')); OUT = ROOT + '/jrtip/paper/fig/'
 LM = np.load(R + 'lat_motion.npz'); LD = np.load(R + 'lat_det.npz')
 def pool(z, pre): return 1e3 * np.concatenate([z[k][10:] for k in z.files if k.startswith(pre)])
 
@@ -26,7 +27,7 @@ a.grid(axis='x', lw=0.4, color='#e5e5e5'); a.set_axisbelow(True)
 fig.savefig(OUT + 'Fig3.pdf', bbox_inches='tight', pad_inches=0.02); plt.close(fig)
 
 # ---------- Fig4: idle frames stored under perturbation (thresholds fixed from clean video)
-Rr = list(csv.DictReader(open('/root/results/event_lovo.csv'))); get = lambda m, k: 100 * float([r for r in Rr if r['method'] == m and r['kind'] == k][0]['idle_kept'])
+Rr = list(csv.DictReader(open(ROOT + '/results/event_lovo.csv'))); get = lambda m, k: 100 * float([r for r in Rr if r['method'] == m and r['kind'] == k][0]['idle_kept'])
 meth = [('FD', 'FD'), ('FLOW', 'Flow'), ('MOG2', 'MOG2'), ('KNN', 'KNN'), ('CNT', 'CNT'), ('GSOC', 'GSOC'), ('Detector (every frame)', 'Det\nk=1'), ('Detector (every 8th frame)', 'Det\nk=8'), ('Hybrid: MOG2 gate + detector', 'MOG2\n+det')]
 kinds = [('clean', 'Clean', GREY, ''), ('illum', 'Illumination steps', ORANGE, '///'), ('jitter', 'Camera jitter', BLUE, '')]
 fig, a = plt.subplots(figsize=(3.3, 2.2)); w = 0.27
@@ -57,7 +58,7 @@ b.legend(frameon=False, loc='upper left'); b.grid(lw=0.4, color='#e5e5e5'); b.se
 fig.tight_layout(w_pad=1.2); fig.savefig(OUT + 'Fig5.pdf', bbox_inches='tight', pad_inches=0.02); plt.close(fig)
 
 # ---------- Fig6: accuracy vs latency on VisDrone
-M = json.load(open('/root/results/det/det_metrics.json')); L = json.load(open('/root/results/rt/latency_visdrone.json'))
+M = json.load(open(ROOT + '/results/det/det_metrics.json')); L = json.load(open(ROOT + '/results/rt/latency_visdrone.json'))
 fig, a = plt.subplots(figsize=(3.3, 2.5))
 for series, col, ls, mk, name in [(['yolo11n_640', 'yolo11n_960', 'yolo11n_1280'], BLUE, '-', 'o', 'YOLO11n'), (['yolo11s_640', 'yolo11s_960', 'yolo11s_1280'], BLUE, '--', 's', 'YOLO11s'),
                                   (['yolo26n_640', 'yolo26n_960', 'yolo26n_1280'], ORANGE, '-', 'o', 'YOLO26n'), (['yolo26s_640', 'yolo26s_960', 'yolo26s_1280'], ORANGE, '--', 's', 'YOLO26s')]:

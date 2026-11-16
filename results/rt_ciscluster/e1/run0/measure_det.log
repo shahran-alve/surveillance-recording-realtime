@@ -1,0 +1,46 @@
+BEFORE t=1794540872 load=0.39 2.23 3.56 steal=0 MHz=2986
+one-by-one 640 1 56.3 63.6
+one-by-one 640 2 39.2 46.1
+one-by-one 480 1 30.5 33.4
+one-by-one 320 1 17.1 18.8
+people 640 1 51.3 59.6
+people 640 2 37.2 42.6
+people 480 1 29.8 32.2
+people 320 1 16.6 18.6
+person-bike-car 640 1 48.8 52.0
+person-bike-car 640 2 33.8 38.7
+person-bike-car 480 1 29.6 31.6
+person-bike-car 320 1 16.9 19.3
+walk-and-pause 640 1 47.2 53.1
+walk-and-pause 640 2 33.1 37.3
+walk-and-pause 480 1 30.2 32.2
+walk-and-pause 320 1 17.0 19.7
+worker-zone 640 1 48.4 56.0
+worker-zone 640 2 33.6 36.8
+worker-zone 480 1 29.3 34.1
+worker-zone 320 1 18.8 21.8
+car-lot 640 1 47.9 52.8
+car-lot 640 2 34.2 41.0
+car-lot 480 1 28.8 31.6
+car-lot 320 1 16.5 18.9
+store-aisle 640 1 47.8 51.8
+store-aisle 640 2 33.1 38.0
+store-aisle 480 1 29.9 35.9
+store-aisle 320 1 16.7 21.5
+scores illum one-by-one
+scores illum people
+scores illum person-bike-car
+scores illum walk-and-pause
+scores illum worker-zone
+scores illum car-lot
+scores illum store-aisle
+scores jitter one-by-one
+scores jitter people
+scores jitter person-bike-car
+scores jitter walk-and-pause
+scores jitter worker-zone
+scores jitter car-lot
+scores jitter store-aisle
+DONE 2.14.1+cpu
+exit=0
+AFTER t=1794541974 load=2.13 1.87 2.28 steal=0 MHz=1147

@@ -1,0 +1,12 @@
+2000 mean 51.3 p99 62.8 max 78.4 MHz 1668.657 steal 0
+4000 mean 50.9 p99 61.1 max 78.4 MHz 1750.529 steal 0
+6000 mean 50.8 p99 61.0 max 78.4 MHz 3170.271 steal 0
+8000 mean 50.7 p99 60.0 max 78.4 MHz 1693.483 steal 0
+10000 mean 51.1 p99 60.7 max 78.4 MHz 1651.74 steal 0
+12000 mean 51.1 p99 60.2 max 78.4 MHz 1564.936 steal 0
+14000 mean 51.1 p99 60.1 max 78.4 MHz 1356.426 steal 0
+16000 mean 51.2 p99 60.0 max 78.4 MHz 1779.199 steal 0
+18000 mean 51.4 p99 61.2 max 78.4 MHz 1727.917 steal 0
+20000 mean 51.5 p99 61.1 max 78.4 MHz 1666.506 steal 0
+22000 mean 51.7 p99 62.4 max 78.5 MHz 1585.705 steal 0
+DONE b2b 640 jobs 23169 mean 51.75 p99 62.29 p99.9 67.34 max 78.55 steal 0

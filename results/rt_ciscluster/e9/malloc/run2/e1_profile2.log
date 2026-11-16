@@ -1,0 +1,12 @@
+BEFORE t=1794616716 load=1.06 1.03 0.96 steal=0
+warmup 1627 jobs 73.8 ms mean 106.9 max sys jiffies 3485
+people 640 1 73.7 91.4 100.2 sys share 0.291 minflt/s 168752 steal 0 aff [2] torch_threads 1
+person-bike-car 640 1 74.7 82.8 94.7 sys share 0.303 minflt/s 180672 steal 0 aff [2] torch_threads 1
+walk-and-pause 640 1 91.1 103.7 113.7 sys share 0.292 minflt/s 178034 steal 0 aff [2] torch_threads 1
+worker-zone 640 1 87.8 94.5 102.5 sys share 0.267 minflt/s 157459 steal 0 aff [2] torch_threads 1
+car-lot 640 1 90.3 98.8 102.6 sys share 0.283 minflt/s 160468 steal 0 aff [2] torch_threads 1
+store-aisle 640 1 88.0 93.8 97.4 sys share 0.268 minflt/s 157724 steal 0 aff [2] torch_threads 1
+one-by-one 640 1 91.8 101.3 106.3 sys share 0.289 minflt/s 171870 steal 0 aff [2] torch_threads 1
+DONE 2.14.1+cpu steal delta total 0
+exit=0
+AFTER t=1794617395 load=2.01 1.82 1.40 steal=0

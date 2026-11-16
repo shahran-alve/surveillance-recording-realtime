@@ -1,0 +1,15 @@
+Clean 640-px YOLO11n scores on this machine (det_scores.py, 1 thread) vs original results/rt/lat_det.npz score|640|1|<clip>
+one-by-one        n=1394/1394 max|diff|=0.000000 mean|diff|=0.00e+00 n_diff>1e-3=0 decisions@0.2 agree=True (0 differ) pos_rate=76.8% orig=76.8%
+people            n=596/596 max|diff|=0.000000 mean|diff|=0.00e+00 n_diff>1e-3=0 decisions@0.2 agree=True (0 differ) pos_rate=38.6% orig=38.6%
+person-bike-car   n=647/647 max|diff|=0.000000 mean|diff|=0.00e+00 n_diff>1e-3=0 decisions@0.2 agree=True (0 differ) pos_rate=40.3% orig=40.3%
+walk-and-pause    n=1091/1091 max|diff|=0.000000 mean|diff|=0.00e+00 n_diff>1e-3=0 decisions@0.2 agree=True (0 differ) pos_rate=62.6% orig=62.6%
+worker-zone       n=910/910 max|diff|=0.000000 mean|diff|=0.00e+00 n_diff>1e-3=0 decisions@0.2 agree=True (0 differ) pos_rate=79.2% orig=79.2%
+car-lot           n=377/377 max|diff|=0.000000 mean|diff|=0.00e+00 n_diff>1e-3=0 decisions@0.2 agree=True (0 differ) pos_rate=6.9% orig=6.9%
+store-aisle       n=785/785 max|diff|=0.000000 mean|diff|=0.00e+00 n_diff>1e-3=0 decisions@0.2 agree=True (0 differ) pos_rate=88.2% orig=88.2%
+
+side check: 8-thread (killed partial run) vs 1-thread scores on this machine
+yolo11n_one-by-one_clean.npy max|diff| 2.56e-06 decisions agree True
+yolo11n_one-by-one_illum.npy max|diff| 2.53e-06 decisions agree True
+yolo11n_one-by-one_jitter.npy max|diff| 1.85e-06 decisions agree True
+yolo11n_people_clean.npy max|diff| 2.74e-06 decisions agree True
+yolo11n_people_jitter.npy max|diff| 3.28e-06 decisions agree True

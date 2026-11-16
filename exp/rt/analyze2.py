@@ -1,9 +1,10 @@
 """Second-stage real-time analysis: (1) load of motion-gated hybrids vs. strided detector, (2) wall-clock validation summary."""
 import sys, json, re, numpy as np
-sys.path.insert(0, '/root/exp')
+import os; ROOT = os.environ.get('SS_ROOT', '/root')
+sys.path.insert(0, ROOT + '/exp')
 import event_eval as EV, event_analysis as EA
 from event_analysis import VIDS, FPS, load
-R = '/root/results/rt/'; A = json.load(open(R + 'analysis.json')); TH = A['theta']
+R = ROOT + '/results/rt/'; A = json.load(open(R + 'analysis.json')); TH = A['theta']
 LM = np.load(R + 'lat_motion.npz'); LD = np.load(R + 'lat_det.npz'); out = {}
 def fifo(release, service):
     fin = np.empty(len(release)); t = 0.0
@@ -11,7 +12,7 @@ def fifo(release, service):
         t = max(t, release[i]) + service[i]; fin[i] = t
     return fin - release
 # ---- 1  hybrids: per-frame job = gate (+ detector if the gate is open); deadline T
-THR = json.load(open('/root/results/event_thresholds.json'))
+THR = json.load(open(ROOT + '/results/event_thresholds.json'))
 def parse(s): return [float(x) for x in re.findall(r'float64\(([^)]+)\)', s)]
 out['hybrid'] = {}
 for g in ['MOG2', 'CNT', 'FD']:

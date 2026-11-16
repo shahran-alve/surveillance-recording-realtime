@@ -1,0 +1,12 @@
+load=3.04 2.15 1.83
+warmup 2014 jobs 59.6 ms mean 77.3 max sys jiffies 805
+car-lot 640 1 60.4 66.8 72.2 sys share 0.106 minflt/s 54827 steal 0 aff [2] torch_threads 1
+store-aisle 640 1 61.3 69.9 84.3 sys share 0.104 minflt/s 51320 steal 0 aff [2] torch_threads 1
+one-by-one 640 1 61.3 66.7 71.1 sys share 0.102 minflt/s 52492 steal 0 aff [2] torch_threads 1
+people 640 1 61.5 67.7 78.0 sys share 0.090 minflt/s 51761 steal 0 aff [2] torch_threads 1
+person-bike-car 640 1 60.4 65.1 76.0 sys share 0.095 minflt/s 55053 steal 0 aff [2] torch_threads 1
+walk-and-pause 640 1 60.9 70.0 91.8 sys share 0.093 minflt/s 50713 steal 0 aff [2] torch_threads 1
+worker-zone 640 1 61.5 67.6 72.8 sys share 0.098 minflt/s 55384 steal 0 aff [2] torch_threads 1
+DONE 2.14.1+cpu steal delta total 0
+exit=0
+load=2.40 2.23 2.03

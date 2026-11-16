@@ -1,5 +1,6 @@
 import sys, json, numpy as np, pandas as pd
-sys.path.insert(0, '/root/exp')
+import os; ROOT = os.environ.get('SS_ROOT', '/root')
+sys.path.insert(0, ROOT + '/exp')
 from event_eval import *
 VIDS = list(VIDEOS); TARGET = 0.95
 MGRID = np.concatenate([[0], np.logspace(-5, -0.5, 46)]); DGRID = np.round(np.arange(0.05, 0.96, 0.05), 2)
@@ -51,6 +52,6 @@ if __name__ == '__main__':
             rows.append(p)
             for r in R: per_video.append(dict(method=name, kind=k, video=r['video'], stored=r['stored'], frame_recall=r['frame_recall'], idle_kept=r['idle_kept'], ev_full=(r['ev_cov'] >= 0.9).mean()))
         print(name, {k: {m: round(float(x), 3) for m, x in p.items() if not isinstance(x, str)} for k, (p, _) in res.items()}, flush=True)
-    pd.DataFrame(rows).to_csv('/root/results/event_lovo.csv', index=False)
-    pd.DataFrame(per_video).to_csv('/root/results/event_lovo_per_video.csv', index=False)
-    json.dump(thresholds, open('/root/results/event_thresholds.json', 'w'), indent=1)
+    pd.DataFrame(rows).to_csv(ROOT + '/results/event_lovo.csv', index=False)
+    pd.DataFrame(per_video).to_csv(ROOT + '/results/event_lovo_per_video.csv', index=False)
+    json.dump(thresholds, open(ROOT + '/results/event_thresholds.json', 'w'), indent=1)

@@ -1,0 +1,17 @@
+one-by-one-person-detection.mp4 3291918
+people-detection.mp4 5482579
+person-bicycle-car-detection.mp4 6031199
+face-demographics-walking-and-pause.mp4 9406029
+worker-zone-detection.mp4 12596893
+car-detection.mp4 2811553
+store-aisle-detection.mp4 9214573
+yolo11n.pt 5613764
+0ebbc80d4a7680d14987a577cd21342b65ecfd94632bd9a8da63ae6417644ee1  yolo11n.pt
+d31e0ebf194cc16e50eea784e7c3b0b1bb7976a4fb9b3fec26cb92a6704cca34  ../sample-videos/car-detection.mp4
+d88ab9aa03634f66f8815db3dc940e1cdd80b098440effb20882e814fd206bf5  ../sample-videos/face-demographics-walking-and-pause.mp4
+a5964aa259099a482a8b360ffc2c57b5a30f84d5919236a4dad01f8e929ac07c  ../sample-videos/one-by-one-person-detection.mp4
+18ffe8672d741e3e29c9d891d22c59d453720b086c25b35c88b393d55f92f693  ../sample-videos/people-detection.mp4
+452b11b7e0efbd019f1d9570d0c790e90416ad4ad29eec6003872d08443140ef  ../sample-videos/person-bicycle-car-detection.mp4
+3526fee39cac70d6366471e4324a6d63b337c8f8ab99c015521bee0d60ed6e04  ../sample-videos/store-aisle-detection.mp4
+b8b58b8100a81600bc42ee7ee082ced777b12a32a3619139ef289d27cbdcd284  ../sample-videos/worker-zone-detection.mp4
+DOWNLOAD DONE

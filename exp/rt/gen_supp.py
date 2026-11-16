@@ -1,5 +1,6 @@
 import json, math
-R='/root/results/rt/'; A=json.load(open(R+'analysis.json')); B=json.load(open(R+'analysis2.json')); M=json.load(open('/root/results/det/det_metrics.json')); L=json.load(open(R+'latency_visdrone.json'))
+import os; ROOT = os.environ.get('SS_ROOT', '/root')
+R=ROOT + '/results/rt/'; A=json.load(open(R+'analysis.json')); B=json.load(open(R+'analysis2.json')); M=json.load(open(ROOT + '/results/det/det_metrics.json')); L=json.load(open(R+'latency_visdrone.json'))
 o=[]
 def T(cap,lab,spec,head,rows):
     o.append("\\begin{table}[h]\n\\centering\\footnotesize\\setlength{\\tabcolsep}{3.5pt}\n\\begin{tabular}{@{}"+spec+"@{}}\n\\toprule\n"+head+" \\\\\n\\midrule\n"+" \\\\\n".join(rows)+" \\\\\n\\bottomrule\n\\end{tabular}\n\\caption{"+cap+"}\n\\label{"+lab+"}\n\\end{table}\n")

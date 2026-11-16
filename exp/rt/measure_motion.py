@@ -1,6 +1,7 @@
 """Per-frame service times of the motion triggers on all seven clips (clean), single thread. Decode excluded (frame already in memory)."""
 import sys, time, numpy as np, cv2, platform
-sys.path.insert(0, '/root/exp')
+import os; ROOT = os.environ.get('SS_ROOT', '/root')
+sys.path.insert(0, ROOT + '/exp')
 from common import VIDEOS, frames
 cv2.setNumThreads(int(sys.argv[1]) if len(sys.argv) > 1 else 1)
 K = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (3, 3)); out = {}
@@ -28,4 +29,4 @@ for name in VIDEOS:
         T[k] = ts
     for k, v in T.items(): out[f'{k}|{name}'] = np.array(v)
     print(name, {k: round(1000 * float(np.median(v)), 2) for k, v in T.items()}, flush=True)
-np.savez('/root/results/rt/lat_motion.npz', **out); print('DONE', cv2.__version__, platform.processor())
+np.savez(ROOT + '/results/rt/lat_motion.npz', **out); print('DONE', cv2.__version__, platform.processor())

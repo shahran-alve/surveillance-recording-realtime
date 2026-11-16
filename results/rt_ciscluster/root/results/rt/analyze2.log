@@ -1,0 +1,11 @@
+hybrid MOG2 clean {'miss': 0.21, 'mean_ms': np.float64(48.27), 'p99_ms': np.float64(80.65), 'max_ms': np.float64(88.7), 'gate_open': 70.97, 'longest_open_run': 714, 'util': 0.58}
+hybrid MOG2 jitter {'miss': 0.21, 'mean_ms': np.float64(55.15), 'p99_ms': np.float64(80.65), 'max_ms': np.float64(88.7), 'gate_open': 83.24, 'longest_open_run': 767, 'util': 0.66}
+hybrid MOG2 illum {'miss': 0.21, 'mean_ms': np.float64(49.82), 'p99_ms': np.float64(80.65), 'max_ms': np.float64(88.7), 'gate_open': 73.24, 'longest_open_run': 714, 'util': 0.6}
+hybrid CNT clean {'miss': 0.0, 'mean_ms': np.float64(44.29), 'p99_ms': np.float64(72.04), 'max_ms': np.float64(82.65), 'gate_open': 78.38, 'longest_open_run': 964, 'util': 0.53}
+hybrid CNT jitter {'miss': 0.0, 'mean_ms': np.float64(53.89), 'p99_ms': np.float64(72.23), 'max_ms': np.float64(83.01), 'gate_open': 95.79, 'longest_open_run': 1394, 'util': 0.65}
+hybrid CNT illum {'miss': 0.0, 'mean_ms': np.float64(52.39), 'p99_ms': np.float64(72.21), 'max_ms': np.float64(83.01), 'gate_open': 93.34, 'longest_open_run': 1333, 'util': 0.63}
+hybrid FD clean {'miss': 0.0, 'mean_ms': np.float64(31.69), 'p99_ms': np.float64(71.29), 'max_ms': np.float64(82.28), 'gate_open': 55.76, 'longest_open_run': 714, 'util': 0.38}
+hybrid FD jitter {'miss': 0.0, 'mean_ms': np.float64(54.74), 'p99_ms': np.float64(71.44), 'max_ms': np.float64(82.28), 'gate_open': 98.88, 'longest_open_run': 784, 'util': 0.66}
+hybrid FD illum {'miss': 0.0, 'mean_ms': np.float64(31.58), 'p99_ms': np.float64(71.29), 'max_ms': np.float64(82.28), 'gate_open': 55.64, 'longest_open_run': 425, 'util': 0.38}
+native {'Detector 640 px': 0.0, 'Detector 640 px, 2 threads': 0.0, 'Detector 320 px': 0.0, 'FD': 0.0, 'CNT': 0.0, 'MOG2': 0.0, 'KNN': 0.0, 'FLOW': 0.0, 'GSOC': 0.07}
+DONE

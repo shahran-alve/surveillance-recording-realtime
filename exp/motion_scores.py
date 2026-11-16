@@ -1,11 +1,12 @@
 import sys, os, time, numpy as np, cv2
-sys.path.insert(0, '/root/exp')
+ROOT = os.environ.get('SS_ROOT', '/root')
+sys.path.insert(0, ROOT + '/exp')
 from common import VIDEOS, frames, video_info
 from perturb import make_perturber
 K = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (3, 3))
 def run(args):
     name, kind = args
-    out = f'/root/results/motion_scores/{name}_{kind}.npz'
+    out = f'{ROOT}/results/motion_scores/{name}_{kind}.npz'
     if os.path.exists(out): return out
     fps, n = video_info(name)
     P = make_perturber(kind, n, seed=abs(hash(name)) % 1000 if False else sum(map(ord, name)))
@@ -43,7 +44,7 @@ def run(args):
     return out
 if __name__ == '__main__':
     from multiprocessing import Pool
-    os.makedirs('/root/results/motion_scores', exist_ok=True)
+    os.makedirs(ROOT + '/results/motion_scores', exist_ok=True)
     jobs = [(v, k) for k in ['clean', 'illum', 'jitter', 'noise'] for v in VIDEOS]
     cv2.setNumThreads(1)
     with Pool(2) as p:

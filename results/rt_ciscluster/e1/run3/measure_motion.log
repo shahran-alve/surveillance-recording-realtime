@@ -1,0 +1,11 @@
+BEFORE t=1794546019 load=1.18 1.24 1.22 steal=0 MHz=3210
+one-by-one {'FD': 0.76, 'FLOW': 19.4, 'MOG2': 9.04, 'KNN': 10.26, 'CNT': 1.49, 'GSOC': 37.9}
+people {'FD': 0.78, 'FLOW': 19.35, 'MOG2': 6.68, 'KNN': 5.99, 'CNT': 1.46, 'GSOC': 31.19}
+person-bike-car {'FD': 0.78, 'FLOW': 19.35, 'MOG2': 7.76, 'KNN': 6.35, 'CNT': 1.43, 'GSOC': 32.44}
+walk-and-pause {'FD': 0.78, 'FLOW': 19.39, 'MOG2': 7.81, 'KNN': 9.38, 'CNT': 1.55, 'GSOC': 32.15}
+worker-zone {'FD': 0.77, 'FLOW': 20.55, 'MOG2': 9.44, 'KNN': 11.57, 'CNT': 1.6, 'GSOC': 32.38}
+car-lot {'FD': 0.78, 'FLOW': 19.36, 'MOG2': 7.95, 'KNN': 7.11, 'CNT': 1.48, 'GSOC': 35.35}
+store-aisle {'FD': 0.77, 'FLOW': 19.36, 'MOG2': 11.19, 'KNN': 16.9, 'CNT': 1.55, 'GSOC': 34.7}
+DONE 4.10.0 x86_64
+exit=0
+AFTER t=1794546509 load=1.21 1.11 1.14 steal=0 MHz=1119

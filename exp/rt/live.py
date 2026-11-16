@@ -3,12 +3,13 @@ Frames are released at the clip's own frame rate (pre-decoded, so decode is excl
 serves the detector jobs of N cameras first-come-first-served. A job released at r with next stride k must finish by r + k*T.
 Outputs job response times, deadline misses, and agreement of the live trigger with the trace-driven trigger."""
 import sys, time, json, heapq, numpy as np, torch, cv2
-sys.path.insert(0, '/root/exp')
+import os; ROOT = os.environ.get('SS_ROOT', '/root')
+sys.path.insert(0, ROOT + '/exp')
 from common import VIDEOS, frames, video_info
 from ultralytics import YOLO
-R = '/root/results/rt/'; A = json.load(open(R + 'analysis.json')); TH = A['theta']
+R = ROOT + '/results/rt/'; A = json.load(open(R + 'analysis.json')); TH = A['theta']
 CLS = [0, 1, 2, 3, 5, 7]; torch.set_num_threads(1); cv2.setNumThreads(1)
-m = YOLO('/root/data/models/yolo11n.pt')
+m = YOLO(ROOT + '/data/models/yolo11n.pt')
 def kidle_rt(fps, pre=1.0): return max(1, int(np.floor(pre * fps + 1e-9)))
 POL = {'Fixed stride 8': lambda fps: (8, 8), 'Adaptive 16/8': lambda fps: (16, 8), 'Adaptive, deadline-aware': lambda fps: (kidle_rt(fps), min(8, kidle_rt(fps)))}
 
@@ -45,7 +46,7 @@ out = {'single': {}, 'multi': {}}
 clips = {}
 for v in VIDEOS:
     fps, n = video_info(v); F = list(frames(v)); clips[v] = (v, F, fps)
-    sc = np.load(f'/root/results/det_scores/yolo11n_{v}_clean.npy') if False else None
+    sc = np.load(f'{ROOT}/results/det_scores/yolo11n_{v}_clean.npy') if False else None
     for pname, pf in POL.items():
         rec = run([clips[v]], pf, 1e9, False); out['single'].setdefault(pname, []).extend(rec)
         print(v, pname, {k: round(x, 3) for k, x in summ(rec).items()}, flush=True)
